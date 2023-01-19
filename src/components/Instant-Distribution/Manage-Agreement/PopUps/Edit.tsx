@@ -1,4 +1,4 @@
-import { FormName, Input, InputLabel, SubmitForm as Button, FormContainer, FormImg } from "../../../Borrow-Against-Salary/Borrow/borrowStyles";
+import { HeaderText, Input, InputLabel, SubmitForm as Button, FormContainer, FormHeader } from "../../../Borrow-Against-Salary/Borrow/borrowStyles";
 import { PopUpContainer, InputRow, AddButton, Remove, ErrorLabel, OrderCol } from '../AgreementStyles'
 import { useForm, SubmitHandler, useFieldArray } from "react-hook-form"
 import {CreateAgteementFormTypes, ManageAgreementProps, AgreementsChanges, Subscriber} from '../AgreementTypes'
@@ -119,11 +119,11 @@ function Edit({reference, wallet, connectWallet, data, closePopUp, setSnackBar, 
     return(
         <PopUpContainer>
             <form onSubmit={handleSubmit(onSubmit)} ref={reference}>
-                <FormImg>
-                    <FormName>{`${subscribers ? 'Edit' : 'Create'} Agreement`}</FormName>
+                <FormHeader>
+                    <HeaderText>{`${subscribers ? 'Edit' : 'Create'} Agreement`}</HeaderText>
                     <Image quality={100} src="/spaceship-ida.jpeg" fill style={{backgroundSize: 'cover', objectFit: 'cover'}} alt="galaxy"
                     />
-                </FormImg>
+                </FormHeader>
                 <FormContainer style={{boxShadow: 'none', padding:'30px'}}>
                     <InputRow>
                         <InputLabel className="hideMobile"></InputLabel>

@@ -4,5 +4,6 @@ export type BorrowFormTypes = {
     borrowAmount: number,
     rate: number,
     token: string,
-    period: number
+    period: number,
+    periodType: string
 }

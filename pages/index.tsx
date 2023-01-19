@@ -8,13 +8,10 @@ export default function Home() {
         <title>Salary stream</title>
       </Head>
 
-      <main className='centerFlex'>
+      <div className='centerFlex'>
         <UserData/>
-      </main>
+      </div>
 
-      <footer>
-
-      </footer>
     </>
   )
 }

@@ -26,9 +26,9 @@ export default function LendPage() {
         <title>Lend offers</title>
       </Head>
 
-      <main className='container'>
+      <div className='container'>
         <Offers type="lender" wallet={wallet} filter={lenderFilters} connectWallet={connectWallet}/>
-      </main>
+      </div>
 
       <footer>
 

@@ -130,7 +130,7 @@ function Select({items, isSearchable, onChange, Placeholder, isLoading, darkThem
                 }
                 <InputControl>
                     {!inputItem.query && !placeholderValue &&
-                        <PlaceholderContainer>{typeof Placeholder === "string" ? Placeholder : <Placeholder/>}</PlaceholderContainer>
+                        <PlaceholderContainer error={error}>{typeof Placeholder === "string" ? Placeholder : <Placeholder/>}</PlaceholderContainer>
                     }
                     <Input
                         readOnly={!isSearchable}

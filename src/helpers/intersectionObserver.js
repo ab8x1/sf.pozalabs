@@ -4,7 +4,7 @@ let listenerCallbacks = new WeakMap();
 
 let defaultObserver;
 
-function handleIntersections(entries, observer) {
+function handleIntersections(entries) {
   entries.forEach(entry => {
     if (listenerCallbacks.has(entry.target)) {
       let cb = listenerCallbacks.get(entry.target);

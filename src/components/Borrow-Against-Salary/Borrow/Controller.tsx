@@ -24,7 +24,7 @@ export default function Controll({Component, componentProps, control, name, requ
                 {...componentProps}
             />
         )}
-        rules={required ? { required: 'Input required' } : {}}
+        rules={required ? { required: 'Required' } : {}}
     />
     )
 }

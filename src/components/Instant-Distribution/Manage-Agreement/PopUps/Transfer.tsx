@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import { FormName, Input, InputLabel, SubmitForm as Button, FormContainer, FormImg, InputContainer, DoubleContainer, Value} from "../../../Borrow-Against-Salary/Borrow/borrowStyles";
+import { HeaderText, Input, InputLabel, SubmitForm as Button, FormContainer, FormHeader, InputContainer, DoubleContainer, Value} from "../../../Borrow-Against-Salary/Borrow/borrowStyles";
 import { PopUpContainer, InputRow, AddButton, Remove, ErrorLabel } from '../AgreementStyles'
 import Image from "next/image"
 import {TransferDistributeProps} from '../AgreementTypes'
@@ -47,11 +47,11 @@ function Transfer({reference, wallet, data, type, allUnits, closePopUp, setSnack
     }
     return(
         <PopUpContainer style={{maxWidth: '600px'}} ref={reference}>
-            <FormImg>
-                <FormName>{type === "transfer" ? "Transfer tokens into agreement" : "Distribute assets"}</FormName>
+            <FormHeader>
+                <HeaderText>{type === "transfer" ? "Transfer tokens into agreement" : "Distribute assets"}</HeaderText>
                 <Image quality={100} src={`/${type}.jpeg`} fill style={{backgroundSize: 'cover', objectFit: 'cover'}} alt="galaxy"
                 />
-            </FormImg>
+            </FormHeader>
             <FormContainer style={{boxShadow: 'none'}}>
                 <form onSubmit={submit}>
                     <DoubleContainer  style={{margin: '40px 0 30px 0'}}>

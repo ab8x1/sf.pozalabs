@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BorrowForm = styled.form`
     width: 100%;
-    max-width: 600px;
+    max-width: 850px;
     margin-bottom: 40px;
 `
 
@@ -13,73 +13,99 @@ export const FormContainer = styled.div`
     border-radius: 15px;
     @media(min-width: 768px){
         box-shadow: rgb(204 204 204 / 25%) 0px 0px 6px 3px;
-        padding: 10px 50px 50px 50px;
+        padding: 10px 30px 50px 30px;
     }
 `
 
-export const FormImg = styled.div`
+export const FormHeader = styled.div`
     position: relative;
+    display: flex;
+    align-items: center;
     border-radius: 15px 15px 0 0;
+    padding: 20px 30px;
     overflow: hidden;
     width: 100%;
-    height: 120px;
+    min-height: 120px;
 `
 
-export const FormName = styled.p`
-    position: absolute;
-    display: table;
-    left: 10px;
-    top: 10px;
+export const HeaderText = styled.p`
+    word-spacing: 0.15em;
+    margin: 15px 10px 10px 30px;
+    &:first-of-type{
+        font-size: 1.15rem;
+        font-weight: bold;
+    }
+`
+
+export const DoubleContainer = styled.div`
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    @media(min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+`
+
+export const InputWithSpecification = styled.div`
+    display: grid;
+    grid-template-columns: 0.65fr 0.35fr;
+    align-items: stretch;
+    background: #F2F3FB;
+    border-radius: 5px;
+    & input{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+`
+
+export const Specification = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DDBDCD;
+    border-radius: 5px;
     font-weight: bold;
-    margin: 0 0 30px 0;
-    padding: 4px 10px;
-    border-radius: 8px;
-    color: rgb(16, 187, 53);
-    background-color: rgba(0,0,0,0.3);
-    color: white;
-    z-index: 100;
+    font-size: 0.9rem;
 `
 
 export const InputContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 5px 0;
+    margin: 10px 0;
+    @media(min-width: 768px){
+        margin: 20px 0;
+    }
 `
 
 export const InputLabel = styled.label`
     position: relative;
     display: block;
     width: 100%;
+    font-weight: bold;
     font-size: 1rem;
     line-height: 250%;
     min-height: 45px;
 `
 
-export const Input = styled.input<{error: boolean, disabled?: boolean}>`
+export const Input = styled.input<{error: boolean, disabled?: boolean, hasSpecification?: boolean}>`
+    position: relative;
     display: block;
-    border: 0px;
-    background: none;
-    border: 1px solid #E0E0E0;
-    border-radius: 12px;
+    border: 2px solid transparent;
+    background: #F2F3FB;
+    border-radius: 5px;
     margin: 0px;
     width: 100%;
     padding: 16.5px 14px;
     outline: none;
     &:focus, &:active{
-        border-color: rgb(16, 187, 53);
+        border-color: rgb(246,203,206);
     }
     ${({error}) => error && `border-color: red;`}
     ${({disabled}) => disabled && `
-        background-color: rgba(0,0,0,0.05)!important;
         pointer-events: none;
     `}
-`
-
-export const DoubleContainer = styled.div`
-    display: grid;
-    width: 100%;
-    grid-template-columns: 6.5fr 3.5fr;
-    align-items: stretch;
 `
 
 export const SubmitForm = styled.button<{disabled: boolean}>`

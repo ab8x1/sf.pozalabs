@@ -21,10 +21,14 @@ export const ConnectMetamask = styled.button`
    display: flex;
    align-items: center;
    color: white;
-   background-color: rgb(16, 187, 53);
-   padding: 5px 20px;
+   background-color: #d9b8c8;
+   padding: 7px 20px;
    font-size: 1rem;
    border-radius: 10px;
+   box-shadow: 0px 2.86296px 2.86296px rgba(0, 0, 0, 0.25);
+   border-radius: 12px;
+   font-weight: bold;
+   transition: all 0.05s ease-in-out;
    & span{
         display: none;
    }
@@ -32,6 +36,10 @@ export const ConnectMetamask = styled.button`
         width: 32px;
         height: 32px;
         margin-left: 10px;
+   }
+   &:hover{
+        box-shadow: 0px 1.5px 1.5px rgba(0, 0, 0, 0.25);
+        transform: translateY(1px);
    }
    @media(min-width: 992px){
         padding: 10px 20px;

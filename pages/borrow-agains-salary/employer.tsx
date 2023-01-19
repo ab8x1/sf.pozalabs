@@ -18,10 +18,10 @@ export default function LendPage() {
         <title>Employer</title>
       </Head>
 
-      <main className='container'>
+      <div className='container'>
         <Offers type="employer" filter={employerFilters} wallet={wallet}
         connectWallet={connectWallet}/>
-      </main>
+      </div>
 
       <footer>
 

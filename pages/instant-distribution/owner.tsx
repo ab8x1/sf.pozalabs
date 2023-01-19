@@ -39,10 +39,6 @@ export default function CreateIDAPage() {
         <CreateAgreement wallet={wallet} connectWallet={connectWallet} setAgreements={setAgreements}/>
         <OwnedAgreements globalCTX={globalCTX} agreements={agreements}/>
       </PageContainer>
-
-      <footer>
-
-      </footer>
     </>
   )
 }

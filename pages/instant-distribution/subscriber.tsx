@@ -12,9 +12,9 @@ export default function CreateIDAPage() {
         <title>Deploy new Index</title>
       </Head>
 
-      <main className='container' style={{alignItems: 'flex-start', marginTop: '40px', maxWidth: '1100px'}}>
+      <div className='container' style={{alignItems: 'flex-start', marginTop: '40px', maxWidth: '1100px'}}>
         <OwnedSubscribtions setSnackBar={setSnackBar}/>
-      </main>
+      </div>
       {snackBar.isOpened &&
         <SnackBar
             status={snackBar.status}
@@ -22,9 +22,6 @@ export default function CreateIDAPage() {
             closeSnackBar={() => setSnackBar(st => ({...st, isOpened: false}))}
         />
       }
-      <footer>
-
-      </footer>
     </>
   )
 }

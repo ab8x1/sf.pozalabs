@@ -52,7 +52,6 @@ export const OfferContainer = styled.div<{$loading?: boolean, $active?: boolean 
     min-height: 124px;
     border-radius: 25px;
     font-size: 0.8rem;
-    border: 1px solid #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 25px;
     & p{

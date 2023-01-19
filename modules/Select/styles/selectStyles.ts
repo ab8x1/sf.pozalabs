@@ -12,12 +12,13 @@ export const Control = styled.div<ControlProps>`
     height: 100%;
     background-color: ${({darkTheme}) => darkTheme ? '#35373c' : 'white'};
     color: ${({darkTheme}) => darkTheme ? 'white' : 'black'};
-    border: 1px solid ${({customColors, listFocused, error}) => error && !listFocused ? 'red' : customColors ? listFocused ? customColors.focused : customColors.unfocused : "#9E9E9E"};
+    border: 1px solid;
     border-radius: 8px;
     font-size: 1rem;
     padding: 0;
     overflow: hidden;
-    ${({customStyles}) => css`${customStyles}`}
+    border-color: ${({customColors, listFocused, error}) => error && !listFocused ? 'red!important' : customColors ? listFocused ? `${customColors.focused}!important` : `${customColors.unfocused}` : "#9E9E9E"};
+    ${({customStyles}) => css`${customStyles}`};
 `;
 
 export const Align = styled.div`
@@ -52,7 +53,7 @@ export const InputControl = styled.div`
     flex: 1;
 `;
 
-export const PlaceholderContainer = styled.span`
+export const PlaceholderContainer = styled.span<{error?: boolean}>`
     position: absolute;
     display: flex;
     padding: 15px 10px 15px 0;
@@ -63,6 +64,8 @@ export const PlaceholderContainer = styled.span`
     top: 0;
     height: 100%;
     pointer-events: none;
+    font-weight: bold;
+    ${({error}) => error && `color: red;`}
 `;
 
 export const Input = styled.input<InputProps>`
@@ -77,6 +80,7 @@ export const Input = styled.input<InputProps>`
         font-size: 1em;
         color: inherit;
         opacity: 0.8;
+        font-weight: bold;
     }
     ${({customStyles}) => css`${customStyles}`}
 `;

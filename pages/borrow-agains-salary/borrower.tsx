@@ -8,13 +8,9 @@ export default function BorrowPage() {
         <title>Create borrow request</title>
       </Head>
 
-      <main className='centerFlex'>
+      <div className='centerFlex container'>
         <Borrow/>
-      </main>
-
-      <footer>
-
-      </footer>
+      </div>
     </>
   )
 }

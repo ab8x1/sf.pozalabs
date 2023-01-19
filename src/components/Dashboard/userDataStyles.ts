@@ -9,7 +9,7 @@ export const InfoBlock = styled.div`
     margin: 20px 0;
     font-size: 1.5rem;
     text-align: center;
-    background: rgba(0,0,0,0.03);
+    background: #F2F3FB;
 `
 
 export const ConnectToWalletInfo = styled.p`

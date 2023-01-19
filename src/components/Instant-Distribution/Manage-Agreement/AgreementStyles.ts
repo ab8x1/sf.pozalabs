@@ -3,7 +3,7 @@ import { MutableRefObject } from "react"
 import {SubmitForm, Error} from "../../Borrow-Against-Salary/Borrow/borrowStyles"
 import { OfferContainer, loadingStyles } from "../../Borrow-Against-Salary/Offers/offersStyles"
 
-export const PageContainer = styled.main`
+export const PageContainer = styled.div`
     display: flex;
     flex-direction: column;
     flex: 1;
