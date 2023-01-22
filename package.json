@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^13.1.2",
     "@next/font": "^13.1.2",
     "@superfluid-finance/sdk-core": "^0.4.4",
     "@types/node": "18.11.9",

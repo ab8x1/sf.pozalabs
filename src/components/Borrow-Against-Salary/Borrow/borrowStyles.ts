@@ -109,17 +109,27 @@ export const Input = styled.input<{error: boolean, disabled?: boolean, hasSpecif
 `
 
 export const SubmitForm = styled.button<{disabled: boolean}>`
-    width: 100%;
-    color: rgb(16,187,53);
-    background-color: rgba(16,187,53,0.1);
+    background-color: #A8E085;
     padding: 15px 20px;
-    font-size: 1rem;
+    min-width: 241px;
+    box-shadow: 0px 2.9px 2.9px rgba(0, 0, 0, 0.25);
+    border-radius: 12.1686px;
+    font-size: 0.95em;
     margin-top: 30px;
     border-radius: 12px;
-    ${({disabled}) => disabled && `
+    align-self: flex-end;
+    font-weight: bold;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    ${({disabled}) => disabled ? `
         color: #BDBDBD;
         background-color: rgba(130, 146, 173, 0.2)!important;
         cursor: default;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    ` : `
+        &:hover{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+            transform: translateY(1px);
+        }
     `}
 `
 

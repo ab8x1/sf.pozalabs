@@ -1,6 +1,7 @@
 import styled, {keyframes, css} from "styled-components"
 import {ConnectMetamask} from '../../Navbar/navbarStyles'
 import {LendButonProps} from './offersTypes'
+import Image from "next/image"
 
 export const ConnectFirstInfo = styled.div`
     display: flex;
@@ -14,7 +15,10 @@ export const ConnectFirstInfo = styled.div`
 
 export const LendOffers = styled.div`
     width: 100%;
-    margin: 50px 0;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 17px 17px;
 `
 
 const placeHolderShimmer = keyframes`
@@ -40,32 +44,41 @@ export const loadingStyles = css`
 
 `
 
+export const LoadingContainer = styled.div`
+    width: 100%;
+    min-height: 400px;
+    ${loadingStyles}
+`
+
 export const OfferContainer = styled.div<{$loading?: boolean, $active?: boolean | null}>`
     position: relative;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     padding: 30px 10px 15px 10px;
-    margin: 25px 0;
     min-height: 124px;
-    border-radius: 25px;
     font-size: 0.8rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 25px;
+    cursor: pointer;
     & p{
         margin: 10px;
     }
     @media(min-width: 992px){
-        padding: 50px 30px;
+        padding: 10px 30px;
+        margin: 20px 0;
         font-size: 0.9rem;
         & p{
             margin: 20px 15px;
         }
     }
-    background-color: ${({$active}) => $active ? '#C8E6C9' : $active === null ? '#FFCDD2' : 'transparent'};
     ${({$loading}) => $loading && loadingStyles}
+`
+
+export const Expand = styled(Image)`
+    cursor: pointer;
+    padding: 15px;
+    box-sizing: content-box;
 `
 
 export const ActualFlowRate = styled.span<{$rate?: number}>`
@@ -77,7 +90,7 @@ export const ActualFlowRate = styled.span<{$rate?: number}>`
 
 export const Adresses = styled.div`
     display: block;
-    font-size: 1em;
+    font-size: 1.1em;
     & a{
         display: block;
         font-weight: bold;
@@ -86,22 +99,41 @@ export const Adresses = styled.div`
     }
 `
 
-export const Amount = styled.div`
+export const Info = styled.p`
+    display: flex;
+    justify-content: center;
     font-size: 1em;
     text-align: center;
     overflow: hidden;
     max-width: 150px;
-    & span{
-        font-weight: bold;
-        font-size: 1.2em;
+    min-width: 75px;
+    font-weight: bold;
+    cursor: text;
+    & img{
+        margin-left: 5px;
     }
 `
 
-export const ContractActions = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+export const ContractStatus = styled.p<{$funded?: boolean}>`
+    min-width: 120px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.1s ease-in-out;
+    ${({$funded}) => $funded ? `
+        color: #A8E085;
+        cursor: default;
+    ` : `
+        background-color: #F8B39D;
+        color: white;
+        cursor: pointer;
+        &: hover {
+            transform: scale(1.05);
+        }
+    `}
 `
+
 export const ExternalLink = styled.a`
     color: #1E88E5;
 `

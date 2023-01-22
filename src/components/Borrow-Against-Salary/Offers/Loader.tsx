@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import {useIntersection} from '../../../helpers/intersectionObserver'
-import LoadingContainers from './helpers/LoadingContainers'
 import {LoaderProps, OfferData} from './offersTypes'
 import getOffers from './helpers/getOffers'
+import { LoadingContainer } from './offersStyles'
 
 
 
@@ -40,7 +40,7 @@ export default function Loader({setOffers, lastRequestedId, setLastRequestdId, f
         ref={ref}
         style={{minHeight: '100px'}}
     >
-        {moreOffersPossible ? loadingData ? <LoadingContainers amount={5}/> : null : <h3 style={{textAlign: 'center', margin: '50px 0'}}>No more offers available</h3>}
+        {moreOffersPossible ? loadingData ? <LoadingContainer/> : null : <h3 style={{textAlign: 'center', margin: '50px 0'}}>No more offers available</h3>}
     </div>
     )
 };

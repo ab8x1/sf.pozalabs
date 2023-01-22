@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
-import {LendOffers, ConnectFirstInfo} from './offersStyles'
+import {LendOffers, ConnectFirstInfo, LoadingContainer} from './offersStyles'
+import { FormHeader, HeaderText} from "../Borrow/borrowStyles"
 import Offer from './Offer'
 import {OffersStateProps, OfferData} from './offersTypes'
-import LoadingContainers from './helpers/LoadingContainers'
 import Loader from './Loader'
 import {ConnectMetamask} from '../../Navbar/navbarStyles'
 import getOffers from './helpers/getOffers'
+import Image from "next/image"
 
 function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
     const [offers, setOffers] = useState<OfferData[] | null | undefined>(undefined);
@@ -29,10 +30,16 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
 
     return(
         <>
-            <h1>{type === "lender" ? "Lend" : "Employee"} offers</h1>
             {
                 type === "lender" || wallet ?
                 <LendOffers>
+                    <FormHeader style={{background: 'linear-gradient(90deg, rgba(246,203,206,1) 0%, rgba(225,194,206,1) 50%, rgba(215,190,203,1) 100%'}}>
+                        <Image src="/navbar/bag.svg" width={35} height={35} alt="ida"/>
+                        <div>
+                            <HeaderText>Lend & Earn</HeaderText>
+                            <HeaderText>Fund a loan against one’s salary and earn interest</HeaderText>
+                        </div>
+                    </FormHeader>
                     {
                         offers ?
                         <>
@@ -43,7 +50,7 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
                             }
                             <Loader setOffers={setOffers} lastRequestedId={lastRequestedId} setLastRequestdId={setLastRequestdId} filter={filter}/>
                         </>
-                        : offers === undefined ? <LoadingContainers amount={5}/>
+                        : offers === undefined ? <LoadingContainer/>
                         : offers === null ? <h1 style={{color: 'red'}}>Fetching offers error</h1>
                         : lastRequestedId < 0 ? <h2>No offers found</h2>
                         : null

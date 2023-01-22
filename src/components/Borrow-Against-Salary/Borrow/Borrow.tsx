@@ -155,7 +155,7 @@ function BorrowComponent(){
                         <LoanAmount watch={watch}/>
                     </InputContainer>
                 </DoubleContainer>
-                <SubmitForm disabled={(!formState.isValid && formState.isSubmitted) || loading} type={wallet ? "submit" : "button"} {...submitAction}>{loading ? "Loading..." : wallet ? 'Send Borrow Request' : 'Connect Wallet'}</SubmitForm>
+                <SubmitForm disabled={(!formState.isValid && formState.isSubmitted) || loading} type={wallet ? "submit" : "button"} {...submitAction}>{loading ? "Loading..." : wallet ? 'Create Borrow Request' : 'Connect Wallet'}</SubmitForm>
             </FormContainer>
             {snackBar.isOpened &&
                 <SnackBar
