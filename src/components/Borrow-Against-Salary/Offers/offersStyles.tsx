@@ -2,6 +2,7 @@ import styled, {keyframes, css} from "styled-components"
 import {ConnectMetamask} from '../../Navbar/navbarStyles'
 import {LendButonProps} from './offersTypes'
 import Image from "next/image"
+import { LoadingSpinner } from "../../Instant-Distribution/Manage-Agreement/LoadingSpinner"
 
 export const ConnectFirstInfo = styled.div`
     display: flex;
@@ -114,16 +115,34 @@ export const Info = styled.p`
     }
 `
 
-export const ContractStatus = styled.p<{$funded?: boolean}>`
+export const ContractStatus = styled.div`
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+`
+
+export const Loading = styled.div`
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate( -100%, -50%);
+`
+
+export const Status = styled.p<{$funded?: boolean, $disabled: boolean}>`
+    padding: 5px 5px;
     min-width: 120px;
+    margin-left: 5px;
     text-align: center;
-    padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
+    cursor: default;
     transition: transform 0.1s ease-in-out;
-    ${({$funded}) => $funded ? `
+    ${({$funded, $disabled}) => $disabled ? `
+        background-color: #E0E0E0;
+        color: #616161;
+    ` : $funded ? `
         color: #A8E085;
-        cursor: default;
     ` : `
         background-color: #F8B39D;
         color: white;

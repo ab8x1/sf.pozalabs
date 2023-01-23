@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { ethers } from "ethers"
-import {OfferContainer, Adresses, Info, LendButton, ExternalLink, IsActive, OfferInfo, ActualFlowRate, LoanActive, ContractStatus, Expand} from './offersStyles'
+import {OfferContainer, Adresses, Info, LendButton, ExternalLink, IsActive, OfferInfo, ActualFlowRate, LoanActive, ContractStatus, Status, Expand, Loading} from './offersStyles'
 import {OfferProps, SnackBarObj} from './offersTypes'
 import {shortenAdress} from '../../Navbar/TopNavbar'
 import FlowRate from "./FlowRate"
@@ -9,6 +9,7 @@ import lend from './helpers/lend'
 import closeLoan from './helpers/closeLoan'
 import SnackBar from '../../../../modules/SnackBar'
 import Image from "next/image"
+import { LoadingSpinner } from "../../Instant-Distribution/Manage-Agreement/LoadingSpinner"
 
 
 function OfferComponent({loading, data, type, wallet}: OfferProps){
@@ -86,27 +87,34 @@ function OfferComponent({loading, data, type, wallet}: OfferProps){
                     <p>Borrower: <a href={`https://goerli.etherscan.io/address/${borrower}`} target="_blank" rel="noopener noreferrer">{shortenAdress(borrower)}</a></p>
                     <p>Employer: <a href={`https://goerli.etherscan.io/address/${employer}`} target="_blank" rel="noopener noreferrer">{shortenAdress(employer)}</a></p>
                 </Adresses> */}
-                <ContractStatus $funded={!!active}>
-                    {
-                        active ?
-                        "Funded Loan" :
-                        <span onClick={lendAction}>Fund Now</span>
+                <ContractStatus>
+                    { asyncDataLoading &&
+                        <Loading>
+                            <LoadingSpinner size="20px"/>
+                        </Loading>
                     }
-                    {/* { active && type === "lender" ?
-                        <>
-                            <LoanActive>Your active loan as {userIs}</LoanActive>
-                            {(userIs === "Borrower" || userIs === "Lender") &&
-                                <LendButton $disabled={disableLendButton} style={{backgroundColor: "#F44336"}} onClick={() => lenderAction(true)}>{disableLendButton ? "Loading..." : "Close loan"}</LendButton>
-                            }
-                        </>
-                        : !active && type === "lender" && userIs === "Borrower"
-                        ? <p>Your borrow request</p>
-                        : active !== null ? <LendButton $disabled={disableLendButton} onClick={lendAction}>{!lendButtonText ? "Loading..." : lendButtonText}</LendButton>
-                        : null
-                    }
-                    <ExternalLink href={`https://goerli.etherscan.io/address/${loanAddress}`} target="_blank" rel="noopener noreferrer">
-                        {shortenAdress(loanAddress)}
-                    </ExternalLink> */}
+                    <Status $funded={!!active} $disabled={!wallet || asyncDataLoading}>
+                        {
+                            active ?
+                            "Funded Loan" :
+                            <span onClick={wallet && !asyncDataLoading ? lendAction : undefined}>Fund Now</span>
+                        }
+                        {/* { active && type === "lender" ?
+                            <>
+                                <LoanActive>Your active loan as {userIs}</LoanActive>
+                                {(userIs === "Borrower" || userIs === "Lender") &&
+                                    <LendButton $disabled={disableLendButton} style={{backgroundColor: "#F44336"}} onClick={() => lenderAction(true)}>{disableLendButton ? "Loading..." : "Close loan"}</LendButton>
+                                }
+                            </>
+                            : !active && type === "lender" && userIs === "Borrower"
+                            ? <p>Your borrow request</p>
+                            : active !== null ? <LendButton $disabled={disableLendButton} onClick={lendAction}>{!lendButtonText ? "Loading..." : lendButtonText}</LendButton>
+                            : null
+                        }
+                        <ExternalLink href={`https://goerli.etherscan.io/address/${loanAddress}`} target="_blank" rel="noopener noreferrer">
+                            {shortenAdress(loanAddress)}
+                        </ExternalLink> */}
+                    </Status>
                 </ContractStatus>
             </OfferContainer>
             { showFlowRatePopUp &&
