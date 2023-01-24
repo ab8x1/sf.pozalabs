@@ -12,7 +12,7 @@ export const LoadingSpinner = styled.div<{size: string}>`
 	height: ${({size}) => size || '35px'};
 	border: solid transparent;
     border-width:${({size}) => size ? '1px' : '3px'};
-	border-color: #1E88E5;
+	border-color: #F8B39D;
 	border-top-color: transparent;
 	border-radius: 50%;
 	animation: ${rotate} 0.5s linear infinite;

@@ -2,7 +2,6 @@ import styled, {keyframes, css} from "styled-components"
 import {ConnectMetamask} from '../../Navbar/navbarStyles'
 import {LendButonProps} from './offersTypes'
 import Image from "next/image"
-import { LoadingSpinner } from "../../Instant-Distribution/Manage-Agreement/LoadingSpinner"
 
 export const ConnectFirstInfo = styled.div`
     display: flex;
@@ -52,22 +51,15 @@ export const LoadingContainer = styled.div`
 `
 
 export const OfferContainer = styled.div<{$loading?: boolean, $active?: boolean | null}>`
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
-    padding: 30px 10px 15px 10px;
-    min-height: 124px;
     font-size: 0.8rem;
-    cursor: pointer;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 30px 10px 15px 10px;
     & p{
-        margin: 10px;
+        margin: 10px 20px;
     }
     @media(min-width: 992px){
-        padding: 10px 30px;
-        margin: 20px 0;
+        padding: 20px 30px;
         font-size: 0.9rem;
         & p{
             margin: 20px 15px;
@@ -76,10 +68,36 @@ export const OfferContainer = styled.div<{$loading?: boolean, $active?: boolean 
     ${({$loading}) => $loading && loadingStyles}
 `
 
-export const Expand = styled(Image)`
+export const InfoContainer = styled.div`
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: space-between;
+    @media(min-width: 992px){
+        justify-content: space-between;
+    }
+
+`
+
+export const ExpandArrow = styled(Image)<{opened: boolean}>`
     cursor: pointer;
     padding: 15px;
     box-sizing: content-box;
+    ${({opened}) => opened && `
+        transform: rotate(180deg);
+    `}
+`
+
+export const DetailsTitle = styled.div`
+    margin: 30px 15px 0 15px;
+    font-weight: bold;
+    text-decoration: underline;
+`
+
+export const ExpandDetails = styled.div`
+
 `
 
 export const ActualFlowRate = styled.span<{$rate?: number}>`
@@ -89,13 +107,17 @@ export const ActualFlowRate = styled.span<{$rate?: number}>`
     ${({$rate}) => $rate === undefined && loadingStyles}
 `
 
-export const Adresses = styled.div`
+export const Addresses = styled.div`
     display: block;
-    font-size: 1.1em;
+    & p{
+        display: flex;
+        align-items: center;
+    }
     & a{
         display: block;
-        font-weight: bold;
-        color: #1E88E5;
+        color: #2F848C;
+        margin-left: 10px;
+        text-decoration: underline;
         cursor: pointer;
     }
 `
@@ -141,6 +163,7 @@ export const Status = styled.p<{$funded?: boolean, $disabled: boolean}>`
     ${({$funded, $disabled}) => $disabled ? `
         background-color: #E0E0E0;
         color: #616161;
+        pointer-events: none;
     ` : $funded ? `
         color: #A8E085;
     ` : `
@@ -157,11 +180,11 @@ export const ExternalLink = styled.a`
     color: #1E88E5;
 `
 
-export const LendButton = styled(ConnectMetamask)<LendButonProps>`
+export const ActionButton = styled(ConnectMetamask)<LendButonProps>`
     justify-content: center;
     text-align: center;
-    min-width: 120px;
-    margin: 10px 20px;
+    min-width: 160px;
+    margin: 10px;
     ${({$disabled}) => $disabled && `
         cursor: default;
         pointer-events: none;

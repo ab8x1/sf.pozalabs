@@ -2,7 +2,7 @@ import {useRef, useState, useEffect} from 'react'
 import { ethers } from 'ethers'
 import OnClickOutside from '../../../../modules/Select/helpers/onClickOutside'
 import {FlowRateProps} from './offersTypes'
-import {DialogBg, DialogContainer, LendButton, TokenPerMounth} from './offersStyles'
+import {DialogBg, DialogContainer, ActionButton, TokenPerMounth} from './offersStyles'
 import {InputContainer, Input, InputLabel, Error} from '../Borrow/borrowStyles'
 import employerFlow from './helpers/employerFlow'
 
@@ -102,8 +102,8 @@ function FlowRate({setShowFlowRate, wallet, loanAdress, defaultFlowRate, actualF
                     <b style={error ? {color: 'red'} : {}}>Your FlowRate is: {flowRate}</b>
                 </TokenPerMounth>
                 <InputContainer style={{marginTop: '30px'}}>
-                    <LendButton $disabled={!flowRate || !!error} style={{margin: 0}} value={actualFlowRate ? "updateFlow" : "createFlow"} onClick={lendAction}>{actualFlowRate && actualFlowRate > 0 ? 'Change' : 'Activate'} flow</LendButton>
-                    <LendButton $disabled={!actualFlowRate} style={{margin: '20px 0 0 0', backgroundColor: "red"}} value="deleteFlow" onClick={lendAction}>Delete flow</LendButton>
+                    <ActionButton $disabled={!flowRate || !!error} style={{margin: 0}} value={actualFlowRate ? "updateFlow" : "createFlow"} onClick={lendAction}>{actualFlowRate && actualFlowRate > 0 ? 'Change' : 'Activate'} flow</ActionButton>
+                    <ActionButton $disabled={!actualFlowRate} style={{margin: '20px 0 0 0', backgroundColor: "red"}} value="deleteFlow" onClick={lendAction}>Delete flow</ActionButton>
                 </InputContainer>
             </DialogContainer>
         </DialogBg>
