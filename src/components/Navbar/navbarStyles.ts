@@ -53,14 +53,14 @@ export const ConnectMetamask = styled.button`
 export const ToggleNavbar = styled.div<OpenedNavbar>`
     position: fixed;
     left: 0;
-    width: 260px;
+    width: 300px;
     top: 0;
     bottom: 0;
     display: flex;
     flex-direction: column;
     background-color: white;
     border-right: 1px solid #E0E0E0;
-    transform: translateX(${({open}) => open ? '0px' : '-260px'});
+    transform: translateX(${({open}) => open ? '0px' : '-300px'});
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
     @media(min-width: 992px){
@@ -69,16 +69,13 @@ export const ToggleNavbar = styled.div<OpenedNavbar>`
 `
 
 export const Logo = styled.p`
-    margin: 40px 0 40px 0;
+    margin-top: 40px;
+    padding: 0 35px;
     color: black;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-weight: bold;
-    text-align: center;
-    & a{
-        text-align: center;
-    }
 `
 
 export const Options = styled.ul`

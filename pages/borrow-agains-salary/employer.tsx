@@ -18,7 +18,7 @@ export default function LendPage() {
         <title>Employer</title>
       </Head>
 
-      <div className='container'>
+      <div className='container' style={!wallet ? {display: 'flex', alignItems: 'center', justifyContent: 'center'} : {}}>
         <Offers type="employer" filter={employerFilters} wallet={wallet}
         connectWallet={connectWallet}/>
       </div>

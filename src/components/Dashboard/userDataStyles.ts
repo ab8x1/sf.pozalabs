@@ -1,15 +1,19 @@
 import styled from "styled-components"
 
-export const InfoBlock = styled.div`
+export const ConnectInfoBlock = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 50px;
+    padding: 20px;
     border-radius: 15px;
     margin: 20px 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     background: #F2F3FB;
+    @media(min-width: 992px){
+        font-size: 1.5rem;
+        padding: 30px 50px;
+    }
 `
 
 export const ConnectToWalletInfo = styled.p`

@@ -30,10 +30,10 @@ export type OffersStateProps = {
 }
 
 export type OfferProps = {
-    loading?: boolean,
     data?: offerData,
     type: string,
-    wallet?: WalletProps
+    wallet?: WalletProps,
+    connectWallet?: (initialization: boolean) => void
 }
 
 export type LoaderProps = {

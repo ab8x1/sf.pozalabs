@@ -7,19 +7,12 @@ import {OfferData} from '../../src/components/Borrow-Against-Salary/Offers/offer
 
 export default function LendPage() {
   const {wallet, connectWallet} = useContext(GlobalCTX) as GlobalContextProps;
-  //show active loans only owners
+
   const lenderFilters = (data: OfferData): boolean =>{
-    if(data?.[8] === true) return false; //dont show closed contracts
-    else{
-      if(data?.[5] === true){ //if loan is active
-        if(data?.[3] === wallet?.adress || data?.[4] === wallet?.adress || data?.[7] === wallet?.adress) //if user is lender / borrower / employer
-          return true
-        else
-          return false
-      }
-      else return true;
-    }
+    if(data?.[8] === true || data?.[5] === true) return false; //dont show closed and active contracts
+    else return true;
   }
+
   return (
     <>
       <Head>

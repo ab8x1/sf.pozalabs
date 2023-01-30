@@ -36,11 +36,8 @@ export default function Loader({setOffers, lastRequestedId, setLastRequestdId, f
     }, [inView, lastRequestedId]);
 
     return(
-    <div
-        ref={ref}
-        style={{minHeight: '100px'}}
-    >
-        {moreOffersPossible ? loadingData ? <LoadingContainer/> : null : <h3 style={{textAlign: 'center', margin: '50px 0'}}>No more offers available</h3>}
+    <div ref={ref}>
+        {loadingData ? <LoadingContainer/> : null}
     </div>
     )
 };

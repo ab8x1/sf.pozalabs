@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import {LendOffers, ConnectFirstInfo, LoadingContainer} from './offersStyles'
+import {LendOffers, LoadingContainer} from './offersStyles'
+import { ConnectInfoBlock, ConnectToWalletInfo } from "../../Dashboard/userDataStyles"
 import { FormHeader, HeaderText} from "../Borrow/borrowStyles"
 import Offer from './Offer'
 import {OffersStateProps, OfferData} from './offersTypes'
@@ -15,7 +16,7 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
     const walletAdress: string | undefined = wallet?.adress;
 
     useEffect(() => { //load initial offers at the beginning and when the user connects wallet as employer
-        if(((type ==="employer" && wallet) || (type=="lender" && wallet !== undefined)) && !loading){
+        if(((type ==="employer" && wallet) || (type=="lender" && !offers?.length)) && !loading){
             setOffers(undefined);
             setLastRequestdId(0);
             const getLendOffers = async () => {
@@ -45,7 +46,7 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
                         <>
                             {
                                 offers?.map((offerData, i)=>
-                                    <Offer key={i} type={type} loading={false} data={offerData} wallet={wallet}/>
+                                    <Offer key={i} type={type} data={offerData} wallet={wallet} connectWallet={connectWallet}/>
                                 )
                             }
                             <Loader setOffers={setOffers} lastRequestedId={lastRequestedId} setLastRequestdId={setLastRequestdId} filter={filter}/>
@@ -57,9 +58,10 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
                     }
                 </LendOffers>
                 : connectWallet &&
-                <ConnectFirstInfo>
-                    <ConnectMetamask style={{padding: '15px 30px'}} onClick={() => connectWallet(false)}>Connect to metamask <img src="/metamask.png"/></ConnectMetamask>
-                </ConnectFirstInfo>
+                <ConnectInfoBlock>
+                    <ConnectToWalletInfo>Connect to <span>Metamask <img src="/metamask.png" width={30} height={30} alt="metamask"/></span> to unlock all features</ConnectToWalletInfo>
+                    <ConnectMetamask onClick={() => connectWallet(false)}>Connect <span>Wallet</span><img src="/wallet.png"/></ConnectMetamask>
+                </ConnectInfoBlock>
             }
         </>
     )

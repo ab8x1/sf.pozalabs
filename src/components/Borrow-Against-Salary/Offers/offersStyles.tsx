@@ -3,19 +3,9 @@ import {ConnectMetamask} from '../../Navbar/navbarStyles'
 import {LendButonProps} from './offersTypes'
 import Image from "next/image"
 
-export const ConnectFirstInfo = styled.div`
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    & button{
-        font-size: 1.2rem;
-    }
-`
-
 export const LendOffers = styled.div`
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 50px auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 17px 17px;
@@ -59,7 +49,7 @@ export const OfferContainer = styled.div<{$loading?: boolean, $active?: boolean 
         margin: 10px 20px;
     }
     @media(min-width: 992px){
-        padding: 20px 30px;
+        padding: 30px 30px 20px 30px;
         font-size: 0.9rem;
         & p{
             margin: 20px 15px;
@@ -73,7 +63,6 @@ export const InfoContainer = styled.div`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     justify-content: space-between;
     @media(min-width: 992px){
         justify-content: space-between;
@@ -83,6 +72,7 @@ export const InfoContainer = styled.div`
 
 export const ExpandArrow = styled(Image)<{opened: boolean}>`
     cursor: pointer;
+    user-select: none;
     padding: 15px;
     box-sizing: content-box;
     ${({opened}) => opened && `
@@ -92,19 +82,12 @@ export const ExpandArrow = styled(Image)<{opened: boolean}>`
 
 export const DetailsTitle = styled.div`
     margin: 30px 15px 0 15px;
+    font-size: 1.1rem;
     font-weight: bold;
-    text-decoration: underline;
 `
 
 export const ExpandDetails = styled.div`
 
-`
-
-export const ActualFlowRate = styled.span<{$rate?: number}>`
-    border-radius: 5px;
-    color: ${({$rate}) => $rate === undefined ? "transparent" : $rate > 0 ? "green" : "#F2675E"};
-    text-align: center;
-    ${({$rate}) => $rate === undefined && loadingStyles}
 `
 
 export const Addresses = styled.div`
@@ -112,6 +95,7 @@ export const Addresses = styled.div`
     & p{
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     & a{
         display: block;
@@ -122,7 +106,19 @@ export const Addresses = styled.div`
     }
 `
 
-export const Info = styled.p`
+const InfoWrapper = ({children, className}: any) => {
+    const preventPropagation = (e: React.MouseEvent<HTMLParagraphElement>) => {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    return(
+        <div className={className} onClick={preventPropagation}>
+            {children}
+        </div>
+    )
+}
+
+export const Info = styled(InfoWrapper)`
     display: flex;
     justify-content: center;
     font-size: 1em;
@@ -131,13 +127,14 @@ export const Info = styled.p`
     max-width: 150px;
     min-width: 75px;
     font-weight: bold;
+    margin: 10px 20px;
     cursor: text;
     & img{
         margin-left: 5px;
     }
 `
 
-export const ContractStatus = styled.div`
+export const ContractStatus = styled(InfoWrapper)`
     position: relative;
     display: flex;
     align-items: center;
@@ -151,7 +148,9 @@ export const Loading = styled.div`
     transform: translate( -100%, -50%);
 `
 
-export const Status = styled.p<{$funded?: boolean, $disabled: boolean}>`
+export const Status = styled.span<{$funded?: boolean, $disabled: boolean}>`
+    display: flex;
+    justify-content: center;
     padding: 5px 5px;
     min-width: 120px;
     margin-left: 5px;
@@ -163,7 +162,6 @@ export const Status = styled.p<{$funded?: boolean, $disabled: boolean}>`
     ${({$funded, $disabled}) => $disabled ? `
         background-color: #E0E0E0;
         color: #616161;
-        pointer-events: none;
     ` : $funded ? `
         color: #A8E085;
     ` : `
@@ -194,15 +192,20 @@ export const ActionButton = styled(ConnectMetamask)<LendButonProps>`
 
 export const OfferInfo = styled.div`
     position: absolute;
-    right: 15px;
-    top: 5px;
+    right: 5px;
+    top: -15px;
+    display: flex;
+    font-size: 0.7rem;
+    padding: 2px 8px;
 `
 
-export const IsActive = styled.span<{active: boolean | null}>`
-    padding: 2px 8px;
-    color: ${({active}) => active ? 'rgb(16,187,53)' : '#757575'};
-    font-weight: bold;
-    font-size: 0.7rem;
+export const ActualFlowRate = styled.label<{$rate?: number}>`
+    border-radius: 5px;
+    & span{
+        color: ${({$rate}) => $rate === undefined ? "transparent" : $rate > 0 ? "#A8E085" : "#F2675E"};
+        font-weight: bold;
+    }
+    ${({$rate}) => $rate === undefined && loadingStyles}
 `
 
 export const DialogBg = styled.div`
@@ -237,4 +240,9 @@ export const LoanActive = styled.p`
     color: #388E3C;
     max-width: 165px;
     text-align: center;
+`
+export const IsActive = styled.span<{active: boolean | null}>`
+    padding: 2px 4px;
+    color: ${({active}) => active ? '#A8E085' : '#F2675E'};
+    font-weight: bold;
 `

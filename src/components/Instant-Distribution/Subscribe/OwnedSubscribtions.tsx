@@ -1,11 +1,11 @@
 import { useContext, useState, useEffect, memo } from "react"
 import { GlobalCTX } from '../../App'
 import { GlobalContextProps } from '../../App/appTypes'
-import {ConnectFirstInfo} from "../../Borrow-Against-Salary/Offers/offersStyles"
+import { ConnectInfoBlock } from "../../Dashboard/userDataStyles"
 import {ConnectMetamask} from '../../Navbar/navbarStyles'
 import { SubscriptionType, OwnedSubscriptionsType } from "./SubscriptionTypes"
 import getSubscriptions from "./helpers/getSubscriptions"
-import LoadingContainers from "../../Borrow-Against-Salary/Offers/helpers/LoadingContainers"
+import { LoadingContainer } from "../../Borrow-Against-Salary/Offers/offersStyles"
 import Subscription from "./Subscription"
 import { shortenAdress } from "../../Navbar/TopNavbar"
 
@@ -32,18 +32,18 @@ function OwnedSubscriptions({setSnackBar}: OwnedSubscriptionsType){ console.log(
             {
                 wallet
                 ? subscriptions === undefined ?
-                    <LoadingContainers amount={5}/>
+                    <LoadingContainer/>
                 : subscriptions === null ?
                     <h3>No subscriptions found</h3>
                 : subscriptions.map(sub =>
                     <Subscription key={`${sub.id}-${user}`} {...sub} setSnackBar={setSnackBar} wallet={wallet}/>
                 )
                 :
-                    <ConnectFirstInfo style={{width: '100%'}}>
+                    <ConnectInfoBlock style={{width: '100%'}}>
                         <ConnectMetamask style={{padding: '15px 30px'}} onClick={() => connectWallet(false)}>
                             Connect to metamask <img src="/metamask.png"/>
                         </ConnectMetamask>
-                    </ConnectFirstInfo>
+                    </ConnectInfoBlock>
             }
         </>
 

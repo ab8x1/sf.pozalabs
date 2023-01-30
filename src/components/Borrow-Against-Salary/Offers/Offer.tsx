@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { ethers } from "ethers"
-import {OfferContainer, Addresses, Info, ActionButton, ExternalLink, IsActive, OfferInfo, ActualFlowRate, LoanActive, ContractStatus, Status, ExpandArrow, Loading, ExpandDetails, InfoContainer, DetailsTitle} from './offersStyles'
+import {OfferContainer, Addresses, Info, ActionButton, ExternalLink, OfferInfo, ActualFlowRate, LoanActive, ContractStatus, Status, ExpandArrow, Loading, ExpandDetails, InfoContainer, DetailsTitle, IsActive} from './offersStyles'
 import {OfferProps, SnackBarObj} from './offersTypes'
 import {shortenAdress} from '../../Navbar/TopNavbar'
 import FlowRate from "./FlowRate"
@@ -9,10 +9,10 @@ import lend from './helpers/lend'
 import closeLoan from './helpers/closeLoan'
 import SnackBar from '../../../../modules/SnackBar'
 import Image from "next/image"
-import { LoadingSpinner } from "../../Instant-Distribution/Manage-Agreement/LoadingSpinner"
+import OfferStatus from "./OfferStatus"
 
 
-function OfferComponent({loading, data, type, wallet}: OfferProps){
+function OfferComponent({data, type, wallet, connectWallet}: OfferProps){
     const [showDetails, setShowDetails] = useState(false);
     const [snackBar, setSnackBar] = useState<SnackBarObj>({isOpened: false, status: "success", message: ""});
     const [showFlowRatePopUp, setShowFlowRatePopUp] = useState(false);
@@ -61,27 +61,33 @@ function OfferComponent({loading, data, type, wallet}: OfferProps){
     }
 
     const toogleDetails = (e: React.MouseEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        e.stopPropagation();
+        if(window.getSelection){
+            window.getSelection()?.removeAllRanges();
+        }
         setShowDetails(st => (!st));
     }
 
     const fundOffer = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault();
         e.stopPropagation();
-        lendAction();
+        if(wallet) lendAction();
+        else{
+            setSnackBar({
+                isOpened: true,
+                message:  `Connect to Metamask first`,
+                status: "warning"
+            });
+            if(connectWallet) connectWallet(false);
+        }
     }
 
     return(
         <>
-            <OfferContainer $loading={loading} $active={active}>
+            <OfferContainer $active={active}>
                 <InfoContainer onClick={toogleDetails} style={{cursor: 'pointer'}}>
-                    {/* <OfferInfo>
-                        <IsActive active={active}>
-                            {active ? 'active' : 'inactive'}
-                        </IsActive>
-                        <ActualFlowRate $rate={actualFlowRate}>{actualFlowRate} fDAIx/m</ActualFlowRate>
-                    </OfferInfo> */}
+                    <OfferInfo>
+                        <ActualFlowRate $rate={actualFlowRate}>Inflow: <span>{actualFlowRate} fDAIx/m</span></ActualFlowRate>
+                    </OfferInfo>
                     <ExpandArrow src="/arrow.svg" width={16} height={16} alt="arrow" opened={showDetails}/>
                     <Info style={{maxWidth: '120px'}}>
                         APR: {Math.round(Number((interestRate * (12/paybackMonths))))}%
@@ -90,31 +96,21 @@ function OfferComponent({loading, data, type, wallet}: OfferProps){
                     <Info>
                         {Number(initialBorrowAmount.toFixed(2))} {borrowToken}
                     </Info>
-                    <ContractStatus>
-                        { asyncDataLoading &&
-                            <Loading>
-                                <LoadingSpinner size="20px"/>
-                            </Loading>
-                        }
-                        <Status
-                            onClick={!active && wallet && !asyncDataLoading ? fundOffer : undefined}
-                            $funded={!!active}
-                            $disabled={!wallet || asyncDataLoading}
-                            style={{margin: '20px 10px'}}
-                        >
-                            {
-                                asyncDataLoading ? "Loading..." : active ? "Funded Loan" : "Fund Now"
-                            }
-                            {/* <ExternalLink href={`https://goerli.etherscan.io/address/${loanAddress}`} target="_blank" rel="noopener noreferrer">
-                                {shortenAdress(loanAddress)}
-                            </ExternalLink> */}
-                        </Status>
-                    </ContractStatus>
+                    <OfferStatus
+                        asyncDataLoading={asyncDataLoading}
+                        active={active}
+                        type={type}
+                        connectWallet={connectWallet}
+                        fundOffer={fundOffer}
+                        setSnackBar={setSnackBar}
+                        userIs={userIs}
+                        actualFlowRate={actualFlowRate}
+                    />
                 </InfoContainer>
                 {
                     showDetails &&
                     <ExpandDetails>
-                        <DetailsTitle>Loan Details</DetailsTitle>
+                        <DetailsTitle>Loan Details:</DetailsTitle>
                         <InfoContainer style={{alignItems: 'flex-start'}}>
                             <div>
                                 <p>
@@ -123,14 +119,21 @@ function OfferComponent({loading, data, type, wallet}: OfferProps){
                                 <p>
                                     Payback period: {paybackMonths} months
                                 </p>
+                                {
+                                    type === "employer" &&
+                                    <p>
+                                        Status: <IsActive active={active}>{active ? "Active" : "Inactive"}</IsActive>
+                                    </p>
+                                }
                             </div>
                             <Addresses>
                                 <p>Borrower address: <a href={`https://goerli.etherscan.io/address/${borrower}`} target="_blank" rel="noopener noreferrer">{shortenAdress(borrower)}</a></p>
                                 <p>Employer address: <a href={`https://goerli.etherscan.io/address/${employer}`} target="_blank" rel="noopener noreferrer">{shortenAdress(employer)}</a></p>
+                                {/* <p>Contract address: <a href={`https://goerli.etherscan.io/address/${loanAddress}`} target="_blank" rel="noopener noreferrer">{shortenAdress(loanAddress)}</a></p> */}
                             </Addresses>
                         </InfoContainer>
                         { active && type === "lender" && (userIs === "Borrower" || userIs === "Lender") &&
-                            <ActionButton $disabled={disableLendButton} style={{backgroundColor: "#F0564C"}} onClick={() => lenderAction(true)}>{disableLendButton ? "Loading..." : "Close loan"}</ActionButton>
+                            <ActionButton $disabled={disableLendButton} style={{backgroundColor: "#F0564C"}} onClick={() => lenderAction(true)}>{disableLendButton ? "Loading..." : `Close loan`}</ActionButton>
                         }
                     </ExpandDetails>
                 }

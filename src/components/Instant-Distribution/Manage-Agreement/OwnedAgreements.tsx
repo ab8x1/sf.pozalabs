@@ -1,9 +1,9 @@
 import { memo } from "react";
-import LoadingContainers from "../../Borrow-Against-Salary/Offers/helpers/LoadingContainers";
+import { LoadingContainer } from "../../Borrow-Against-Salary/Offers/offersStyles";
 import {OwnedAgreementsProps, AgreementTypes} from './AgreementTypes'
 import {OwnedAgreementsContainer} from './AgreementStyles'
 import {ConnectMetamask} from '../../Navbar/navbarStyles'
-import {ConnectFirstInfo as NoOffersToDisplay} from "../../Borrow-Against-Salary/Offers/offersStyles"
+import { ConnectInfoBlock } from "../../Dashboard/userDataStyles";
 import Agreement from "./Agreement";
 
 function OwnedAgreements({globalCTX, agreements}: OwnedAgreementsProps){
@@ -15,11 +15,11 @@ function OwnedAgreements({globalCTX, agreements}: OwnedAgreementsProps){
             {
                 wallet ?
                     agreements === undefined ?
-                        <LoadingContainers amount={5}/>
+                        <LoadingContainer/>
                     : agreements === null ?
-                        <NoOffersToDisplay>
+                        <ConnectInfoBlock>
                             <h2>No agreements found</h2>
-                        </NoOffersToDisplay>
+                        </ConnectInfoBlock>
                     :
                         <>
                             {
@@ -29,11 +29,11 @@ function OwnedAgreements({globalCTX, agreements}: OwnedAgreementsProps){
                             }
                         </>
                 :
-                    <NoOffersToDisplay>
+                    <ConnectInfoBlock>
                         <ConnectMetamask style={{padding: '15px 30px'}} onClick={() => connectWallet(false)}>
                             Connect to metamask <img src="/metamask.png"/>
                         </ConnectMetamask>
-                    </NoOffersToDisplay>
+                    </ConnectInfoBlock>
             }
         </OwnedAgreementsContainer>
     )
