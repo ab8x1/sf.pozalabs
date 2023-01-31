@@ -48,7 +48,7 @@ function OfferComponent({data, type, wallet, connectWallet}: OfferProps){
                 await lend(wallet, loanAddress, rawBorrowAmount);
             setSnackBar({
                 isOpened: true,
-                message:  `Success! Your ${close ? 'close' : 'lend'} request has succeeded`,
+                message:  `Success! Your ${close ? 'close' : 'lend'} request has succeeded. ${!close ? `Your Funded Loan will appear now in Active Loans tab.` : ""}`,
                 status: "success"
             });
             if(close) setActive(null); //closed offer indicator
@@ -110,7 +110,10 @@ function OfferComponent({data, type, wallet, connectWallet}: OfferProps){
                 {
                     showDetails &&
                     <ExpandDetails>
-                        <DetailsTitle>Loan Details:</DetailsTitle>
+                        <DetailsTitle>
+                            <label>Loan Details:</label>
+                            <a href={`https://goerli.etherscan.io/address/${loanAddress}`} target="_blank" rel="noopener noreferrer"><Image src="/external-link.svg" width={18} height={18} alt="contract info"/></a>
+                        </DetailsTitle>
                         <InfoContainer style={{alignItems: 'flex-start'}}>
                             <div>
                                 <p>
@@ -129,10 +132,9 @@ function OfferComponent({data, type, wallet, connectWallet}: OfferProps){
                             <Addresses>
                                 <p>Borrower address: <a href={`https://goerli.etherscan.io/address/${borrower}`} target="_blank" rel="noopener noreferrer">{shortenAdress(borrower)}</a></p>
                                 <p>Employer address: <a href={`https://goerli.etherscan.io/address/${employer}`} target="_blank" rel="noopener noreferrer">{shortenAdress(employer)}</a></p>
-                                {/* <p>Contract address: <a href={`https://goerli.etherscan.io/address/${loanAddress}`} target="_blank" rel="noopener noreferrer">{shortenAdress(loanAddress)}</a></p> */}
                             </Addresses>
                         </InfoContainer>
-                        { active && type === "lender" && (userIs === "Borrower" || userIs === "Lender") &&
+                        { active && (type !== "employer") &&
                             <ActionButton $disabled={disableLendButton} style={{backgroundColor: "#F0564C"}} onClick={() => lenderAction(true)}>{disableLendButton ? "Loading..." : `Close loan`}</ActionButton>
                         }
                     </ExpandDetails>

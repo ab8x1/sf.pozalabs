@@ -4,7 +4,7 @@ import { LoadingSpinner } from "../../Instant-Distribution/Manage-Agreement/Load
 
 function OfferStatus({asyncDataLoading, active, actualFlowRate, fundOffer, userIs, type}: any){
     const loading = asyncDataLoading || (type === "employer" && actualFlowRate === undefined);
-    const clickDisabled = loading || (type === "lender" && !actualFlowRate);
+    const clickDisabled = loading || (type === "lender" && (!actualFlowRate || active)) || type === "activeLoans";
 
     return(
         <ContractStatus>
@@ -15,14 +15,15 @@ function OfferStatus({asyncDataLoading, active, actualFlowRate, fundOffer, userI
             }
             <Status
                 onClick={!clickDisabled ? fundOffer : undefined}
-                $funded={type !== "employer" && !!active}
+                $noActions={type !== "employer" && (active === true || active === null)}
                 $disabled={clickDisabled}
             >
                 {
                     loading ? "Loading..."
-                    : type === "lender" ? "Fund now"
-                    : userIs === "Employer" ? !actualFlowRate ? "Create Flow" : "Change Flow"
-                    : userIs === "Borrower" ? "Your Debt" : "Your Loan"
+                    : type === "lender" ? !active ? "Fund now" : "Your Funded loan"
+                    : type === "employer" ? !actualFlowRate ? "Create Flow" : "Change Flow"
+                    : active === null ? "Closed Loan"
+                    : userIs === "Borrower" ? "Your Debt" : "Your Funded Loan"
                 }
             </Status>
         </ContractStatus>

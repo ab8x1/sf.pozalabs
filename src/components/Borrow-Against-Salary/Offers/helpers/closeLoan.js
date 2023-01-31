@@ -5,7 +5,7 @@ const LoanContractABI = LoanContract.abi
 export default async function main(wallet, loanAddress, userIs) {
     return new Promise(async(res, rej) => {
         try{
-            const {sfSigner, daix} = wallet;
+            const {sfSigner, daix} = wallet; console.log(userIs);
             const userSigner = sfSigner;
             let amountLeft;
 
@@ -26,7 +26,7 @@ export default async function main(wallet, loanAddress, userIs) {
                     rej(false);
                 }
             }
-            const tx = userIs === "Lender" ? await employmentLoan.connect(userSigner).closeOpenLoan(0) : await employmentLoan.connect(userSigner).closeOpenLoan(amountLeft);
+            const tx = userIs === "Borrower" ? await employmentLoan.connect(userSigner).closeOpenLoan(amountLeft) : await employmentLoan.connect(userSigner).closeOpenLoan(0);
             await tx.wait();
             res(tx);
         } catch(e){

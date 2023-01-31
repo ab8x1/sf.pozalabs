@@ -81,9 +81,13 @@ export const ExpandArrow = styled(Image)<{opened: boolean}>`
 `
 
 export const DetailsTitle = styled.div`
-    margin: 30px 15px 0 15px;
+    display: flex;
+    margin: 25px 15px 0 15px;
     font-size: 1.1rem;
     font-weight: bold;
+    & label{
+        margin-right: 10px;
+    }
 `
 
 export const ExpandDetails = styled.div`
@@ -148,7 +152,7 @@ export const Loading = styled.div`
     transform: translate( -100%, -50%);
 `
 
-export const Status = styled.span<{$funded?: boolean, $disabled: boolean}>`
+export const Status = styled.span<{$noActions?: boolean, $disabled: boolean}>`
     display: flex;
     justify-content: center;
     padding: 5px 5px;
@@ -159,11 +163,11 @@ export const Status = styled.span<{$funded?: boolean, $disabled: boolean}>`
     font-weight: bold;
     cursor: default;
     transition: transform 0.1s ease-in-out;
-    ${({$funded, $disabled}) => $disabled ? `
+    ${({$noActions, $disabled}) => $noActions? `
+        color: #616161;
+    ` : $disabled ? `
         background-color: #E0E0E0;
         color: #616161;
-    ` : $funded ? `
-        color: #A8E085;
     ` : `
         background-color: #F8B39D;
         color: white;

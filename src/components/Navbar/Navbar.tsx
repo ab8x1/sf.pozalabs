@@ -9,7 +9,7 @@ import {route} from './navbarTypes'
 import { relative } from 'path'
 import Image from 'next/image'
 
-const bagRoutes: route[] = [{url: "borrower", name: "Borrower"}, {url: "lender", name: "Lender"}, {url: "employer", name: "Employer"}];
+const bagRoutes: route[] = [{url: "borrower", name: "Borrower"}, {url: "lender", name: "Lender"}, {url: "employer", name: "Employer"}, {url: "activeLoans", name: "Active Loans"}];
 const idRoutes: route[] = [{url: "subscriber", name: "Subscriber"}, {url: "owner", name: "Owner"}];
 
 function NavbarComponent(){

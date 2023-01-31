@@ -16,7 +16,7 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
     const walletAdress: string | undefined = wallet?.adress;
 
     useEffect(() => { //load initial offers at the beginning and when the user connects wallet as employer
-        if(((type ==="employer" && wallet) || (type=="lender" && !offers?.length)) && !loading){
+        if((((type ==="employer" || type === "activeLoans") && wallet) || (type=="lender" && !offers?.length)) && !loading){
             setOffers(undefined);
             setLastRequestdId(0);
             const getLendOffers = async () => {
