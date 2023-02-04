@@ -19,7 +19,7 @@ export default async function fetch(lastRequestedId: number,  setLastRequestdId:
                 }
                 else return acc;
             }, []);
-            const noMoreOffers = results.some(result => result.status === "rejected" && result.reason === "No more offers");
+            const noMoreOffers = results.some(result => result.status === "rejected" && result.reason === "No more offers") || results.every(result => result.status === "rejected" && result.reason === "Fetching error");
             const newLastId = noMoreOffers ? -1 : ((st: any) => st + 5);
             setLastRequestdId(newLastId);
             res([fulfilledResults, false]);

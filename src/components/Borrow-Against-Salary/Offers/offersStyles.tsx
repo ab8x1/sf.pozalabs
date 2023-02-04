@@ -3,7 +3,7 @@ import {ConnectMetamask} from '../../Navbar/navbarStyles'
 import {LendButonProps} from './offersTypes'
 import Image from "next/image"
 
-export const LendOffers = styled.div`
+export const DisplayContainer = styled.div`
     width: 100%;
     max-width: 900px;
     margin: 50px auto;

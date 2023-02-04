@@ -117,7 +117,7 @@ function OfferComponent({data, type, wallet, connectWallet}: OfferProps){
                         <InfoContainer style={{alignItems: 'flex-start'}}>
                             <div>
                                 <p>
-                                    Profit: <span style={{color: "#A8E085", fontWeight: 'bold'}}>{Number(profit.toFixed(2))} {borrowToken}</span>
+                                    Lender Profit: <span style={{color: "#A8E085", fontWeight: 'bold'}}>{Number(profit.toFixed(2))} {borrowToken}</span>
                                 </p>
                                 <p>
                                     Payback period: {paybackMonths} months

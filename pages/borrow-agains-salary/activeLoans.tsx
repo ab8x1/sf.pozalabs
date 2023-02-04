@@ -9,7 +9,7 @@ export default function LendPage() {
   const {wallet, connectWallet} = useContext(GlobalCTX) as GlobalContextProps;
 
   const lenderFilters = (data: OfferData): boolean =>{
-    if((data?.[3] === wallet?.adress || data?.[4] === wallet?.adress) && data?.[8] !== true && data?.[5] === true) return true;
+    if((data?.[7] === wallet?.adress || data?.[4] === wallet?.adress) && data?.[8] !== true && data?.[5] === true) return true;
     else return false;
   }
 
@@ -19,7 +19,7 @@ export default function LendPage() {
         <title>Lend offers</title>
       </Head>
 
-      <div className='container'>
+      <div className='container' style={!wallet ? {display: 'flex', alignItems: 'center', justifyContent: 'center'} : {}}>
         <Offers type="activeLoans" wallet={wallet} filter={lenderFilters} connectWallet={connectWallet}/>
       </div>
 

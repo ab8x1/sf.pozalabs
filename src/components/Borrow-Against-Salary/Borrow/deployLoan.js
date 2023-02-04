@@ -2,7 +2,7 @@ const ethers = require("ethers")
 const LoanFactoryABI = require("../../../artifacts/contracts/LoanFactory.sol/LoanFactory.json").abi
 
 //place deployed address of the loan factory here...
-const LoanFactoryAddress = "0x98aee9CF0e7214B2C5596EcbC36779f06afb2DCA";
+const LoanFactoryAddress = process.env.NEXT_PUBLIC_LOAN_FACTORY_ADDRESS;
 
 //enforce goerli provider first
 

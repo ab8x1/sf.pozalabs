@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import {LendOffers, LoadingContainer} from './offersStyles'
+import {DisplayContainer, LoadingContainer} from './offersStyles'
 import { ConnectInfoBlock, ConnectToWalletInfo } from "../../Dashboard/userDataStyles"
 import { FormHeader, HeaderText} from "../Borrow/borrowStyles"
 import Offer from './Offer'
@@ -20,7 +20,7 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
             setOffers(undefined);
             setLastRequestdId(0);
             const getLendOffers = async () => {
-                setLoading(true);
+                setLoading(true); console.log('request ', lastRequestedId);
                 const [results] = await getOffers(0, setLastRequestdId, filter);
                 setOffers(results);
                 setLoading(false)
@@ -33,7 +33,7 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
         <>
             {
                 type === "lender" || wallet ?
-                <LendOffers>
+                <DisplayContainer>
                     <FormHeader style={{background: 'linear-gradient(90deg, rgba(246,203,206,1) 0%, rgba(225,194,206,1) 50%, rgba(215,190,203,1) 100%'}}>
                         <Image src="/navbar/bag.svg" width={35} height={35} alt="ida"/>
                         <div>
@@ -42,7 +42,7 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
                         </div>
                     </FormHeader>
                     {
-                        offers ?
+                        (offers && offers.length > 0) || lastRequestedId > 0 ?
                         <>
                             {
                                 offers?.map((offerData, i)=>
@@ -52,11 +52,11 @@ function LendComponent({type, filter, wallet, connectWallet}: OffersStateProps){
                             <Loader setOffers={setOffers} lastRequestedId={lastRequestedId} setLastRequestdId={setLastRequestdId} filter={filter}/>
                         </>
                         : offers === undefined ? <LoadingContainer/>
-                        : offers === null ? <h1 style={{color: 'red'}}>Fetching offers error</h1>
-                        : lastRequestedId < 0 ? <h2>No offers found</h2>
+                        : offers === null ? <h1 style={{color: 'red', textAlign: 'center', padding: '40px 20px'}}>Fetching offers error</h1>
+                        : lastRequestedId < 0 ? <h2 style={{textAlign: 'center', padding: '40px 20px'}}>No offers found</h2>
                         : null
                     }
-                </LendOffers>
+                </DisplayContainer>
                 : connectWallet &&
                 <ConnectInfoBlock>
                     <ConnectToWalletInfo>Connect to <span>Metamask <img src="/metamask.png" width={30} height={30} alt="metamask"/></span> to unlock all features</ConnectToWalletInfo>
