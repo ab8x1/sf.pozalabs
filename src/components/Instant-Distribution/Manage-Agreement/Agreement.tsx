@@ -66,8 +66,8 @@ function Agreement({index, data, wallet}: AgreementProps){
                     </Info>
                 </InfoCol>
                 <InfoCol>
-                    <AgreementButton $disabled={assets===undefined} onClick={assets ? () => showPopUp("transfer") : undefined}>Top up</AgreementButton>
-                    <AgreementButton  $disabled={assets===undefined} style={{backgroundColor: "#BC6E5A", color: 'white', marginLeft: '20px'}} onClick={assets ? () => showPopUp("distribute") : undefined}>Distribute <span>assets</span></AgreementButton>
+                    <AgreementButton $disabled={assets===undefined} onClick={assets!==undefined ? () => showPopUp("transfer") : undefined}>Top up</AgreementButton>
+                    <AgreementButton  $disabled={assets===undefined} style={{backgroundColor: "#BC6E5A", color: 'white', marginLeft: '20px'}} onClick={assets!==undefined ? () => showPopUp("distribute") : undefined}>Distribute <span>assets</span></AgreementButton>
                 </InfoCol>
             </AgreementContainer>
             {popUp.status !== false && <PopUp popUpData={popUp} closePopUp={closePopUp} wallet={wallet}/>}
