@@ -108,7 +108,10 @@ export const Input = styled.input<{error: boolean, disabled?: boolean, hasSpecif
     `}
 `
 
-export const SubmitForm = styled.button<{disabled: boolean}>`
+export const SubmitForm = styled.button<{$disabled: boolean}>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #A8E085;
     padding: 15px 20px;
     min-width: 241px;
@@ -120,7 +123,10 @@ export const SubmitForm = styled.button<{disabled: boolean}>`
     align-self: flex-end;
     font-weight: bold;
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-    ${({disabled}) => disabled ? `
+    & img{
+        margin-left: 5px;
+    }
+    ${({$disabled}) => $disabled ? `
         color: #BDBDBD;
         background-color: rgba(130, 146, 173, 0.2)!important;
         cursor: default;

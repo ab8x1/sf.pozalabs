@@ -49,7 +49,7 @@ export const OfferContainer = styled.div<{$loading?: boolean, $active?: boolean 
         margin: 10px 20px;
     }
     @media(min-width: 992px){
-        padding: 30px 30px 20px 30px;
+        padding: 35px 30px 20px 30px;
         font-size: 0.9rem;
         & p{
             margin: 20px 15px;
@@ -197,7 +197,7 @@ export const ActionButton = styled(ConnectMetamask)<LendButonProps>`
 export const OfferInfo = styled.div`
     position: absolute;
     right: 5px;
-    top: -15px;
+    top: -20px;
     display: flex;
     font-size: 0.7rem;
     padding: 2px 8px;

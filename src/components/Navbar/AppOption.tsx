@@ -12,7 +12,8 @@ function AppOptionComponent({info, mainUrl, routes}: AppOptionsProps){
     const appOpened = asPath.includes(mainUrl);
 
     useEffect(() => {
-        if(isOpened && !appOpened) setIsOpened(false);
+        if(appOpened) setIsOpened(true);
+        else setIsOpened(false);
     }, [asPath])
 
     return(

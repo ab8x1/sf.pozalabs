@@ -21,12 +21,14 @@ export const TopInfoContainer = styled.div`
 `
 
 export const AgreementContainer = styled(OfferContainer)`
+    position: relative;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     padding: 60px 15px 15px 15px;
     @media(min-width: 992px){
-        padding: 70px 40px 40px 40px;
+        padding: 60px 40px 30px 40px;
         justify-content: space-between;
     }
 `
@@ -48,7 +50,6 @@ export const Info = styled.div`
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 1.1rem;
     margin: 10px;
     & img{
         margin-right: 15px;
@@ -60,9 +61,6 @@ export const TopInfo = styled.p`
     font-weight: bold;
     & label{
         margin-right: 10px;
-    }
-    & a{
-        color: #E0805A;
     }
 `
 
@@ -82,7 +80,7 @@ export const CreateAgreementContainer = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: #FCD38C;
-    padding: 20px;
+    padding: 40px 25px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     & img{
@@ -105,7 +103,7 @@ export const NewAgreementInfo = styled.div`
     align-items: center;
     & h1{
         margin: 0;
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     & p{
@@ -113,6 +111,9 @@ export const NewAgreementInfo = styled.div`
     }
     @media(min-width: 768px){
         align-items: flex-start;
+        & h1{
+            font-size: 2.3rem;
+        }
     }
 `
 
@@ -134,14 +135,13 @@ export const InputRow = styled.div`
 export const AddButton = styled(SubmitForm)`
     display: flex;
     align-items: center;
-    width: auto;
+    width: 100%;
     justify-content: center;
     background-color: white;
     color: black;
     font-weight: bold;
-    padding: 21px 35px 21px 35px;
-    margin: 0 20px 0 0;
-    font-size: 1rem;
+    padding: 18px 35px 18px 35px;
+    margin: 10px 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     & img{
         margin-left: 5px;
@@ -168,34 +168,23 @@ export const OwnedAgreementsContainer = styled.div`
     width: 100%;
 `
 
-export const AgreementButton = styled.button<{color?: string, $disabled?: boolean}>`
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 12px 40px;
+export const AgreementButton = styled(SubmitForm)`
+    padding: 10px 30px;
+    min-width: auto;
     margin: 10px 0;
-    font-size: 0.9rem;
     background-color: ${({color}) => color ? color : "white"};
     z-index: 100;
     border-radius: 10px;
-    font-size: 1.1rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    & img{
-        margin-right: 10px;
-    }
     & span{
-        margin-left: 5px;
+        display: none;
     }
-    ${({$disabled}) => $disabled && `
-        opacity: 0.5;
-        pointer-events: none;
-    `}
-    @media(max-width: 767px){
+    @media(min-width: 768px){
         padding: 15px 20px;
     }
-    @media(max-width: 1100px){
+    @media(min-width: 1100px){
         & span{
-            display: none;
+            display: block;
+            margin-left: 5px;
         }
     }
 `

@@ -1,32 +1,32 @@
-import {useContext, useEffect} from 'react'
-import {ConnectInfoBlock, ConnectToWalletInfo} from './userDataStyles'
+import {useContext} from 'react'
+import {DashBoardContainer, ServiceBox} from './userDataStyles'
 import {GlobalCTX} from '../App'
 import {GlobalContextProps} from '../App/appTypes'
-import {ConnectMetamask} from '../Navbar/navbarStyles'
+import Image from 'next/image'
+import Link from 'next/link'
 
 function UserDataComponent(){
     const {wallet, connectWallet} = useContext(GlobalCTX) as GlobalContextProps;
     const name: string | undefined = wallet?.network?.name;
 
     return(
-        <>
-        {
-            wallet ?
-            <div>
-                <ConnectInfoBlock>
-                    {wallet && `Welcome: ${wallet?.adress.slice(0,5)}...${wallet?.adress.slice(-4)}`}
-                </ConnectInfoBlock>
-                <ConnectInfoBlock>
-                    {name && <>Current network: {name[0].toUpperCase()+name.slice(1)}</>}
-                </ConnectInfoBlock>
-            </div>
-            :
-            <ConnectInfoBlock>
-                <ConnectToWalletInfo>Connect to <span>Metamask <img src="/metamask.png" width={30} height={30} alt="metamask"/></span> to unlock all features</ConnectToWalletInfo>
-                <ConnectMetamask onClick={() => connectWallet(false)}>Connect <span>Wallet</span><img src="/wallet.png"/></ConnectMetamask>
-            </ConnectInfoBlock>
-        }
-        </>
+        <div className='container'>
+            <h2>Apps built on top of <a style={{color: "#2196F3"}} href='https://www.superfluid.finance/' target="_blank" rel="noreferrer">Superfluid</a></h2>
+            <DashBoardContainer>
+                <Link href="/borrow-agains-salary/borrower">
+                    <ServiceBox>
+                        <label>Borrow Against Salary</label>
+                        <Image src="/ida-box.png" width={272} height={348} alt='IDA'/>
+                    </ServiceBox>
+                </Link>
+                <Link href="/instant-distribution/owner">
+                    <ServiceBox>
+                        <label>Instant Distribution Agreement</label>
+                        <Image src="/bag-box.png" width={272} height={348} alt='IDA'/>
+                    </ServiceBox>
+                </Link>
+            </DashBoardContainer>
+        </div>
     )
 }
 export default UserDataComponent;

@@ -7,11 +7,7 @@ export default function Home() {
       <Head>
         <title>Salary stream</title>
       </Head>
-
-      <div className='centerFlex'>
-        <UserData/>
-      </div>
-
+      <UserData/>
     </>
   )
 }

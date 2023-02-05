@@ -119,10 +119,11 @@ function Edit({reference, wallet, connectWallet, data, closePopUp, setSnackBar, 
     return(
         <PopUpContainer>
             <form onSubmit={handleSubmit(onSubmit)} ref={reference}>
-                <FormHeader>
-                    <HeaderText>{`${subscribers ? 'Edit' : 'Create'} Agreement`}</HeaderText>
-                    <Image quality={100} src="/spaceship-ida.jpeg" fill style={{backgroundSize: 'cover', objectFit: 'cover'}} alt="galaxy"
-                    />
+                <FormHeader style={{background: 'linear-gradient(90deg, rgba(252,211,140,1) 0%, rgba(242,195,113,1) 50%, rgba(244,170,42,1) 100%)'}}>
+                    <div>
+                        <HeaderText>Edit Agreement</HeaderText>
+                        <HeaderText>Manage your agreement: add / remove users, change shares</HeaderText>
+                    </div>
                 </FormHeader>
                 <FormContainer style={{boxShadow: 'none', padding:'30px'}}>
                     <InputRow>
@@ -155,11 +156,11 @@ function Edit({reference, wallet, connectWallet, data, closePopUp, setSnackBar, 
                             </InputRow>
                         )
                     }
-                    <AddButton disabled={false} type={"button"} onClick={addNewSubscriber} style={{backgroundColor: "#FFEB3B", boxShadow: 'none'}}>
+                    <Button $disabled={false} type={"button"} onClick={addNewSubscriber} style={{backgroundColor: "#ffeb3b", width: '100%'}}>
                         Add subscriber
                         <Image src="/add.png" width={20} height={20} alt="add"/>
-                    </AddButton>
-                    <Button disabled={false} type={wallet ? "submit" : "button"} {...clickToConnect}>
+                    </Button>
+                    <Button $disabled={false} type={wallet ? "submit" : "button"} {...clickToConnect} style={{width: '100%'}}>
                         {wallet ? `${subscribers ? 'Edit' : 'Create'} Agreement` : "Connect Wallet"}
                     </Button>
                 </FormContainer>

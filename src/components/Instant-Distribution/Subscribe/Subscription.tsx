@@ -39,7 +39,13 @@ function Subscription({id, isApproved, shares, setSnackBar, wallet} : Subscripti
         <AgreementContainer>
             <TopInfoContainer>
                 <TopInfo>
-                Id:<span style={{marginLeft: '10px'}}><a href={`https://goerli.etherscan.io/address/${id}`}  rel="noreferrer" target="_blank">{shortenAdress(id)}</a></span>
+                Id:
+                <span style={{marginLeft: '10px'}}>
+                    <a href={`https://goerli.etherscan.io/address/${id}`}  rel="noreferrer" target="_blank">
+                        {shortenAdress(id)}
+                        <Image src="/external-link.svg" width={18} height={18} alt="external-link" style={{marginLeft: '10px'}}/>
+                    </a>
+                </span>
                 </TopInfo>
             </TopInfoContainer>
             <InfoCol>
@@ -52,9 +58,12 @@ function Subscription({id, isApproved, shares, setSnackBar, wallet} : Subscripti
                 </Info>
             </InfoCol>
             <InfoCol>
-                <Button $disabled={approved === undefined} style={{color: 'white'}} color={!approved ? "#9ed27d" : "#F0564C"} onClick={() => approveOrRevoke(approved ? "revoke" : "approve")}>
-                    <Image src={approved ? '/revoke.svg' : '/approve.svg'} width={25} height={25} alt="dai"/>
-                    {approved ? "Revoke" : "Approve"}
+                <Button $disabled={approved === undefined} style={{color: 'white', minWidth: '140px'}} color={!approved ? "#9ed27d" : "#F0564C"} onClick={approved !== undefined ? () => approveOrRevoke(approved ? "revoke" : "approve") : undefined}>
+                    {
+                        approved === true ? <> Revoke <Image src="/revoke.svg" width={25} height={25} alt="dai"/></>
+                        : approved === false ? <>Approve <Image src="/approve.svg" width={25} height={25} alt="dai"/></>
+                        : "Loading..."
+                    }
                 </Button>
             </InfoCol>
         </AgreementContainer>

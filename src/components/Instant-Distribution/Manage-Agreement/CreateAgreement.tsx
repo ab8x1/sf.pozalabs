@@ -22,7 +22,7 @@ function CreateAgreement({wallet, connectWallet, setAgreements}: CreateAgreement
                     <h1>Your Agreements</h1>
                     <p>Set conditions and unleash the power of asset distribution</p>
                     <div style={{display: 'flex', alignItems: 'center'}}>
-                        <AddButton disabled={loading} onClick={() => setPopUp(st => ({...st, status: "edit", createAgreementData: {setAgreements, setNewAgreementLoading: setLoading}}))}>
+                        <AddButton $disabled={loading} onClick={() => setPopUp(st => ({...st, status: "edit", createAgreementData: {setAgreements, setNewAgreementLoading: setLoading}}))}>
                             Create Agreement
                             <Image width={20} height={20} src="/add.svg" alt='add button' priority/>
                         </AddButton>

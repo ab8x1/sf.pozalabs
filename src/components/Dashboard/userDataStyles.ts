@@ -4,6 +4,7 @@ export const ConnectInfoBlock = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     padding: 20px;
     border-radius: 15px;
     margin: 20px 0;
@@ -31,3 +32,31 @@ export const ConnectToWalletInfo = styled.p`
         }
     }
 `;
+
+export const DashBoardContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    width: 100%;
+    margin: 50px 0;
+    @media(min-width: 992px){
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+`
+export const ServiceBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F3FB;
+    padding: 40px 20px;
+    border-radius: 30px;
+    transition: transform 0.2s ease-in-out;
+    & label{
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+`

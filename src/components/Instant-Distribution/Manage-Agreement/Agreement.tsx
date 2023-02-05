@@ -46,14 +46,19 @@ function Agreement({index, data, wallet}: AgreementProps){
                 <TopInfoContainer>
                     <TopInfo>
                         <label>Id:</label>
-                        <span><a href={`https://goerli.etherscan.io/address/${id}`}  rel="noreferrer" target="_blank">{shortenAdress(id)}</a></span>
+                        <span>
+                            <a href={`https://goerli.etherscan.io/address/${id}`}  rel="noreferrer" target="_blank">
+                                {shortenAdress(id)}
+                                <Image src="/external-link.svg" width={18} height={18} alt="external-link" style={{marginLeft: '10px'}}/>
+                            </a>
+                        </span>
                     </TopInfo>
                     <Image style={!agreementSubscribers ? {opacity: '0.5', pointerEvents: 'none'} : {cursor: 'pointer'}} src="/edit.svg" width={20} height={20} alt="edit" onClick={() => showPopUp("edit")} />
                 </TopInfoContainer>
                 <InfoCol>
                     <Info>
                         <Image src="/dai.svg" width={35} height={35} alt="dai"/>
-                        <Assets style={{display: 'block', maxWidth: '140px', minWidth: '120px'}} $rate={assets}>{assets} fDAIx</Assets>
+                        <span style={{display: 'block', maxWidth: '140px', minWidth: '120px'}}>{assets} fDAIx</span>
                     </Info>
                     <Info style={{marginLeft: '20px'}}>
                         <Image src="/subscribers.svg" width={35} height={35} alt="dai"/>
@@ -61,8 +66,8 @@ function Agreement({index, data, wallet}: AgreementProps){
                     </Info>
                 </InfoCol>
                 <InfoCol>
-                    <AgreementButton $disabled={assets===undefined} onClick={() => showPopUp("transfer")}>Top up</AgreementButton>
-                    <AgreementButton style={{backgroundColor: "#BC6E5A", color: 'white', marginLeft: '20px'}} $disabled={assets===undefined} onClick={() => showPopUp("distribute")}>Distribute <span>assets</span></AgreementButton>
+                    <AgreementButton $disabled={assets===undefined} onClick={assets ? () => showPopUp("transfer") : undefined}>Top up</AgreementButton>
+                    <AgreementButton  $disabled={assets===undefined} style={{backgroundColor: "#BC6E5A", color: 'white', marginLeft: '20px'}} onClick={assets ? () => showPopUp("distribute") : undefined}>Distribute <span>assets</span></AgreementButton>
                 </InfoCol>
             </AgreementContainer>
             {popUp.status !== false && <PopUp popUpData={popUp} closePopUp={closePopUp} wallet={wallet}/>}

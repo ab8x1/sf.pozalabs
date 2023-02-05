@@ -11,10 +11,7 @@ export default function CreateIDAPage() {
       <Head>
         <title>Deploy new Index</title>
       </Head>
-
-      <div className='container' style={{alignItems: 'flex-start', marginTop: '40px', maxWidth: '1100px'}}>
-        <OwnedSubscribtions setSnackBar={setSnackBar}/>
-      </div>
+      <OwnedSubscribtions setSnackBar={setSnackBar}/>
       {snackBar.isOpened &&
         <SnackBar
             status={snackBar.status}

@@ -1,13 +1,14 @@
 import { useContext, useState, useEffect, memo } from "react"
 import { GlobalCTX } from '../../App'
 import { GlobalContextProps } from '../../App/appTypes'
-import { ConnectInfoBlock } from "../../Dashboard/userDataStyles"
+import { ConnectInfoBlock, ConnectToWalletInfo } from "../../Dashboard/userDataStyles"
 import {ConnectMetamask} from '../../Navbar/navbarStyles'
 import { SubscriptionType, OwnedSubscriptionsType } from "./SubscriptionTypes"
 import getSubscriptions from "./helpers/getSubscriptions"
-import { LoadingContainer } from "../../Borrow-Against-Salary/Offers/offersStyles"
+import { LoadingContainer, DisplayContainer } from "../../Borrow-Against-Salary/Offers/offersStyles"
 import Subscription from "./Subscription"
 import { shortenAdress } from "../../Navbar/TopNavbar"
+import { FormHeader, HeaderText } from "../../Borrow-Against-Salary/Borrow/borrowStyles"
 
 function OwnedSubscriptions({setSnackBar}: OwnedSubscriptionsType){ console.log('OwnedSubscriptions');
     const [subscriptions, setSubscriptions] = useState<undefined | null | SubscriptionType[]>();
@@ -27,25 +28,35 @@ function OwnedSubscriptions({setSnackBar}: OwnedSubscriptionsType){ console.log(
     }, [wallet])
 
     return(
-        <>
-        <h2>Subscriptions</h2>
+        <div className='container centerFlex' style={{alignItems: wallet ? 'flex-start' : 'center', marginTop: '40px', maxWidth: '1100px'}}>
             {
                 wallet
-                ? subscriptions === undefined ?
-                    <LoadingContainer/>
-                : subscriptions === null ?
-                    <h3>No subscriptions found</h3>
-                : subscriptions.map(sub =>
-                    <Subscription key={`${sub.id}-${user}`} {...sub} setSnackBar={setSnackBar} wallet={wallet}/>
-                )
+                ?
+                <DisplayContainer style={{maxWidth: '100%', borderRadius: '17px'}}>
+                    <FormHeader style={{background: 'linear-gradient(90deg, rgba(252,211,140,1) 0%, rgba(242,195,113,1) 50%, rgba(244,170,42,1) 100%)'}}>
+                        <div>
+                            <HeaderText>Subscriptions</HeaderText>
+                            <HeaderText>Your Subscriptions are listed below</HeaderText>
+                        </div>
+                    </FormHeader>
+                    {
+                        subscriptions === undefined ?
+                            <LoadingContainer/>
+                        : subscriptions === null ?
+                            <h2 style={{padding: '40px 20px', textAlign: 'center'}}>No subscriptions found</h2>
+                        :
+                            subscriptions.map(sub =>
+                                <Subscription key={`${sub.id}-${user}`} {...sub} setSnackBar={setSnackBar} wallet={wallet}/>
+                            )
+                    }
+                </DisplayContainer>
                 :
-                    <ConnectInfoBlock style={{width: '100%'}}>
-                        <ConnectMetamask style={{padding: '15px 30px'}} onClick={() => connectWallet(false)}>
-                            Connect to metamask <img src="/metamask.png"/>
-                        </ConnectMetamask>
+                    <ConnectInfoBlock>
+                        <ConnectToWalletInfo>Connect to <span>Metamask <img src="/metamask.png" width={30} height={30} alt="metamask"/></span> to unlock all features</ConnectToWalletInfo>
+                        <ConnectMetamask onClick={() => connectWallet(false)}>Connect <span>Wallet</span><img src="/wallet.png"/></ConnectMetamask>
                     </ConnectInfoBlock>
             }
-        </>
+        </div>
 
     )
 }

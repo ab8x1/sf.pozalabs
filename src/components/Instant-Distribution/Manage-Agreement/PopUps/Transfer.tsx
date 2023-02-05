@@ -47,14 +47,14 @@ function Transfer({reference, wallet, data, type, allUnits, closePopUp, setSnack
     }
     return(
         <PopUpContainer style={{maxWidth: '600px'}} ref={reference}>
-            <FormHeader>
-                <HeaderText>{type === "transfer" ? "Transfer tokens into agreement" : "Distribute assets"}</HeaderText>
-                <Image quality={100} src={`/${type}.jpeg`} fill style={{backgroundSize: 'cover', objectFit: 'cover'}} alt="galaxy"
-                />
+            <FormHeader style={{background: 'linear-gradient(90deg, rgba(252,211,140,1) 0%, rgba(242,195,113,1) 50%, rgba(244,170,42,1) 100%)'}}>
+                <div>
+                    <HeaderText>{type === "transfer" ? "Top up agreement" : "Distribute assets" }</HeaderText>
+                </div>
             </FormHeader>
             <FormContainer style={{boxShadow: 'none'}}>
                 <form onSubmit={submit}>
-                    <DoubleContainer  style={{margin: '40px 0 30px 0'}}>
+                    <DoubleContainer  style={{margin: '10px 0 30px 0', gridTemplateColumns: '0.75fr 0.25fr'}}>
                         <InputContainer>
                             <InputLabel>Amount</InputLabel>
                             <Input error={false} type="number" step="0.1" required placeholder="Type amount" onChange={e => setAmount(Number(e.target.value))}/>
@@ -86,7 +86,7 @@ function Transfer({reference, wallet, data, type, allUnits, closePopUp, setSnack
                             </>
                         }
                     </div>
-                    <Button style={{backgroundColor: "#64B5F6", color: "white"}} disabled={!amount || (type==="distribute" && assetsLeft < 0)}>Confirm</Button>
+                    <Button style={{backgroundColor: "#64B5F6", color: "white", width: '100%'}} $disabled={!amount || (type==="distribute" && assetsLeft < 0)}>Confirm</Button>
                 </form>
             </FormContainer>
         </PopUpContainer>
