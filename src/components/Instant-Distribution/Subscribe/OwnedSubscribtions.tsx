@@ -20,7 +20,7 @@ function OwnedSubscriptions({setSnackBar}: OwnedSubscriptionsType){ console.log(
             setSubscriptions(undefined);
             const fetchSubscriptions = async() => {
                 const subscriptions = await getSubscriptions(wallet);
-                console.table(subscriptions);
+                console.log(subscriptions);
                 setSubscriptions(subscriptions);
             }
             fetchSubscriptions();

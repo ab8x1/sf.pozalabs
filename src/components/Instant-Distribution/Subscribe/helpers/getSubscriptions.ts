@@ -6,7 +6,7 @@ export default function getSubscriptions(wallet: WalletProps): Promise<null | Su
       if(wallet){
           try{
               const subscriptions = await subscriptionsInfo(wallet.adress);
-              if(subscriptions.length > 0)
+              if(subscriptions?.length > 0)
                 res(subscriptions)
               else
                 res(null)
@@ -51,7 +51,7 @@ async function subscriptionsInfo(id: string): Promise<SubscriptionType[]>{
         const response = await fetch(endpoint, { method: 'POST', headers, body });
         if (response.ok) {
           const data = await response.json();
-          const subs: SubscriptionType[] = data.data.accounts[0].subscriptions.map((sub: any) => ({
+          const subs: SubscriptionType[] = data.data.accounts[0]?.subscriptions.map((sub: any) => ({
             id: sub.index.publisher.id,
             shares: Number(((Number(sub.units) / Number(sub.index.totalUnits)) * 100).toFixed(2)),
             isApproved: sub.approved
