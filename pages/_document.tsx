@@ -28,11 +28,11 @@ export default class MyDocument extends Document {
         <Head>
             <meta property="og:title" content="Salary stream" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://pozalabs.xyz/" />
-            <meta property="og:image" content="https://pozalabs.xyz/social-card.png" />
-            <meta name="twitter:image" content="https://pozalabs.xyz/social-card.png" />
+            <meta property="og:url" content="https://sf.pozalabs.xyz/" />
+            <meta property="og:image" content="https://sf.pozalabs.xyz/social-card.jpeg" />
+            <meta name="twitter:image" content="https://sf.pozalabs.xyz/social-card.jpeg" />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:url" content="https://pozalabs.xyz/" />
+            <meta name="twitter:url" content="https://sf.pozalabs.xyz/" />
             <meta name="twitter:title" content="Salary stream" />
             <meta name="twitter:description" content="Superfluid salary stream from POZALABS" />
             <meta name="twitter:site" content="Salary stream" />

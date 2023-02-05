@@ -123,7 +123,7 @@ function BorrowComponent(){
                     <InputContainer>
                         <InputLabel>Payback period <Error>{errors?.period?.message || errors?.periodType?.message }</Error></InputLabel>
                         <InputWithSpecification>
-                            <Input placeholder="i.e 12" step="1" type="number" min="1" max="120" {...register("period", {required:{value: true, message: "Required"}, max: {value: 120, message: "Max: 120"}, min: {value: 1, message: "Min: 1"}})} error={!!errors?.period}/>
+                            <Input placeholder="e.g. 12" step="1" type="number" min="1" max="120" {...register("period", {required:{value: true, message: "Required"}, max: {value: 120, message: "Max: 120"}, min: {value: 1, message: "Min: 1"}})} error={!!errors?.period}/>
                             <Controller
                                 Component={Select}
                                 componentProps={{
@@ -145,7 +145,7 @@ function BorrowComponent(){
                     <InputContainer>
                         <InputLabel>Interest rate in % <Error>{errors?.rate?.message}</Error></InputLabel>
                         <InputWithSpecification>
-                            <Input min={0} max={100} placeholder="i.e. 5" step="1" type="number" {...register("rate", {required: {value: true, message: "Required"}, validate: {
+                            <Input min={0} max={100} placeholder="e.g. 5" step="1" type="number" {...register("rate", {required: {value: true, message: "Required"}, validate: {
                                     isValidRate: amount => amount >= 0 && amount <= 100 ? true : "Between 0 and 100"}})} error={!!errors?.rate}/>
                             <Specification>%</Specification>
                         </InputWithSpecification>
@@ -155,7 +155,7 @@ function BorrowComponent(){
                         <LoanAmount watch={watch}/>
                     </InputContainer>
                 </DoubleContainer>
-                <SubmitForm $disabled={(!formState.isValid && formState.isSubmitted) || loading} type={wallet ? "submit" : "button"} {...submitAction}>{loading ? "Loading..." : wallet ? 'Create Borrow Request' : 'Connect Wallet'}</SubmitForm>
+                <SubmitForm style={!wallet ? {backgroundColor: "#d9b8c8", color: "white"} : {}} $disabled={(!formState.isValid && formState.isSubmitted) || loading} type={wallet ? "submit" : "button"} {...submitAction}>{loading ? "Loading..." : wallet ? 'Create Borrow Request' : 'Connect Wallet'}</SubmitForm>
             </FormContainer>
             {snackBar.isOpened &&
                 <SnackBar

@@ -10,7 +10,7 @@ export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 20px 15px;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
     @media(min-width: 768px){
         box-shadow: rgb(204 204 204 / 25%) 0px 0px 6px 3px;
         padding: 10px 30px 50px 30px;
