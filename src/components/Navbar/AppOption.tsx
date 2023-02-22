@@ -23,7 +23,7 @@ function AppOptionComponent({info, mainUrl, routes}: AppOptionsProps){
                 isOpened &&
                 <Options>
                     {
-                        routes.map(({name, url}) =>
+                        routes?.map(({name, url}) =>
                             <Option key={url} selected={asPath === `/${mainUrl}/${url}`}>
                                 <Link href={`/${mainUrl}/${url}`}><Icon src={`/navbar/${url}.png`}/>{name}</Link>
                             </Option>

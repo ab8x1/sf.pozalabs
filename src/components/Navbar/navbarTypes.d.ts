@@ -1,3 +1,4 @@
+import { type } from "os";
 import { Dispatch, SetStateAction } from "react";
 
 export type OptionTypes = {
@@ -20,5 +21,12 @@ export type route = {url: string, name: string};
 export type AppOptionsProps = {
     info: {name: string, img: string},
     mainUrl: string,
-    routes: route[]
+    routes?: route[]
+}
+
+export type OptionWrapperProps = {
+    children?: any,
+    hasSubRoutes?: boolean,
+    url: string,
+    name: string
 }

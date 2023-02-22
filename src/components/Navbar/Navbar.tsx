@@ -11,6 +11,7 @@ import Image from 'next/image'
 
 const bagRoutes: route[] = [{url: "borrower", name: "Borrower"}, {url: "lender", name: "Lender"}, {url: "employer", name: "Employer"}, {url: "activeLoans", name: "Active Loans"}];
 const idRoutes: route[] = [{url: "subscriber", name: "Subscriber"}, {url: "owner", name: "Owner"}];
+const sentinelRoutes: route[] = [{url: "view", name: "View"}];
 
 function NavbarComponent(){
     const [open, setOpen] = useState<boolean>(false);
@@ -22,7 +23,7 @@ function NavbarComponent(){
     useEffect((): void => {
         setOpen(false);
     }, [router.asPath])
-
+    console.log(router.asPath);
     return(
         <Navbar>
             <TopNavbar open={open} setOpen={setOpen}/>
@@ -33,6 +34,7 @@ function NavbarComponent(){
                         <Option selected={router.asPath === "/"}><Link href="/"><Icon src="/navbar/dashboard.png"/>Dashboard</Link></Option>
                         <AppOption info={{name: "Borrow against salary", img: "/navbar/bag.svg"}} mainUrl='borrow-agains-salary' routes={bagRoutes}/>
                         <AppOption info={{name: "Instant distribution", img: "/navbar/ida.svg"}} mainUrl='instant-distribution' routes={idRoutes}/>
+                        <Option selected={router.asPath === "/sentinel-dao"}><Link href="/sentinel-dao"><Icon src="/navbar/ida.svg"/>Sentinel Dao</Link></Option>
                     </AppOptions>
                 </div>
             </ToggleNavbar>
