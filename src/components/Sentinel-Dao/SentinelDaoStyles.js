@@ -9,7 +9,7 @@ export const ChainSelector = styled.div`
     border-width: 0 0 1px 0;
 `
 
-export const Chain = styled.span<{$selected: boolean}>`
+export const Chain = styled.span`
     margin: 5px 5px;
     padding: 5px;
     font-size: 1.1rem;
@@ -38,7 +38,7 @@ const placeHolderShimmer = keyframes`
     }
 `
 
-const animation  = (props: any) => css`
+const animation  = () => css`
     ${placeHolderShimmer} 1s linear infinite forwards
 `
 
@@ -69,11 +69,12 @@ export const TableCell = styled.td`
     padding: 10px;
     border: 1px solid black;
     word-wrap: break-word;
+    cursor: pointer;
 `;
 
-export const TripleData = styled.div`
+export const DoubleData = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     justify-items: center;
 `
