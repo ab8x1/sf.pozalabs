@@ -9,7 +9,7 @@ export const Container = styled.div`
     color: white;
     border-radius: 7px;
     overflow: hidden;
-    z-index: 1200;
+    z-index: 1800;
     @media(min-width: 992px){
         top: 20px;
         left: 50%;

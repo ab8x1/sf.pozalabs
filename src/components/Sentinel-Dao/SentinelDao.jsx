@@ -1,14 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import {TableCell, TableHeader, Table, DoubleData, ChainSelector, Chain, LoadingContainer} from './SentinelDaoStyles'
 import getSentinelsInfo, {tokensNames} from './helpers/getSentinels';
 import { shortenAdress } from '../Navbar/TopNavbar';
 import { ActionButton } from '../Borrow-Against-Salary/Offers/offersStyles';
 import SentinelAction from './SentinelAction'
+import { GlobalCTX } from '../../components/App'
+import SnackBar from '../../../modules/SnackBar';
 
 function SentinelDao(){
     const [chain, setChain] = useState('Polygon');
     const [tokensInfo, setTokensInfo] = useState();
     const [dialog, setDialog] = useState(false);
+    const [snackBar, setSnackBar] = useState({isOpened: false, status: "success", message: ""});
+    const globalCTX = useContext(GlobalCTX);
+    const {wallet, connectWallet} = globalCTX;
 
     useEffect(() => {
         const getInfo = async () => {
@@ -17,7 +22,7 @@ function SentinelDao(){
         }
         getInfo();
     }, [chain])
-    console.log(tokensInfo);
+console.log(dialog);
     return(
         <div className="container">
             <h1>Sentinel Dao</h1>
@@ -61,7 +66,7 @@ function SentinelDao(){
                         </tr>
                     </tbody>
                     :
-                    <>
+                    <tbody>
                         {
                             Object.entries(tokensInfo).map(([key, {transactions, apr, stake, sentinel, daoControlled, daoFunds}]) =>
                             <tr key={key}>
@@ -82,16 +87,23 @@ function SentinelDao(){
                                 </TableCell>
                                 <TableCell>{daoControlled === true ? "✔️" : "❌"}</TableCell>
                                 <TableCell>{Number(daoFunds).toFixed(2)}</TableCell>
-                                <TableCell><ActionButton onClick={() => setDialog(true)}>Manage</ActionButton></TableCell>
+                                <TableCell><ActionButton onClick={() => setDialog(key)}>Manage</ActionButton></TableCell>
                             </tr>
 
                         )
                         }
-                    </>
+                    </tbody>
                 }
             </Table>
             {
-                dialog && <SentinelAction closeDialog={() => setDialog(false)}/>
+                dialog && <SentinelAction closeDialog={() => setDialog(false)} wallet={wallet} setSnackBar={setSnackBar} data={tokensInfo[dialog]}/>
+            }
+            {snackBar.isOpened &&
+                <SnackBar
+                    status={snackBar.status}
+                    message={snackBar.message}
+                    closeSnackBar={() => setSnackBar(st => ({...st, isOpened: false}))}
+                />
             }
         </div>
     )

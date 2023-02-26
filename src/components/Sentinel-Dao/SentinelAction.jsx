@@ -4,14 +4,43 @@ import { InputContainer, Input, InputLabel } from '../Borrow-Against-Salary/Borr
 import {useRef, useState, useEffect} from 'react'
 import { ButtonsMenu } from './SentinelDaoStyles';
 import OnClickOutside from '../../hooks/useClickOutside'
+import picActions from './helpers/picActions';
 
-function SentinelAction({closeDialog}){
+const picCb = async (wallet, amount, setSnackBar, manageState, data) => {
+    try{
+        await picActions(wallet, amount, manageState, data);
+        setSnackBar({
+            isOpened: true,
+            status: "success",
+            message: "You request has succeeded"
+        })
+    }
+    catch(e){
+        console.log(e);
+        setSnackBar({
+            isOpened: true,
+            status: "error",
+            message: "Sorry, something went wrong"
+        })
+    }
+}
+
+function SentinelAction({closeDialog, wallet, setSnackBar, data}){
     const [manageState, setManageState] = useState('menu');
+    const [amount, setAmount] = useState(0);
     const ref = useRef();
 
     OnClickOutside(ref, () => {
         closeDialog();
     });
+
+    const picAction = (state) => {
+        picCb(wallet, amount, setSnackBar, state || manageState, data);
+    }
+
+    const changeAmount = e => {
+        setAmount(e.target.value);
+    }
 
     return(
         <DialogBg>
@@ -19,23 +48,27 @@ function SentinelAction({closeDialog}){
                 <FormHeader style={{background: 'linear-gradient(90deg, rgba(252,211,140,1) 0%, rgba(242,195,113,1) 50%, rgba(244,170,42,1) 100%)'}}>
                     <h3>Manage Sentinel</h3>
                 </FormHeader>
-                <div className='container' style={{minHeight:'250px'}}>
+                <div className='container'>
                     {
                         manageState === 'menu' ?
                         <ButtonsMenu>
                             <ActionButton onClick={() => setManageState("fund")}>Fund Sentinel</ActionButton>
-                            <ActionButton>Become Setinel</ActionButton>
-                            <ActionButton>Reedem Funds</ActionButton>
-                            <ActionButton>Redeem Setinel stake</ActionButton>
+                            <ActionButton onClick={() => picAction("become")}>Become Setinel</ActionButton>
+                            <ActionButton onClick={() => setManageState("redeemFunds")}>Reedem Funds</ActionButton>
+                            <ActionButton onClick={() => picAction("redeemStake")}>Redeem Setinel stake</ActionButton>
                         </ButtonsMenu>
                         :
                         <div>
-                            <img src="/arrow.svg" style={{transform: 'rotate(90deg)', marginTop: '15px', cursor: 'pointer'}} onClick={() => setManageState("menu")}/>
+                            <div style={{display: 'flex', alignItems: 'center', margin: '20px 0 20px 0'}}>
+                                <img src="/arrow.svg" style={{transform: 'rotate(90deg)', cursor: 'pointer', marginRight: '10px', height: '16px', width: '16px'}} onClick={() => setManageState("menu")}/>
+                                <label>Type amount</label>
+                            </div>
                             <InputContainer style={{marginTop: '10px'}}>
-                                <InputLabel>Type amount</InputLabel>
-                                <Input type="text"/>
+                                <Input type="number" placeholder='Amount' value={amount} onChange={changeAmount}/>
                             </InputContainer>
-                            <ActionButton style={{margin: '20px 0'}}>Fund Setinel</ActionButton>
+                            <ActionButton onClick={e => picAction(null)} style={{margin: '30px 0'}}>
+                                {manageState === "fund" ? "Fund Setinel" : "Reedem Funds"}
+                            </ActionButton>
                         </div>
                     }
                 </div>

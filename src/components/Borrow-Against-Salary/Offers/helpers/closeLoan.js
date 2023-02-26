@@ -5,7 +5,7 @@ const LoanContractABI = LoanContract.abi
 export default async function main(wallet, loanAddress, userIs) {
     return new Promise(async(res, rej) => {
         try{
-            const {sfSigner, daix} = wallet; console.log(userIs);
+            const {sfSigner, daix} = wallet;
             const userSigner = sfSigner;
             let amountLeft;
 

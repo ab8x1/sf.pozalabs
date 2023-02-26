@@ -4,7 +4,7 @@ import styled, {keyframes, css} from "styled-components";
 export const ChainSelector = styled.div`
     display: flex;
     justify-content: flex-end;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
     border: solid lightgray;
     border-width: 0 0 1px 0;
 `
@@ -26,7 +26,8 @@ export const Table = styled.table`
     border-collapse: collapse;
     border-radius: 10px;
     border-style: hidden;
-    box-shadow: 0 0 0 2px #777;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.4), 0px 1px 2px rgba(16, 24, 40, 0.1);
+    border-radius: 12px;
 `;
 
 const placeHolderShimmer = keyframes`
@@ -61,13 +62,17 @@ export const LoadingContainer = styled.div`
 
 export const TableHeader = styled.th`
     padding: 10px;
-    border: 1px solid black;
+    border: solid #EAECF0;
+    border-width: 1px 0;
     word-wrap: break-word;
+    color: #475467;
+    font-weight: normal;
 `;
 
 export const TableCell = styled.td`
-    padding: 10px;
-    border: 1px solid black;
+    padding: 15px 10px;
+    border: solid #EAECF0;
+    border-width: 1px 0;
     word-wrap: break-word;
     text-align: center;
     cursor: pointer;
