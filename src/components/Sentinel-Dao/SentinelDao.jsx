@@ -6,6 +6,7 @@ import { ActionButton } from '../Borrow-Against-Salary/Offers/offersStyles';
 import SentinelAction from './SentinelAction'
 import { GlobalCTX } from '../../components/App'
 import SnackBar from '../../../modules/SnackBar';
+import Accordion from './Accordion'
 
 function SentinelDao(){
     const [chain, setChain] = useState('Polygon');
@@ -22,11 +23,11 @@ function SentinelDao(){
         }
         getInfo();
     }, [chain])
-console.log(dialog);
+console.log(tokensInfo);
     return(
         <div className="container">
             <h1>Sentinel Dao</h1>
-            <h2 style={{marginTop: '100px'}}>Sentinel profitability</h2>
+            <h2 style={{marginTop: '80px'}}>Sentinel profitability</h2>
             <ChainSelector>
                 {/* <Chain $selected={chain==="Polygon"} onClick={() => setChain("Polygon")}>Polygon</Chain> */}
                 <Chain $selected={chain==="Goerli"} onClick={() => setChain("Goerli")}>Goerli</Chain>
@@ -75,8 +76,8 @@ console.log(dialog);
                                 <TableCell>{stake} <span style={{fontSize: '0.8rem'}}>{tokensNames[key]}</span></TableCell>
                                 <TableCell>
                                     <DoubleData>
-                                        <span>{apr['7d']}%</span>
-                                        <span>{apr['30d']}%</span>
+                                        <span>{Number.isFinite(apr['7d']) ? `${apr['7d']}%` : '-'}</span>
+                                        <span>{Number.isFinite(apr['30d']) ? `${apr['30d']}%` : '-'}</span>
                                     </DoubleData>
                                 </TableCell>
                                 <TableCell>
@@ -87,7 +88,7 @@ console.log(dialog);
                                 </TableCell>
                                 <TableCell>{daoControlled === true ? "✔️" : "❌"}</TableCell>
                                 <TableCell>{Number(daoFunds).toFixed(2)}</TableCell>
-                                <TableCell><ActionButton onClick={() => setDialog(key)}>Manage</ActionButton></TableCell>
+                                <TableCell><ActionButton onClick={wallet ? () => setDialog(key) : () => connectWallet(false)}>Manage</ActionButton></TableCell>
                             </tr>
 
                         )
@@ -105,6 +106,8 @@ console.log(dialog);
                     closeSnackBar={() => setSnackBar(st => ({...st, isOpened: false}))}
                 />
             }
+            <h2 style={{marginTop: '50px'}}>FAQ</h2>
+            <Accordion/>
         </div>
     )
 }
