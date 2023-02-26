@@ -69,6 +69,7 @@ export const TableCell = styled.td`
     padding: 10px;
     border: 1px solid black;
     word-wrap: break-word;
+    text-align: center;
     cursor: pointer;
 `;
 
@@ -77,4 +78,17 @@ export const DoubleData = styled.div`
     grid-template-columns: 1fr 1fr;
     width: 100%;
     justify-items: center;
+`
+
+export const ButtonsMenu = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 10px;
+    margin: 30px 0 20px 0;
+    & button{
+        font-size: 0.9rem;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
 `

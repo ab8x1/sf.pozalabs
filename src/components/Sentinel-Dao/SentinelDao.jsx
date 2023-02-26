@@ -2,10 +2,13 @@ import { useState, useEffect } from 'react';
 import {TableCell, TableHeader, Table, DoubleData, ChainSelector, Chain, LoadingContainer} from './SentinelDaoStyles'
 import getSentinelsInfo, {tokensNames} from './helpers/getSentinels';
 import { shortenAdress } from '../Navbar/TopNavbar';
+import { ActionButton } from '../Borrow-Against-Salary/Offers/offersStyles';
+import SentinelAction from './SentinelAction'
 
 function SentinelDao(){
     const [chain, setChain] = useState('Polygon');
     const [tokensInfo, setTokensInfo] = useState();
+    const [dialog, setDialog] = useState(false);
 
     useEffect(() => {
         const getInfo = async () => {
@@ -31,20 +34,21 @@ function SentinelDao(){
                         <TableHeader>Stake</TableHeader>
                         <TableHeader>
                             APR
-                            <DoubleData>
+                            <DoubleData style={{marginTop: '5px'}}>
                                 <span>7d</span>
                                 <span>30d</span>
                             </DoubleData>
                         </TableHeader>
                         <TableHeader>
                             TXs
-                            <DoubleData>
+                            <DoubleData style={{marginTop: '5px'}}>
                                 <span>JackPots</span>
                                 <span>Unprofitable</span>
                             </DoubleData>
                         </TableHeader>
                         <TableHeader>DAO <br/> controlled</TableHeader>
                         <TableHeader>DAO funds</TableHeader>
+                        <TableHeader>Action</TableHeader>
                     </tr>
                 </thead>
                 {
@@ -63,7 +67,7 @@ function SentinelDao(){
                             <tr key={key}>
                                 <TableCell>{tokensNames[key]}</TableCell>
                                 <TableCell>{shortenAdress(sentinel)}</TableCell>
-                                <TableCell>{stake}</TableCell>
+                                <TableCell>{stake} <span style={{fontSize: '0.8rem'}}>{tokensNames[key]}</span></TableCell>
                                 <TableCell>
                                     <DoubleData>
                                         <span>{apr['7d']}%</span>
@@ -76,8 +80,9 @@ function SentinelDao(){
                                         <span style={{color: "#EF5350"}}>{Math.floor((transactions.unprofitable/transactions.total)*100)}%</span>
                                     </DoubleData>
                                 </TableCell>
-                                <TableCell>{daoControlled === true ? "Yes" : "No"}</TableCell>
-                                <TableCell>{daoFunds}</TableCell>
+                                <TableCell>{daoControlled === true ? "✔️" : "❌"}</TableCell>
+                                <TableCell>{Number(daoFunds).toFixed(2)}</TableCell>
+                                <TableCell><ActionButton onClick={() => setDialog(true)}>Manage</ActionButton></TableCell>
                             </tr>
 
                         )
@@ -85,6 +90,9 @@ function SentinelDao(){
                     </>
                 }
             </Table>
+            {
+                dialog && <SentinelAction closeDialog={() => setDialog(false)}/>
+            }
         </div>
     )
 }
