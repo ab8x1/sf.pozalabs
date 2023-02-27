@@ -29,15 +29,20 @@ function SentinelDao(){
             setTokensInfo(info);
         }
         getInfo();
-    }, [chain])
+    }, [chain]);
+
+    const changeChain = chainName => {
+        if(tokensInfo !== undefined)
+            setChain(chainName)
+    }
 
     return(
         <div className="container">
             <h1>Sentinel Dao</h1>
             <h3 style={{marginTop: '80px'}}>Tap into Sentinel&apos;s profitability in just one click</h3>
             <ChainSelector>
-                <Chain $selected={chain==="Polygon"} onClick={() => setChain("Polygon")}>Polygon</Chain>
-                <Chain $selected={chain==="Goerli"} onClick={() => setChain("Goerli")}>Goerli</Chain>
+                <Chain $selected={chain==="Polygon"} onClick={() => changeChain("Polygon")}>Polygon</Chain>
+                <Chain $selected={chain==="Goerli"} onClick={() => changeChain("Goerli")}>Goerli</Chain>
             </ChainSelector>
             {chain==="Polygon" && <p>State from 27.02.2023</p>}
             <Table>
