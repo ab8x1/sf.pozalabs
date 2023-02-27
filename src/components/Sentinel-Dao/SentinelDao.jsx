@@ -7,6 +7,7 @@ import SentinelAction from './SentinelAction'
 import { GlobalCTX } from '../../components/App'
 import SnackBar from '../../../modules/SnackBar';
 import Accordion from './Accordion'
+import faqData from './faqData';
 
 function SentinelDao(){
     const [chain, setChain] = useState('Polygon');
@@ -107,7 +108,13 @@ console.log(tokensInfo);
                 />
             }
             <h2 style={{marginTop: '50px'}}>FAQ</h2>
-            <Accordion/>
+            <div style={{margin: '50px 0 100px 0'}}>
+                {
+                    faqData.map(({title, content}) =>
+                        <Accordion key={title} title={title} content={content}/>
+                    )
+                }
+            </div>
         </div>
     )
 }
