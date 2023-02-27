@@ -34,7 +34,7 @@ function SentinelDao(){
     return(
         <div className="container">
             <h1>Sentinel Dao</h1>
-            <h3 style={{marginTop: '80px'}}>Tap into Sentinel's profitability in just one click</h3>
+            <h3 style={{marginTop: '80px'}}>Tap into Sentinel&apos;s profitability in just one click</h3>
             <ChainSelector>
                 <Chain $selected={chain==="Polygon"} onClick={() => setChain("Polygon")}>Polygon</Chain>
                 <Chain $selected={chain==="Goerli"} onClick={() => setChain("Goerli")}>Goerli</Chain>
