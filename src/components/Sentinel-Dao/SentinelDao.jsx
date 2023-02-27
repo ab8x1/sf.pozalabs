@@ -9,6 +9,11 @@ import SnackBar from '../../../modules/SnackBar';
 import Accordion from './Accordion'
 import faqData from './faqData';
 
+const chainScan = {
+    Goerli: "https://goerli.etherscan.io",
+    Polygon: "https://polygonscan.com/"
+}
+
 function SentinelDao(){
     const [chain, setChain] = useState('Goerli');
     const [tokensInfo, setTokensInfo] = useState();
@@ -51,7 +56,7 @@ function SentinelDao(){
                         <TableHeader>
                             TXs
                             <DoubleData style={{marginTop: '10px'}}>
-                                <span>JackPots</span>
+                                <span>Jackpots</span>
                                 <span>Unprofitable</span>
                             </DoubleData>
                         </TableHeader>
@@ -74,8 +79,8 @@ function SentinelDao(){
                         {
                             Object.entries(tokensInfo).map(([key, {transactions, apr, stake, sentinel, daoControlled, daoFunds, name}]) =>
                             <tr key={key}>
-                                <TableCell><a href={`https://goerli.etherscan.io/token/${key}`} target="_blank" rel="noreferrer">{name}</a></TableCell>
-                                <TableCell><a href={`https://goerli.etherscan.io/address/${sentinel}`} target="_blank" rel="noreferrer">{shortenAdress(sentinel)}</a></TableCell>
+                                <TableCell><a href={`${chainScan[chain]}/token/${key}`} target="_blank" rel="noreferrer">{name}</a></TableCell>
+                                <TableCell><a href={`${chainScan[chain]}/address/${sentinel}`} target="_blank" rel="noreferrer">{shortenAdress(sentinel)}</a></TableCell>
                                 <TableCell>{stake} <span style={{fontSize: '0.8rem'}}>{name}</span></TableCell>
                                 <TableCell>
                                     <DoubleData>
@@ -100,7 +105,7 @@ function SentinelDao(){
                 }
             </Table>
             {
-                dialog && <SentinelAction closeDialog={() => setDialog(false)} wallet={wallet} setSnackBar={setSnackBar} data={tokensInfo[dialog]}/>
+                dialog && <SentinelAction closeDialog={() => setDialog(false)} wallet={wallet} setSnackBar={setSnackBar} data={tokensInfo?.[dialog]}/>
             }
             {snackBar.isOpened &&
                 <SnackBar

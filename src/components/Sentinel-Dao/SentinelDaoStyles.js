@@ -88,14 +88,15 @@ export const DoubleData = styled.div`
 `
 
 export const ButtonsMenu = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 10px;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
     margin: 30px 0 20px 0;
     & button{
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         padding: 15px 20px;
         border-radius: 10px;
         font-weight: bold;
+        width: 45%;
     }
 `

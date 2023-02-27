@@ -4,7 +4,7 @@ import { InputContainer, Input, InputLabel } from '../Borrow-Against-Salary/Borr
 import {useRef, useState, useEffect} from 'react'
 import { ButtonsMenu } from './SentinelDaoStyles';
 import OnClickOutside from '../../hooks/useClickOutside'
-import picActions from './helpers/picActions';
+import picActions, {getMaxFctn} from './helpers/picActions';
 
 const picCb = async (wallet, amount, setSnackBar, manageState, data) => {
     try{
@@ -42,6 +42,18 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
         setAmount(e.target.value);
     }
 
+    useEffect(() => {
+        console.log();
+        if(manageState === "become")
+            setAmount(data['daoFunds'])
+    }, [manageState])
+
+    const getMax = async () => {
+        const balance = await getMaxFctn(wallet);
+        console.log(balance);
+        setAmount(balance)
+    }
+
     return(
         <DialogBg>
             <DialogContainer ref={ref} style={{padding: 0}}>
@@ -55,7 +67,8 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
                             <ActionButton onClick={() => setManageState("fund")}>Fund Sentinel</ActionButton>
                             <ActionButton onClick={() => setManageState("become")}>Become Sentinel</ActionButton>
                             <ActionButton onClick={() => setManageState("redeemFunds")}>Reedem Funds</ActionButton>
-                            <ActionButton onClick={() => picAction("redeemStake")}>Redeem sentinel stake</ActionButton>
+                            <ActionButton onClick={() => picAction("redeemStake")}>Redeem Sentinel Stake</ActionButton>
+                            <ActionButton onClick={() => setManageState("simulate")}>Simulate Rewards</ActionButton>
                         </ButtonsMenu>
                         :
                         <div>
@@ -66,9 +79,17 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
                             <InputContainer style={{marginTop: '10px'}}>
                                 <Input type="number" placeholder='Amount' value={amount} onChange={changeAmount}/>
                             </InputContainer>
-                            <ActionButton onClick={e => picAction(null)} style={{margin: '30px 0'}}>
-                                {manageState === "fund" ? "Fund Sentinel" : manageState === "become" ? "Become Sentinel" : "Reedem Funds"}
-                            </ActionButton>
+                            <div style={{display: 'flex', justifyContent: 'space-between', margin: '10px 0 20px 0'}}>
+                                <ActionButton onClick={e => picAction(null)} style={{margin: '0'}}>
+                                    {manageState === "fund" ? "Fund Sentinel" : manageState === "become" ? "Become Sentinel" : manageState === "simulate" ? "Simulate Rewards" : "Reedem Funds"}
+                                </ActionButton>
+                                {
+                                    manageState === "redeemFunds" &&
+                                    <ActionButton onClick={getMax} style={{margin: '0', backgroundColor: 'black'}}>
+                                        Max.
+                                    </ActionButton>
+                                }
+                            </div>
                         </div>
                     }
                 </div>

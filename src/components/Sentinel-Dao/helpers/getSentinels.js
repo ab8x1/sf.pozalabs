@@ -63,11 +63,11 @@ async function sentinelsInfo(chainName){
         for(const token of tokens){
           const {bond, pic} = await toga.getCurrentPICInfo(token) || {};
           tokensInfo[token] = {
-            stake: Math.round(Number(ethers.utils.formatEther(bond?._hex))),
+            stake: Number(ethers.utils.formatEther(bond?._hex)).toFixed(2),
             sentinel: pic,
             daoControlled: pic === PICAddress
           }
-          const daoFunds = ethers.utils.formatEther(await pIC.stakeAndBalance());
+          const daoFunds = Number(Number(ethers.utils.formatEther(await pIC.stakeAndBalance())).toFixed(2));
           tokensInfo[token]['daoFunds'] = daoFunds;
         }
 

@@ -4,6 +4,26 @@ import ERC777ABI from '../../../artifacts/contracts/ERC777.json'
 const PICAddress = "0x644Db75f6ccFd5935C7d6dF9F0E0334cf49dd8a9"
 const DAIxAddress = "0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00"
 
+export const getMaxFctn = (wallet) => {
+    return new Promise(async (res, rej) => {
+        const {sfSigner, provider, adress} = wallet;
+        const pIC = new ethers.Contract(
+            PICAddress,
+            PIC.abi,
+            provider
+        );
+        const address = await pIC.sentinelDaoToken();
+        const sent = new ethers.Contract(
+            address,
+            ERC777ABI.abi,
+            provider
+        )
+        const userBalance = ethers.utils.formatEther(await sent.balanceOf(adress));
+        const ratio = ethers.utils.formatEther(await pIC.calculateSdtWorth());
+        res(userBalance * ratio);
+    })
+}
+
 export default function picActions(wallet, amount, state, tokenData){ console.log(state);
     return new Promise(async (res, rej) => {
 
@@ -33,6 +53,8 @@ export default function picActions(wallet, amount, state, tokenData){ console.lo
                 tx = await pIC.connect(sfSigner).redeemPICStake();
             else if (state === "redeemFunds")
                 tx = await pIC.connect(sfSigner).redeemFunds(ethers.utils.parseEther(amount.toString()));
+            else if (state === "simulate")
+                tx = await pIC.connect(sfSigner).simulateLiquidationsRewards(ethers.utils.parseEther(amount.toString()));
 
             await tx.wait();
             res(true);
