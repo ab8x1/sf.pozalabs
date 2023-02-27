@@ -70,6 +70,8 @@ async function sentinelsInfo(chainName){
           const daoFunds = Number(Number(ethers.utils.formatEther(await pIC.stakeAndBalance())).toFixed(2));
           tokensInfo[token]['daoFunds'] = daoFunds;
         }
+        tokensInfo["0x5943f705abb6834cad767e6e4bb258bc48d9c947"]['daoFunds'] = 0;
+        tokensInfo["0x8ae68021f6170e5a766be613cea0d75236ecca9a"]['daoFunds'] = 0;
 
         const query = `
         {
