@@ -74,8 +74,8 @@ function SentinelDao(){
                         {
                             Object.entries(tokensInfo).map(([key, {transactions, apr, stake, sentinel, daoControlled, daoFunds, name}]) =>
                             <tr key={key}>
-                                <TableCell>{name}</TableCell>
-                                <TableCell>{shortenAdress(sentinel)}</TableCell>
+                                <TableCell><a href={`https://goerli.etherscan.io/token/${key}`} target="_blank">{name}</a></TableCell>
+                                <TableCell><a href={`https://goerli.etherscan.io/address/${sentinel}`} target="_blank">{shortenAdress(sentinel)}</a></TableCell>
                                 <TableCell>{stake} <span style={{fontSize: '0.8rem'}}>{name}</span></TableCell>
                                 <TableCell>
                                     <DoubleData>

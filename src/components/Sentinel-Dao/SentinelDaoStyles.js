@@ -75,7 +75,9 @@ export const TableCell = styled.td`
     border-width: 1px 0;
     word-wrap: break-word;
     text-align: center;
-    cursor: pointer;
+    & a{
+        color: #2196F3;
+    }
 `;
 
 export const DoubleData = styled.div`

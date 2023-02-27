@@ -53,7 +53,7 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
                         manageState === 'menu' ?
                         <ButtonsMenu>
                             <ActionButton onClick={() => setManageState("fund")}>Fund Sentinel</ActionButton>
-                            <ActionButton onClick={() => picAction("become")}>Become Sentinel</ActionButton>
+                            <ActionButton onClick={() => setManageState("become")}>Become Sentinel</ActionButton>
                             <ActionButton onClick={() => setManageState("redeemFunds")}>Reedem Funds</ActionButton>
                             <ActionButton onClick={() => picAction("redeemStake")}>Redeem sentinel stake</ActionButton>
                         </ButtonsMenu>
@@ -67,7 +67,7 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
                                 <Input type="number" placeholder='Amount' value={amount} onChange={changeAmount}/>
                             </InputContainer>
                             <ActionButton onClick={e => picAction(null)} style={{margin: '30px 0'}}>
-                                {manageState === "fund" ? "Fund Sentinel" : "Reedem Funds"}
+                                {manageState === "fund" ? "Fund Sentinel" : manageState === "become" ? "Become Sentinel" : "Reedem Funds"}
                             </ActionButton>
                         </div>
                     }

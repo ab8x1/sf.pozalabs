@@ -28,11 +28,11 @@ export default function picActions(wallet, amount, state, tokenData){ console.lo
                     tx = await pIC.connect(sfSigner).fundPIC(ethers.utils.parseEther(amount.toString()));
                 }
             else if (state === "become")
-                tx = await pIC.connect(sfSigner).becomePIC(stake, "0x0000000000000000000000000000000000000000000000000000000000000000");
+                tx = await pIC.connect(sfSigner).becomePIC(ethers.utils.parseEther(amount.toString()), "0x0000000000000000000000000000000000000000000000000000000000000000");
             else if (state === "redeemStake")
                 tx = await pIC.connect(sfSigner).redeemPICStake();
             else if (state === "redeemFunds")
-                tx = await pIC.connect(sfSigner).redeemFunds(amount);
+                tx = await pIC.connect(sfSigner).redeemFunds(ethers.utils.parseEther(amount.toString()));
 
             await tx.wait();
             res(true);
