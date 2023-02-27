@@ -3,7 +3,7 @@ import TogaAbi from '../../../artifacts/contracts/Toga.sol/TOGA.json';
 import PicAbi from '../../../artifacts/contracts/Pic.sol/PIC.json';
 import getDefaultProvider from "../../../utils/getDefaultProvider";
 import polygonData from '../polygon-stats.json';
-const PICAddress = "0x115CaF42FDA1C35fA2184b93b2561096416a23b3" //for fDaix
+const PICAddress = "0x644Db75f6ccFd5935C7d6dF9F0E0334cf49dd8a9" //for fDaix
 
 const chains = {
   Goerli: {

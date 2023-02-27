@@ -34,6 +34,7 @@ function SentinelDao(){
                 <Chain $selected={chain==="Polygon"} onClick={() => setChain("Polygon")}>Polygon</Chain>
                 <Chain $selected={chain==="Goerli"} onClick={() => setChain("Goerli")}>Goerli</Chain>
             </ChainSelector>
+            {chain==="Polygon" && <p>State from 27.02.2023</p>}
             <Table>
                 <thead>
                     <tr>
