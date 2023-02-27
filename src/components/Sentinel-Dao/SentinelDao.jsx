@@ -19,12 +19,13 @@ function SentinelDao(){
 
     useEffect(() => {
         const getInfo = async () => {
+            setTokensInfo(undefined);
             const info = await getSentinelsInfo(chain);
             setTokensInfo(info);
         }
         getInfo();
     }, [chain])
-console.log(tokensInfo);
+
     return(
         <div className="container">
             <h1>Sentinel Dao</h1>
@@ -88,7 +89,7 @@ console.log(tokensInfo);
                                     </DoubleData>
                                 </TableCell>
                                 <TableCell>{daoControlled === true ? "✔️" : "❌"}</TableCell>
-                                <TableCell>{Number(daoFunds).toFixed(2)}</TableCell>
+                                <TableCell>{daoFunds ? Number(daoFunds).toFixed(2) : "-"}</TableCell>
                                 <TableCell><ActionButton onClick={wallet ? () => setDialog(key) : () => connectWallet(false)}>Manage</ActionButton></TableCell>
                             </tr>
 
