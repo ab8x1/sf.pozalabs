@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import {TableCell, TableHeader, Table, DoubleData, ChainSelector, Chain, LoadingContainer} from './SentinelDaoStyles'
-import getSentinelsInfo, {tokensNames} from './helpers/getSentinels';
+import getSentinelsInfo from './helpers/getSentinels';
 import { shortenAdress } from '../Navbar/TopNavbar';
 import { ActionButton } from '../Borrow-Against-Salary/Offers/offersStyles';
 import SentinelAction from './SentinelAction'
@@ -10,7 +10,7 @@ import Accordion from './Accordion'
 import faqData from './faqData';
 
 function SentinelDao(){
-    const [chain, setChain] = useState('Polygon');
+    const [chain, setChain] = useState('Goerli');
     const [tokensInfo, setTokensInfo] = useState();
     const [dialog, setDialog] = useState(false);
     const [snackBar, setSnackBar] = useState({isOpened: false, status: "success", message: ""});
@@ -19,7 +19,7 @@ function SentinelDao(){
 
     useEffect(() => {
         const getInfo = async () => {
-            const info = await getSentinelsInfo();
+            const info = await getSentinelsInfo(chain);
             setTokensInfo(info);
         }
         getInfo();
@@ -30,7 +30,7 @@ console.log(tokensInfo);
             <h1>Sentinel Dao</h1>
             <h2 style={{marginTop: '80px'}}>Sentinel profitability</h2>
             <ChainSelector>
-                {/* <Chain $selected={chain==="Polygon"} onClick={() => setChain("Polygon")}>Polygon</Chain> */}
+                <Chain $selected={chain==="Polygon"} onClick={() => setChain("Polygon")}>Polygon</Chain>
                 <Chain $selected={chain==="Goerli"} onClick={() => setChain("Goerli")}>Goerli</Chain>
             </ChainSelector>
             <Table>
@@ -41,14 +41,14 @@ console.log(tokensInfo);
                         <TableHeader>Stake</TableHeader>
                         <TableHeader>
                             APR
-                            <DoubleData style={{marginTop: '5px'}}>
+                            <DoubleData style={{marginTop: '10px'}}>
                                 <span>7d</span>
                                 <span>30d</span>
                             </DoubleData>
                         </TableHeader>
                         <TableHeader>
                             TXs
-                            <DoubleData style={{marginTop: '5px'}}>
+                            <DoubleData style={{marginTop: '10px'}}>
                                 <span>JackPots</span>
                                 <span>Unprofitable</span>
                             </DoubleData>
@@ -70,11 +70,11 @@ console.log(tokensInfo);
                     :
                     <tbody>
                         {
-                            Object.entries(tokensInfo).map(([key, {transactions, apr, stake, sentinel, daoControlled, daoFunds}]) =>
+                            Object.entries(tokensInfo).map(([key, {transactions, apr, stake, sentinel, daoControlled, daoFunds, name}]) =>
                             <tr key={key}>
-                                <TableCell>{tokensNames[key]}</TableCell>
+                                <TableCell>{name}</TableCell>
                                 <TableCell>{shortenAdress(sentinel)}</TableCell>
-                                <TableCell>{stake} <span style={{fontSize: '0.8rem'}}>{tokensNames[key]}</span></TableCell>
+                                <TableCell>{stake} <span style={{fontSize: '0.8rem'}}>{name}</span></TableCell>
                                 <TableCell>
                                     <DoubleData>
                                         <span>{Number.isFinite(apr['7d']) ? `${apr['7d']}%` : '-'}</span>

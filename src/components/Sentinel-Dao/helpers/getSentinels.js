@@ -4,24 +4,34 @@ import PicAbi from '../../../artifacts/contracts/Pic.sol/PIC.json';
 import getDefaultProvider from "../../../utils/getDefaultProvider";
 const PICAddress = "0x115CaF42FDA1C35fA2184b93b2561096416a23b3" //for fDaix
 
-export const tokensNames = {
-  "0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00": "DAIx",
-  "0x5943f705abb6834cad767e6e4bb258bc48d9c947": "ETHx",
-  "0x8ae68021f6170e5a766be613cea0d75236ecca9a": "USDCx",
-  "0x95697ec24439e3eb7ba588c7b279b9b369236941": "TUSDx",
+const chains = {
+  Goerli: {
+    endpoint: 'https://api.thegraph.com/subgraphs/name/superfluid-finance/protocol-v1-goerli',
+    tokensAddresses: {
+      "0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00": "DAIx",
+      "0x5943f705abb6834cad767e6e4bb258bc48d9c947": "ETHx",
+      "0x8ae68021f6170e5a766be613cea0d75236ecca9a": "USDCx",
+      "0x95697ec24439e3eb7ba588c7b279b9b369236941": "TUSDx",
+    },
+    togaAddress: '0xa54FC15FC75693447d70a57262F37a70B614721b'
+  },
+  Polygon: {
+    endpoint: 'https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic',
+    tokensAddresses: {
+      "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2": "DAIx",
+      "0x27e1e4e6bc79d93032abef01025811b7e4727e85": "ETHx",
+      "0xcaa7349cea390f89641fe306d93591f87595dc1f": "USDCx",
+      "0x4086ebf75233e8492f1bcda41c7f2a8288c2fb92": "WBTCx",
+    },
+    togaAddress: "0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7"
+  }
 }
 
-export const tokens = [
-  "0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00", //"DAIx",
-  "0x5943f705abb6834cad767e6e4bb258bc48d9c947", //"ETHx",
-  "0x8ae68021f6170e5a766be613cea0d75236ecca9a", //"USDCx",
-  "0x95697ec24439e3eb7ba588c7b279b9b369236941", //"TUSDx"
-]
 
-export default function getSentinelsInfo(){
+export default function getSentinelsInfo(chain){
     return new Promise(async (res, rej) => {
           try{
-            const tokensInfo = await sentinelsInfo();
+            const tokensInfo = await sentinelsInfo(chain);
             res(tokensInfo);
           }
           catch(e){
@@ -31,12 +41,15 @@ export default function getSentinelsInfo(){
     })
 }
 
-async function sentinelsInfo(){
+async function sentinelsInfo(chainName){
     return new Promise(async (res, rej) => {
+      const chain = chains[chainName];
+      const {endpoint, tokensAddresses, togaAddress} = chain;
+      const tokens = Object.keys(tokensAddresses);
         let tokensInfo = {};
         const {customHttpProvider} = await getDefaultProvider();
         const toga = new ethers.Contract(
-          "0xa54FC15FC75693447d70a57262F37a70B614721b",
+          togaAddress,
           TogaAbi.abi,
           customHttpProvider
         );
@@ -45,6 +58,7 @@ async function sentinelsInfo(){
           PicAbi.abi,
           customHttpProvider
       )
+      if(chainName === "Goerli"){
         for(const token of tokens){
           const {bond, pic} = await toga.getCurrentPICInfo(token) || {};
           tokensInfo[token] = {
@@ -55,6 +69,7 @@ async function sentinelsInfo(){
           const daoFunds = ethers.utils.formatEther(await pIC.stakeAndBalance());
           tokensInfo[token]['daoFunds'] = daoFunds;
         }
+      }
 
       const query = `
         {
@@ -73,7 +88,6 @@ async function sentinelsInfo(){
           }
         }
       `
-        const endpoint = `https://api.thegraph.com/subgraphs/name/superfluid-finance/protocol-v1-goerli`;
 
         const headers = {
           'Content-Type': 'application/json',
@@ -127,6 +141,7 @@ async function sentinelsInfo(){
               '30d': Math.ceil(((graphInfo[token]['rewards']['7d'] * (10 ** -18) * 12) / (tokensInfo[token]['stake'])) * 100)
             }
             tokensInfo[token]['transactions'] = graphInfo[token]['transactions']
+            tokensInfo[token]['name'] = chain['tokensAddresses'][token];
           }
           res(tokensInfo);
         }
