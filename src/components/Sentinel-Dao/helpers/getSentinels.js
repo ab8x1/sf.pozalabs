@@ -148,9 +148,10 @@ async function sentinelsInfo(chainName){
           }
         }
         for(const token of tokens){
+          if(token === "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2") console.log((graphInfo[token]['rewards']['7d'] * (10 ** -18) * 12));
           tokensInfo[token]['apr'] = {
-            '7d': Math.ceil(((graphInfo[token]['rewards']['7d'] * (10 ** -18) * 52 )/ (tokensInfo[token]['stake'])) * 100),
-            '30d': Math.ceil(((graphInfo[token]['rewards']['7d'] * (10 ** -18) * 12) / (tokensInfo[token]['stake'])) * 100)
+            '7d': Math.ceil(((graphInfo[token]['rewards']['7d'] * (10 ** -18) * 52 ) / (tokensInfo[token]['stake'])) * 100),
+            '30d': Math.ceil(((graphInfo[token]['rewards']['30d'] * (10 ** -18) * 12) / (tokensInfo[token]['stake'])) * 100)
           }
           tokensInfo[token]['transactions'] = graphInfo[token]['transactions']
           tokensInfo[token]['name'] = chain['tokensAddresses'][token];
