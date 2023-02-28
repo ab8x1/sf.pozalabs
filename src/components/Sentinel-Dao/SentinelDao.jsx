@@ -106,7 +106,7 @@ function SentinelDao(){
                                 </TableCell>
                                 <TableCell>{daoControlled === true ? "✔️" : "❌"}</TableCell>
                                 <TableCell>{daoFunds ? Number(daoFunds).toFixed(2) : "-"}</TableCell>
-                                <TableCell><ActionButton onClick={wallet ? () => setDialog(key) : () => connectWallet(false)}>Manage</ActionButton></TableCell>
+                                <TableCell><ActionButton $disabled={chain==="Polygon"} onClick={wallet ? () => setDialog(key) : () => connectWallet(false)}>Manage</ActionButton></TableCell>
                             </tr>
 
                         )

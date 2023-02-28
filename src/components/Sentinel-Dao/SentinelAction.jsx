@@ -45,13 +45,24 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
 
     useEffect(() => {
         if(manageState === "become")
-            setAmount(data['daoFunds'])
+            setAmount(data['daoFunds']);
+        else
+            setAmount(0);
     }, [manageState])
 
     const getMax = async () => {
-        const balance = await getMaxFctn(wallet);
-        console.log(balance);
-        setAmount(balance)
+        try{
+            const balance = await getMaxFctn(wallet, data);
+            setAmount(balance);
+        }
+        catch(e){
+            const {reason} = e;
+            setSnackBar({
+                isOpened: true,
+                status: "error",
+                message:  reason.charAt(0).toUpperCase() + reason.slice(1)
+            })
+        }
     }
 
     return(
