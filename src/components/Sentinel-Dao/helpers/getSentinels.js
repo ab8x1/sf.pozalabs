@@ -3,12 +3,11 @@ import TogaAbi from '../../../artifacts/contracts/Toga.sol/TOGA.json';
 import PicAbi from '../../../artifacts/contracts/Pic.sol/PIC.json';
 import getDefaultProvider from "../../../utils/getDefaultProvider";
 import polygonData from '../polygon-stats.json';
-const DaixPic = process.env.NEXT_PUBLIC_DAIX_PIC;
 
 export const picsAddresses = {
   DAIx: process.env.NEXT_PUBLIC_DAIX_PIC,
   ETHx: process.env.NEXT_PUBLIC_ETHX_PIC,
-  USDCx: process.env.NEXT_PUBLIC_DAIX_PIC,
+  USDCx: process.env.NEXT_PUBLIC_USDCX_PIC,
 }
 
 const chains = {
@@ -63,7 +62,7 @@ async function sentinelsInfo(chainName){
       if(chainName === "Goerli"){
         for(const token of tokens){
           const tokenName = chain['tokensAddresses'][token];
-          const pIC = new ethers.Contract(
+          const picContract = new ethers.Contract(
             picsAddresses[tokenName],
             PicAbi.abi,
             customHttpProvider
@@ -72,13 +71,12 @@ async function sentinelsInfo(chainName){
           tokensInfo[token] = {
             stake: Number(ethers.utils.formatEther(bond?._hex)).toFixed(2),
             sentinel: pic,
-            daoControlled: pic === DaixPic
+            daoControlled: pic === picsAddresses[tokenName]
           }
-          const daoFunds = Number(Number(ethers.utils.formatEther(await pIC.stakeAndBalance())).toFixed(2));
+          const daoFunds = Number(Number(ethers.utils.formatEther(await picContract.stakeAndBalance())).toFixed(2));
           tokensInfo[token]['daoFunds'] = daoFunds;
+          tokensInfo[token]['address'] = token;
         }
-        // tokensInfo["0x5943f705abb6834cad767e6e4bb258bc48d9c947"]['daoFunds'] = 0;
-        // tokensInfo["0x8ae68021f6170e5a766be613cea0d75236ecca9a"]['daoFunds'] = 0;
 
         const query = `
         {

@@ -2,7 +2,6 @@ import { ethers } from 'ethers';
 import PIC from '../../../artifacts/contracts/Pic.sol/PIC.json';
 import ERC777ABI from '../../../artifacts/contracts/ERC777.json'
 const DaixPic = process.env.NEXT_PUBLIC_DAIX_PIC;
-const DAIxAddress = "0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00"
 import { picsAddresses } from './getSentinels';
 
 export const getMaxFctn = (wallet, tokenData) => {
@@ -31,25 +30,25 @@ export const getMaxFctn = (wallet, tokenData) => {
     })
 }
 
-export default function picActions(wallet, amount, state, tokenData){ console.log(state);
+export default function picActions(wallet, amount, state, tokenData){ console.log(tokenData);
     return new Promise(async (res, rej) => {
         try{
-            const {name} = tokenData;
+            const {name, address} = tokenData;
             const {sfSigner, provider} = wallet;
             const pIC = new ethers.Contract(
                 picsAddresses[name],
                 PIC.abi,
                 provider
             );
-            const daix = new ethers.Contract(
-                DAIxAddress,
+            const tokenContract = new ethers.Contract(
+                address,
                 ERC777ABI.abi,
                 provider
             )
             let tx;
             if(state === "fund")
                 {
-                    tx = await daix.connect(sfSigner).approve(DaixPic, ethers.utils.parseEther(amount.toString()));
+                    tx = await tokenContract.connect(sfSigner).approve(picsAddresses[name], ethers.utils.parseEther(amount.toString()));
                     await tx.wait();
                     tx = await pIC.connect(sfSigner).fundPIC(ethers.utils.parseEther(amount.toString()));
                 }
