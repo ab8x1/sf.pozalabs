@@ -21,8 +21,8 @@ export const getMaxFctn = (wallet, tokenData) => {
                 provider
             )
             const userBalance = ethers.utils.formatEther(await sent.balanceOf(adress));
-            const ratio = ethers.utils.formatEther(await pIC.calculateSdtWorth());
-            res(userBalance * ratio);
+            // const ratio = ethers.utils.formatEther(await pIC.calculateSdtWorth());
+            res(userBalance);
         }
         catch(e){
             rej(e)
