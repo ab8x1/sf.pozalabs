@@ -61,7 +61,7 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
                     <Icon src="/navbar/sentinel-dao.svg" style={{marginRight: '0px', width: '35px', height: '35px'}}/>
                     <div>
                         <HeaderText>Manage Sentinel</HeaderText>
-                        <HeaderText>Tap into Sentinel's profitability</HeaderText>
+                        <HeaderText>Tap into Sentinel&apos;s profitability</HeaderText>
                     </div>
                 </FormHeader>
                 <div className='container'>
