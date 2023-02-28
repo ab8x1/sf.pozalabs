@@ -14,2919 +14,2905 @@
     }
   },
   "data": {
-    "agreementLiquidatedV2Events": [
-      {
-        "rewardAmount": "19393544000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677519882",
-        "gasUsed": "1256553",
-        "gasPrice": "121687498737"
-      },
-      {
-        "rewardAmount": "55399437654908175",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677459865",
-        "gasUsed": "326489",
-        "gasPrice": "88385503456"
-      },
-      {
-        "rewardAmount": "1657224454201330140",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677454741",
-        "gasUsed": "1662967",
-        "gasPrice": "167333633915"
-      },
-      {
-        "rewardAmount": "5524081511157343867",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677454741",
-        "gasUsed": "1662967",
-        "gasPrice": "167333633915"
-      },
-      {
-        "rewardAmount": "4419265209780002073",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677454741",
-        "gasUsed": "1662967",
-        "gasPrice": "167333633915"
-      },
-      {
-        "rewardAmount": "24971874999955849",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677453095",
-        "gasUsed": "310265",
-        "gasPrice": "136271239197"
-      },
-      {
-        "rewardAmount": "1663844185185474220",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677372615",
-        "gasUsed": "327365",
-        "gasPrice": "113423613202"
-      },
-      {
-        "rewardAmount": "38292906745910635",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677287557",
-        "gasUsed": "310265",
-        "gasPrice": "116659754058"
-      },
-      {
-        "rewardAmount": "110992567270623436",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677247908",
-        "gasUsed": "931000",
-        "gasPrice": "226763756252"
-      },
-      {
-        "rewardAmount": "34907341269805808",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677227406",
-        "gasUsed": "310265",
-        "gasPrice": "217348061401"
-      },
-      {
-        "rewardAmount": "24980985449642574",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677205773",
-        "gasUsed": "327365",
-        "gasPrice": "123440605771"
-      },
-      {
-        "rewardAmount": "5390049253311",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677178058",
-        "gasUsed": "309389",
-        "gasPrice": "163415251875"
-      },
-      {
-        "rewardAmount": "5822453703769792",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677167573",
-        "gasUsed": "310265",
-        "gasPrice": "219837757009"
-      },
-      {
-        "rewardAmount": "279771990743127575",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677156724",
-        "gasUsed": "310265",
-        "gasPrice": "360481712334"
-      },
-      {
-        "rewardAmount": "1662615742650100",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677152306",
-        "gasUsed": "327365",
-        "gasPrice": "878239659224"
-      },
-      {
-        "rewardAmount": "2218364198358250",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1677151880",
-        "gasUsed": "327365",
-        "gasPrice": "600735628947"
-      },
-      {
-        "rewardAmount": "18195949074087084",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677146328",
-        "gasUsed": "310265",
-        "gasPrice": "313404639348"
-      },
-      {
-        "rewardAmount": "16633101853945197",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1677128295",
-        "gasUsed": "327365",
-        "gasPrice": "236494530849"
-      },
-      {
-        "rewardAmount": "5313787984500",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677121625",
-        "gasUsed": "310265",
-        "gasPrice": "289105229603"
-      },
-      {
-        "rewardAmount": "2278824231715758",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677088518",
-        "gasUsed": "326489",
-        "gasPrice": "153076464069"
-      },
-      {
-        "rewardAmount": "554089528724506",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1677061740",
-        "gasUsed": "309377",
-        "gasPrice": "187963522852"
-      },
-      {
-        "rewardAmount": "866322044935747",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1677036253",
-        "gasUsed": "326489",
-        "gasPrice": "182222224809"
-      },
-      {
-        "rewardAmount": "273300179012695630",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676983530",
-        "gasUsed": "1298717",
-        "gasPrice": "224523354941"
-      },
-      {
-        "rewardAmount": "4292391088",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676963154",
-        "gasUsed": "326489",
-        "gasPrice": "121438787717"
-      },
-      {
-        "rewardAmount": "27731481481961304",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676934776",
-        "gasUsed": "326489",
-        "gasPrice": "118448040177"
-      },
-      {
-        "rewardAmount": "554111148804177027",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676934222",
-        "gasUsed": "989254",
-        "gasPrice": "88694881740"
-      },
-      {
-        "rewardAmount": "55360580881658",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "1108409898604",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "556344736751",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "556344736751",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "556344736751",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "556344736751",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "55634473675",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "55634473675",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "556344736751",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896405",
-        "gasUsed": "2028676",
-        "gasPrice": "208633581754"
-      },
-      {
-        "rewardAmount": "556654825033",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "55665482503",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "55665482503",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "556654825033",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "55665482503",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "556654825033",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "55665482503",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "55665482503",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "55665482503",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "55665482503",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676896397",
-        "gasUsed": "2237563",
-        "gasPrice": "208119387581"
-      },
-      {
-        "rewardAmount": "55428240741700386",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676865019",
-        "gasUsed": "326489",
-        "gasPrice": "127387837611"
-      },
-      {
-        "rewardAmount": "1276519984313812",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676815613",
-        "gasUsed": "634777",
-        "gasPrice": "178078076243"
-      },
-      {
-        "rewardAmount": "143194763925785",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676815613",
-        "gasUsed": "634777",
-        "gasPrice": "178078076243"
-      },
-      {
-        "rewardAmount": "166258450819446",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676810451",
-        "gasUsed": "998396",
-        "gasPrice": "176560116583"
-      },
-      {
-        "rewardAmount": "332512617289801",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676810451",
-        "gasUsed": "998396",
-        "gasPrice": "176560116583"
-      },
-      {
-        "rewardAmount": "332512617289801",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676810451",
-        "gasUsed": "998396",
-        "gasPrice": "176560116583"
-      },
-      {
-        "rewardAmount": "332512617289800",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676810451",
-        "gasUsed": "998396",
-        "gasPrice": "176560116583"
-      },
-      {
-        "rewardAmount": "430188576169754489",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676731861",
-        "gasUsed": "324087",
-        "gasPrice": "465498186326"
-      },
-      {
-        "rewardAmount": "165261259259930320",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676680007",
-        "gasUsed": "611495",
-        "gasPrice": "209313920742"
-      },
-      {
-        "rewardAmount": "554089510762255",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676680007",
-        "gasUsed": "611495",
-        "gasPrice": "209313920742"
-      },
-      {
-        "rewardAmount": "166144037037708092",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676679905",
-        "gasUsed": "310265",
-        "gasPrice": "247766536847"
-      },
-      {
-        "rewardAmount": "166354166667337602",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676678492",
-        "gasUsed": "310253",
-        "gasPrice": "153441698992"
-      },
-      {
-        "rewardAmount": "166099537037707974",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676678362",
-        "gasUsed": "604707",
-        "gasPrice": "157234694044"
-      },
-      {
-        "rewardAmount": "166400462963633898",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676678362",
-        "gasUsed": "604707",
-        "gasPrice": "157234694044"
-      },
-      {
-        "rewardAmount": "165960648148819086",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676678290",
-        "gasUsed": "604707",
-        "gasPrice": "193957122472"
-      },
-      {
-        "rewardAmount": "165659722222893162",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676678290",
-        "gasUsed": "604707",
-        "gasPrice": "193957122472"
-      },
-      {
-        "rewardAmount": "165150462963633906",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676678254",
-        "gasUsed": "604707",
-        "gasPrice": "250865606722"
-      },
-      {
-        "rewardAmount": "165636574074745014",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676678254",
-        "gasUsed": "604707",
-        "gasPrice": "250865606722"
-      },
-      {
-        "rewardAmount": "2770227524476948841",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676669868",
-        "gasUsed": "939877",
-        "gasPrice": "183649085602"
-      },
-      {
-        "rewardAmount": "5493204136313776243",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676668424",
-        "gasUsed": "1256786",
-        "gasPrice": "233896033170"
-      },
-      {
-        "rewardAmount": "8298926649257719926",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676667994",
-        "gasUsed": "1394695",
-        "gasPrice": "527967120191"
-      },
-      {
-        "rewardAmount": "5529365000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676667370",
-        "gasUsed": "1340178",
-        "gasPrice": "246367535480"
-      },
-      {
-        "rewardAmount": "6924918541021135462",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676663647",
-        "gasUsed": "1532295",
-        "gasPrice": "355366876586"
-      },
-      {
-        "rewardAmount": "6617292210739930968",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676661396",
-        "gasUsed": "1660519",
-        "gasPrice": "395589476057"
-      },
-      {
-        "rewardAmount": "2760095698076530",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676591022",
-        "gasUsed": "309377",
-        "gasPrice": "180869899939"
-      },
-      {
-        "rewardAmount": "554611885266400",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676545406",
-        "gasUsed": "310265",
-        "gasPrice": "564703808754"
-      },
-      {
-        "rewardAmount": "13656537321088784",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676462977",
-        "gasUsed": "326489",
-        "gasPrice": "274844610848"
-      },
-      {
-        "rewardAmount": "826736111111169820",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676454711",
-        "gasUsed": "327365",
-        "gasPrice": "258917649175"
-      },
-      {
-        "rewardAmount": "30351520184106",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676427169",
-        "gasUsed": "616804",
-        "gasPrice": "185189825821"
-      },
-      {
-        "rewardAmount": "911407158348625",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676427169",
-        "gasUsed": "616804",
-        "gasPrice": "185189825821"
-      },
-      {
-        "rewardAmount": "27710262345627635",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676408212",
-        "gasUsed": "327365",
-        "gasPrice": "277738380848"
-      },
-      {
-        "rewardAmount": "27691358012326012",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676391852",
-        "gasUsed": "326489",
-        "gasPrice": "523919404661"
-      },
-      {
-        "rewardAmount": "543766974978932500",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676386059",
-        "gasUsed": "327365",
-        "gasPrice": "413808164898"
-      },
-      {
-        "rewardAmount": "1105430091111459530",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1676283027",
-        "gasUsed": "1030422",
-        "gasPrice": "265907129710"
-      },
-      {
-        "rewardAmount": "55456354164942771",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676242622",
-        "gasUsed": "866711",
-        "gasPrice": "156459354799"
-      },
-      {
-        "rewardAmount": "116520833335529082",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676183957",
-        "gasUsed": "327365",
-        "gasPrice": "211984235228"
-      },
-      {
-        "rewardAmount": "910808622458289",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676161332",
-        "gasUsed": "616816",
-        "gasPrice": "254891005021"
-      },
-      {
-        "rewardAmount": "15086548848935",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676161332",
-        "gasUsed": "616816",
-        "gasPrice": "254891005021"
-      },
-      {
-        "rewardAmount": "323104166666666698",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676138722",
-        "gasUsed": "310265",
-        "gasPrice": "179547014637"
-      },
-      {
-        "rewardAmount": "414479166666666638",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676134521",
-        "gasUsed": "310265",
-        "gasPrice": "277142951407"
-      },
-      {
-        "rewardAmount": "443888888888888992",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676133533",
-        "gasUsed": "310265",
-        "gasPrice": "312774696979"
-      },
-      {
-        "rewardAmount": "2378720935213",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676060903",
-        "gasUsed": "1484596",
-        "gasPrice": "185878229385"
-      },
-      {
-        "rewardAmount": "4753155886757",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676060903",
-        "gasUsed": "1484596",
-        "gasPrice": "185878229385"
-      },
-      {
-        "rewardAmount": "548605909382",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676060903",
-        "gasUsed": "1484596",
-        "gasPrice": "185878229385"
-      },
-      {
-        "rewardAmount": "548605909382",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676060903",
-        "gasUsed": "1484596",
-        "gasPrice": "185878229385"
-      },
-      {
-        "rewardAmount": "548605909382",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676060903",
-        "gasUsed": "1484596",
-        "gasPrice": "185878229385"
-      },
-      {
-        "rewardAmount": "548605909382",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676060903",
-        "gasUsed": "1484596",
-        "gasPrice": "185878229385"
-      },
-      {
-        "rewardAmount": "554166689218332",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676042314",
-        "gasUsed": "309389",
-        "gasPrice": "458075162671"
-      },
-      {
-        "rewardAmount": "277473006507829",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676032116",
-        "gasUsed": "326477",
-        "gasPrice": "305284924599"
-      },
-      {
-        "rewardAmount": "55412816080591",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676004003",
-        "gasUsed": "326489",
-        "gasPrice": "171604741332"
-      },
-      {
-        "rewardAmount": "609745375482182",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676002205",
-        "gasUsed": "310265",
-        "gasPrice": "211599206256"
-      },
-      {
-        "rewardAmount": "277008209196261279",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1676000355",
-        "gasUsed": "310253",
-        "gasPrice": "616541018090"
-      },
-      {
-        "rewardAmount": "2276086690295141",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675963270",
-        "gasUsed": "855124",
-        "gasPrice": "282422813414"
-      },
-      {
-        "rewardAmount": "1365655439587424",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675963270",
-        "gasUsed": "855124",
-        "gasPrice": "282422813414"
-      },
-      {
-        "rewardAmount": "1365655439587423",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675963270",
-        "gasUsed": "855124",
-        "gasPrice": "282422813414"
-      },
-      {
-        "rewardAmount": "1662268518519147880",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675953367",
-        "gasUsed": "738496",
-        "gasPrice": "553882240494"
-      },
-      {
-        "rewardAmount": "414682717935035048",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675936875",
-        "gasUsed": "327365",
-        "gasPrice": "286865873591"
-      },
-      {
-        "rewardAmount": "272988000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675929757",
-        "gasUsed": "1340178",
-        "gasPrice": "389604752768"
-      },
-      {
-        "rewardAmount": "554344359237857",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675894469",
-        "gasUsed": "309389",
-        "gasPrice": "107056799765"
-      },
-      {
-        "rewardAmount": "552469137282962",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675883035",
-        "gasUsed": "327353",
-        "gasPrice": "148375566125"
-      },
-      {
-        "rewardAmount": "5537422870694655",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675882331",
-        "gasUsed": "326489",
-        "gasPrice": "151262406242"
-      },
-      {
-        "rewardAmount": "44431712958889668",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675843497",
-        "gasUsed": "309389",
-        "gasPrice": "194501800218"
-      },
-      {
-        "rewardAmount": "277527008209472",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675840535",
-        "gasUsed": "327365",
-        "gasPrice": "211746574330"
-      },
-      {
-        "rewardAmount": "4560819401383571",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675836064",
-        "gasUsed": "326489",
-        "gasPrice": "163362960813"
-      },
-      {
-        "rewardAmount": "27706475308697502",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675832587",
-        "gasUsed": "327353",
-        "gasPrice": "146651334082"
-      },
-      {
-        "rewardAmount": "664962691266378194",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675797747",
-        "gasUsed": "1450829",
-        "gasPrice": "157661529961"
-      },
-      {
-        "rewardAmount": "48541675942162",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675758329",
-        "gasUsed": "329229",
-        "gasPrice": "160790778023"
-      },
-      {
-        "rewardAmount": "54203975646920592",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675737641",
-        "gasUsed": "299814",
-        "gasPrice": "178151953918"
-      },
-      {
-        "rewardAmount": "11183886629630203410",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675727069",
-        "gasUsed": "310253",
-        "gasPrice": "118810991004"
-      },
-      {
-        "rewardAmount": "41001731201026",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675703258",
-        "gasUsed": "326489",
-        "gasPrice": "129228568430"
-      },
-      {
-        "rewardAmount": "40852187799952",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675697296",
-        "gasUsed": "309377",
-        "gasPrice": "200155053094"
-      },
-      {
-        "rewardAmount": "51984951547479263",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675672457",
-        "gasUsed": "299814",
-        "gasPrice": "132409541670"
-      },
-      {
-        "rewardAmount": "56032485433748865",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675670311",
-        "gasUsed": "326489",
-        "gasPrice": "174168884121"
-      },
-      {
-        "rewardAmount": "21277777785662884",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675640168",
-        "gasUsed": "326489",
-        "gasPrice": "98723474911"
-      },
-      {
-        "rewardAmount": "1014284200000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636320",
-        "gasUsed": "619330",
-        "gasPrice": "154076082122"
-      },
-      {
-        "rewardAmount": "1011506440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636320",
-        "gasUsed": "619330",
-        "gasPrice": "154076082122"
-      },
-      {
-        "rewardAmount": "1055641960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636278",
-        "gasUsed": "1066819",
-        "gasPrice": "148007837506"
-      },
-      {
-        "rewardAmount": "1008883000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636278",
-        "gasUsed": "1066819",
-        "gasPrice": "148007837506"
-      },
-      {
-        "rewardAmount": "1055333320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636278",
-        "gasUsed": "1066819",
-        "gasPrice": "148007837506"
-      },
-      {
-        "rewardAmount": "1055024680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636278",
-        "gasUsed": "1066819",
-        "gasPrice": "148007837506"
-      },
-      {
-        "rewardAmount": "1061506120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636190",
-        "gasUsed": "1066819",
-        "gasPrice": "171060797404"
-      },
-      {
-        "rewardAmount": "1057802440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636190",
-        "gasUsed": "1066819",
-        "gasPrice": "171060797404"
-      },
-      {
-        "rewardAmount": "1060580200000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636190",
-        "gasUsed": "1066819",
-        "gasPrice": "171060797404"
-      },
-      {
-        "rewardAmount": "1060425880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636190",
-        "gasUsed": "1066819",
-        "gasPrice": "171060797404"
-      },
-      {
-        "rewardAmount": "967679560000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "312129",
-        "gasPrice": "171154734053"
-      },
-      {
-        "rewardAmount": "1057802440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1060580200000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1008420040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1056104920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1055796280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1057493800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1055179000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1057030840000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1056722200000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1054253080000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636182",
-        "gasUsed": "2409412",
-        "gasPrice": "171296161674"
-      },
-      {
-        "rewardAmount": "1062740680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1062277720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1060117240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1061814760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1059654280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1061351800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1059037000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1061043160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1058728360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636066",
-        "gasUsed": "2185618",
-        "gasPrice": "152474639003"
-      },
-      {
-        "rewardAmount": "1061351800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1058728360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1058574040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1056259240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1057956760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1055796280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1055487640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1057648120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1057185160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1055024680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675636058",
-        "gasUsed": "2409412",
-        "gasPrice": "157069700256"
-      },
-      {
-        "rewardAmount": "1059654280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1061660440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1059191320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1058882680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1058728360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1056104920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1057956760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1055796280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1057648120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635994",
-        "gasUsed": "2185654",
-        "gasPrice": "152252531386"
-      },
-      {
-        "rewardAmount": "1008420040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1056104920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1055950600000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1057802440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1057493800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1055179000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1054561720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1052246920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1054098760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1051783960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635984",
-        "gasUsed": "2409412",
-        "gasPrice": "154301001559"
-      },
-      {
-        "rewardAmount": "1054407400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1052246920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1053944440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1051783960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1053790120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1051475320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1051166680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "997617640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1048543240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1048543240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635974",
-        "gasUsed": "2409412",
-        "gasPrice": "134450581274"
-      },
-      {
-        "rewardAmount": "1057493800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635882",
-        "gasUsed": "619330",
-        "gasPrice": "133450146830"
-      },
-      {
-        "rewardAmount": "1054870360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635882",
-        "gasUsed": "619330",
-        "gasPrice": "133450146830"
-      },
-      {
-        "rewardAmount": "1063666600000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1061197480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1063203640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1060734520000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1060580200000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1062895000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1002247240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1057802440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1059962920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1057493800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635794",
-        "gasUsed": "2409424",
-        "gasPrice": "117753246105"
-      },
-      {
-        "rewardAmount": "1063049320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635716",
-        "gasUsed": "1290571",
-        "gasPrice": "123205460701"
-      },
-      {
-        "rewardAmount": "1065055480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635716",
-        "gasUsed": "1290571",
-        "gasPrice": "123205460701"
-      },
-      {
-        "rewardAmount": "1062586360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635716",
-        "gasUsed": "1290571",
-        "gasPrice": "123205460701"
-      },
-      {
-        "rewardAmount": "1062432040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635716",
-        "gasUsed": "1290571",
-        "gasPrice": "123205460701"
-      },
-      {
-        "rewardAmount": "1064746840000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635716",
-        "gasUsed": "1290571",
-        "gasPrice": "123205460701"
-      },
-      {
-        "rewardAmount": "1064901160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1062277720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1059499960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1061814760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1059345640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1061197480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1058728360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1057956760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1060271560000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1057802440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635710",
-        "gasUsed": "2409388",
-        "gasPrice": "125428787297"
-      },
-      {
-        "rewardAmount": "1059499960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1061660440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1059037000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1061351800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1058574040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1060888840000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1058111080000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1060425880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1060117240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1057648120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635652",
-        "gasUsed": "2409400",
-        "gasPrice": "134899570872"
-      },
-      {
-        "rewardAmount": "1063820920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1061043160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1063357960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1062895000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1062740680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1064901160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1062277720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1064283880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1061660440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635550",
-        "gasUsed": "2185630",
-        "gasPrice": "136141555830"
-      },
-      {
-        "rewardAmount": "1063820920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635506",
-        "gasUsed": "1066819",
-        "gasPrice": "126718400243"
-      },
-      {
-        "rewardAmount": "1061351800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635506",
-        "gasUsed": "1066819",
-        "gasPrice": "126718400243"
-      },
-      {
-        "rewardAmount": "1063512280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635506",
-        "gasUsed": "1066819",
-        "gasPrice": "126718400243"
-      },
-      {
-        "rewardAmount": "1063203640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635506",
-        "gasUsed": "1066819",
-        "gasPrice": "126718400243"
-      },
-      {
-        "rewardAmount": "1065364120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1063357960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1065055480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1064746840000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1062586360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1059962920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1062277720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1059654280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1061814760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1061660440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635468",
-        "gasUsed": "2409412",
-        "gasPrice": "120419233401"
-      },
-      {
-        "rewardAmount": "1063666600000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635410",
-        "gasUsed": "1514329",
-        "gasPrice": "126254193172"
-      },
-      {
-        "rewardAmount": "1065364120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635410",
-        "gasUsed": "1514329",
-        "gasPrice": "126254193172"
-      },
-      {
-        "rewardAmount": "1063049320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635410",
-        "gasUsed": "1514329",
-        "gasPrice": "126254193172"
-      },
-      {
-        "rewardAmount": "1065055480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635410",
-        "gasUsed": "1514329",
-        "gasPrice": "126254193172"
-      },
-      {
-        "rewardAmount": "1062586360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635410",
-        "gasUsed": "1514329",
-        "gasPrice": "126254193172"
-      },
-      {
-        "rewardAmount": "1062432040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635410",
-        "gasUsed": "1514329",
-        "gasPrice": "126254193172"
-      },
-      {
-        "rewardAmount": "1063820920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1063357960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1066135720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1065981400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1062895000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1062432040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1065055480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1064746840000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1062123400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1064283880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635354",
-        "gasUsed": "2409400",
-        "gasPrice": "131194731521"
-      },
-      {
-        "rewardAmount": "1059962920000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1062123400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1061814760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1059499960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1061197480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1058882680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1058419720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1060425880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1057956760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1060271560000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635346",
-        "gasUsed": "2409400",
-        "gasPrice": "134596371941"
-      },
-      {
-        "rewardAmount": "1061969080000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1063975240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1061506120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1063666600000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1060580200000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1063203640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1063049320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1060888840000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1060117240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1062432040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635256",
-        "gasUsed": "2409412",
-        "gasPrice": "137405557284"
-      },
-      {
-        "rewardAmount": "1063512280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1063049320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1061506120000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1061043160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1060580200000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1062432040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1060117240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1061969080000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1059654280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635206",
-        "gasUsed": "2185606",
-        "gasPrice": "155236553826"
-      },
-      {
-        "rewardAmount": "1063666600000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1061043160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1063203640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1060734520000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1060425880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1062895000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1062432040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1059808600000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1061969080000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1059191320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635148",
-        "gasUsed": "2409412",
-        "gasPrice": "147289795070"
-      },
-      {
-        "rewardAmount": "1059191320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1056413560000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1058574040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1058265400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1055796280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1055487640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1057802440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1057339480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1059345640000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1056722200000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635140",
-        "gasUsed": "2409424",
-        "gasPrice": "151613321464"
-      },
-      {
-        "rewardAmount": "1058574040000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1055796280000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1058265400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1055179000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1057493800000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1055024680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1057185160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1054407400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1056567880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1053944440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675635094",
-        "gasUsed": "2409400",
-        "gasPrice": "120679490167"
-      },
-      {
-        "rewardAmount": "1062123400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1059499960000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1059191320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1061660440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1061043160000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1058419720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1060734520000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1058111080000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1060271560000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1057802440000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634986",
-        "gasUsed": "2409424",
-        "gasPrice": "104284158645"
-      },
-      {
-        "rewardAmount": "1062586360000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1065055480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1062123400000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1064592520000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1061814760000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1064283880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1061197480000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1063666600000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1060734520000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1063049320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634886",
-        "gasUsed": "2409400",
-        "gasPrice": "95903979691"
-      },
-      {
-        "rewardAmount": "1064283880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634836",
-        "gasUsed": "843058",
-        "gasPrice": "111195153278"
-      },
-      {
-        "rewardAmount": "1061969080000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634836",
-        "gasUsed": "843058",
-        "gasPrice": "111195153278"
-      },
-      {
-        "rewardAmount": "1063975240000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634836",
-        "gasUsed": "843058",
-        "gasPrice": "111195153278"
-      },
-      {
-        "rewardAmount": "1066907320000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634792",
-        "gasUsed": "1738093",
-        "gasPrice": "100890997887"
-      },
-      {
-        "rewardAmount": "1064592520000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634792",
-        "gasUsed": "1738093",
-        "gasPrice": "100890997887"
-      },
-      {
-        "rewardAmount": "1066598680000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634792",
-        "gasUsed": "1738093",
-        "gasPrice": "100890997887"
-      },
-      {
-        "rewardAmount": "1064283880000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634792",
-        "gasUsed": "1738093",
-        "gasPrice": "100890997887"
-      },
-      {
-        "rewardAmount": "1066135720000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634792",
-        "gasUsed": "1738093",
-        "gasPrice": "100890997887"
-      },
-      {
-        "rewardAmount": "1063666600000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634792",
-        "gasUsed": "1738093",
-        "gasPrice": "100890997887"
-      },
-      {
-        "rewardAmount": "1065827080000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634792",
-        "gasUsed": "1738093",
-        "gasPrice": "100890997887"
-      },
-      {
-        "rewardAmount": "1066753000000000000",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675634748",
-        "gasUsed": "309389",
-        "gasPrice": "114030643838"
-      },
-      {
-        "rewardAmount": "51993372653514059",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675630064",
-        "gasUsed": "299814",
-        "gasPrice": "87273005063"
-      },
-      {
-        "rewardAmount": "43211836221340",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675617687",
-        "gasUsed": "326477",
-        "gasPrice": "318528348274"
-      },
-      {
-        "rewardAmount": "130950925933096155",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675612546",
-        "gasUsed": "326489",
-        "gasPrice": "160556761117"
-      },
-      {
-        "rewardAmount": "52159405124341007",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675590697",
-        "gasUsed": "299814",
-        "gasPrice": "95130502162"
-      },
-      {
-        "rewardAmount": "501623546199904",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675579929",
-        "gasUsed": "299814",
-        "gasPrice": "106713349052"
-      },
-      {
-        "rewardAmount": "52178874936592909",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675549308",
-        "gasUsed": "299814",
-        "gasPrice": "77420395142"
-      },
-      {
-        "rewardAmount": "51952467021828889",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675529828",
-        "gasUsed": "299814",
-        "gasPrice": "124863839617"
-      },
-      {
-        "rewardAmount": "1280840147948851972",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675525548",
-        "gasUsed": "1485029",
-        "gasPrice": "185478706024"
-      },
-      {
-        "rewardAmount": "7872905767567560",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675517342",
-        "gasUsed": "309389",
-        "gasPrice": "180654754999"
-      },
-      {
-        "rewardAmount": "4852538914868390",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675511770",
-        "gasUsed": "329229",
-        "gasPrice": "111971116463"
-      },
-      {
-        "rewardAmount": "16681003217587",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675508507",
-        "gasUsed": "616828",
-        "gasPrice": "145361029142"
-      },
-      {
-        "rewardAmount": "877945147316483",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675508507",
-        "gasUsed": "616828",
-        "gasPrice": "145361029142"
-      },
-      {
-        "rewardAmount": "47971830852172756472",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675508341",
-        "gasUsed": "310265",
-        "gasPrice": "103939475783"
-      },
-      {
-        "rewardAmount": "52084538305441234",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675470917",
-        "gasUsed": "299814",
-        "gasPrice": "78416170139"
-      },
-      {
-        "rewardAmount": "159515542328315594",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675455282",
-        "gasUsed": "1301947",
-        "gasPrice": "106008762046"
-      },
-      {
-        "rewardAmount": "53171847442771864",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675455282",
-        "gasUsed": "1301947",
-        "gasPrice": "106008762046"
-      },
-      {
-        "rewardAmount": "53171847442771864",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675455282",
-        "gasUsed": "1301947",
-        "gasPrice": "106008762046"
-      },
-      {
-        "rewardAmount": "53171847442771864",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675455282",
-        "gasUsed": "1301947",
-        "gasPrice": "106008762046"
-      },
-      {
-        "rewardAmount": "53171847442771864",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675455282",
-        "gasUsed": "1301947",
-        "gasPrice": "106008762046"
-      },
-      {
-        "rewardAmount": "52061897513964832",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675453234",
-        "gasUsed": "299814",
-        "gasPrice": "98905394404"
-      },
-      {
-        "rewardAmount": "435389679253314",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675437160",
-        "gasUsed": "326489",
-        "gasPrice": "252486232591"
-      },
-      {
-        "rewardAmount": "52018729904323012",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675433262",
-        "gasUsed": "299814",
-        "gasPrice": "182447692619"
-      },
-      {
-        "rewardAmount": "138884854490372179",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675415991",
-        "gasUsed": "309389",
-        "gasPrice": "151190490099"
-      },
-      {
-        "rewardAmount": "221834662600916",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675407299",
-        "gasUsed": "326489",
-        "gasPrice": "214537046166"
-      },
-      {
-        "rewardAmount": "45624060572824",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675400591",
-        "gasUsed": "326489",
-        "gasPrice": "123779592142"
-      },
-      {
-        "rewardAmount": "1387306432454387586",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675389995",
-        "gasUsed": "806440",
-        "gasPrice": "200134908531"
-      },
-      {
-        "rewardAmount": "13873064324543875858",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675389995",
-        "gasUsed": "806440",
-        "gasPrice": "200134908531"
-      },
-      {
-        "rewardAmount": "594559900236176643",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675389995",
-        "gasUsed": "806440",
-        "gasPrice": "200134908531"
-      },
-      {
-        "rewardAmount": "12755169994828",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675308122",
-        "gasUsed": "616816",
-        "gasPrice": "146071754176"
-      },
-      {
-        "rewardAmount": "911032768280196",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675308122",
-        "gasUsed": "616816",
-        "gasPrice": "146071754176"
-      },
-      {
-        "rewardAmount": "2786479909539390",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675293768",
-        "gasUsed": "327365",
-        "gasPrice": "103107563023"
-      },
-      {
-        "rewardAmount": "6008229050761959",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675211300",
-        "gasUsed": "302554",
-        "gasPrice": "86113303755"
-      },
-      {
-        "rewardAmount": "4435802492006576",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675188064",
-        "gasUsed": "326489",
-        "gasPrice": "90567450266"
-      },
-      {
-        "rewardAmount": "22506190598",
-        "token": "0x27e1e4e6bc79d93032abef01025811b7e4727e85",
-        "timestamp": "1675126067",
-        "gasUsed": "312129",
-        "gasPrice": "88523141851"
-      },
-      {
-        "rewardAmount": "5546369025070",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074223",
-        "gasUsed": "1824503",
-        "gasPrice": "125241917499"
-      },
-      {
-        "rewardAmount": "557208634666",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074223",
-        "gasUsed": "1824503",
-        "gasPrice": "125241917499"
-      },
-      {
-        "rewardAmount": "557208634666",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074223",
-        "gasUsed": "1824503",
-        "gasPrice": "125241917499"
-      },
-      {
-        "rewardAmount": "557208634666",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074223",
-        "gasUsed": "1824503",
-        "gasPrice": "125241917499"
-      },
-      {
-        "rewardAmount": "557208634666",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074223",
-        "gasUsed": "1824503",
-        "gasPrice": "125241917499"
-      },
-      {
-        "rewardAmount": "55720863466",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074223",
-        "gasUsed": "1824503",
-        "gasPrice": "125241917499"
-      },
-      {
-        "rewardAmount": "55720863466",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074223",
-        "gasUsed": "1824503",
-        "gasPrice": "125241917499"
-      },
-      {
-        "rewardAmount": "557208634666",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074223",
-        "gasUsed": "1824503",
-        "gasPrice": "125241917499"
-      },
-      {
-        "rewardAmount": "557595612164",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "55759561216",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "55759561216",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "557595612164",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "55759561216",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "557595612164",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "55759561216",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "55759561216",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "55759561216",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "55759561216",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675074213",
-        "gasUsed": "2237563",
-        "gasPrice": "127410204223"
-      },
-      {
-        "rewardAmount": "2376488100760939",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675073348",
-        "gasUsed": "327365",
-        "gasPrice": "92702372816"
-      },
-      {
-        "rewardAmount": "501027401706248",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1675073306",
-        "gasUsed": "326453",
-        "gasPrice": "113784122579"
-      },
-      {
-        "rewardAmount": "46223776462345083",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675044116",
-        "gasUsed": "329229",
-        "gasPrice": "73457555665"
-      },
-      {
-        "rewardAmount": "831732253501894",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675033257",
-        "gasUsed": "327365",
-        "gasPrice": "68159364992"
-      },
-      {
-        "rewardAmount": "11099024694891073",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1675012248",
-        "gasUsed": "310253",
-        "gasPrice": "63805966881"
-      },
-      {
-        "rewardAmount": "554591050878375",
-        "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
-        "timestamp": "1674990691",
-        "gasUsed": "327365",
-        "gasPrice": "90061200183"
-      },
-      {
-        "rewardAmount": "3316629631208236",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1674958023",
-        "gasUsed": "299814",
-        "gasPrice": "89734714314"
-      },
-      {
-        "rewardAmount": "1108011321401465",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1674878890",
-        "gasUsed": "820924",
-        "gasPrice": "94922393847"
-      },
-      {
-        "rewardAmount": "1108011321401465",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1674878890",
-        "gasUsed": "820924",
-        "gasPrice": "94922393847"
-      },
-      {
-        "rewardAmount": "1108011321401464",
-        "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
-        "timestamp": "1674878890",
-        "gasUsed": "820924",
-        "gasPrice": "94922393847"
-      }
-    ]
+      "agreementLiquidatedV2Events": [
+        {
+          "rewardAmount": "8299768518522156426",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1677597383",
+          "gasUsed": "327365",
+          "gasPrice": "350014487658"
+        },
+        {
+          "rewardAmount": "510909909952023",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677583078",
+          "gasUsed": "309416",
+          "gasPrice": "199236228695"
+        },
+        {
+          "rewardAmount": "48570345165064249",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1677540138",
+          "gasUsed": "330105",
+          "gasPrice": "95369104695"
+        },
+        {
+          "rewardAmount": "14526994171301",
+          "token": "0x27e1e4e6bc79d93032abef01025811b7e4727e85",
+          "timestamp": "1677525978",
+          "gasUsed": "329229",
+          "gasPrice": "79557483495"
+        },
+        {
+          "rewardAmount": "19393544000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677519882",
+          "gasUsed": "1256553",
+          "gasPrice": "121687498737"
+        },
+        {
+          "rewardAmount": "55399437654908175",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677459865",
+          "gasUsed": "326489",
+          "gasPrice": "88385503456"
+        },
+        {
+          "rewardAmount": "1657224454201330140",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677454741",
+          "gasUsed": "1662967",
+          "gasPrice": "167333633915"
+        },
+        {
+          "rewardAmount": "5524081511157343867",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677454741",
+          "gasUsed": "1662967",
+          "gasPrice": "167333633915"
+        },
+        {
+          "rewardAmount": "4419265209780002073",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677454741",
+          "gasUsed": "1662967",
+          "gasPrice": "167333633915"
+        },
+        {
+          "rewardAmount": "24971874999955849",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677453095",
+          "gasUsed": "310265",
+          "gasPrice": "136271239197"
+        },
+        {
+          "rewardAmount": "1663844185185474220",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677372615",
+          "gasUsed": "327365",
+          "gasPrice": "113423613202"
+        },
+        {
+          "rewardAmount": "38292906745910635",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677287557",
+          "gasUsed": "310265",
+          "gasPrice": "116659754058"
+        },
+        {
+          "rewardAmount": "110992567270623436",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677247908",
+          "gasUsed": "931000",
+          "gasPrice": "226763756252"
+        },
+        {
+          "rewardAmount": "34907341269805808",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677227406",
+          "gasUsed": "310265",
+          "gasPrice": "217348061401"
+        },
+        {
+          "rewardAmount": "24980985449642574",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677205773",
+          "gasUsed": "327365",
+          "gasPrice": "123440605771"
+        },
+        {
+          "rewardAmount": "5390049253311",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677178058",
+          "gasUsed": "309389",
+          "gasPrice": "163415251875"
+        },
+        {
+          "rewardAmount": "5822453703769792",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677167573",
+          "gasUsed": "310265",
+          "gasPrice": "219837757009"
+        },
+        {
+          "rewardAmount": "279771990743127575",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677156724",
+          "gasUsed": "310265",
+          "gasPrice": "360481712334"
+        },
+        {
+          "rewardAmount": "1662615742650100",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677152306",
+          "gasUsed": "327365",
+          "gasPrice": "878239659224"
+        },
+        {
+          "rewardAmount": "2218364198358250",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1677151880",
+          "gasUsed": "327365",
+          "gasPrice": "600735628947"
+        },
+        {
+          "rewardAmount": "18195949074087084",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677146328",
+          "gasUsed": "310265",
+          "gasPrice": "313404639348"
+        },
+        {
+          "rewardAmount": "16633101853945197",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1677128295",
+          "gasUsed": "327365",
+          "gasPrice": "236494530849"
+        },
+        {
+          "rewardAmount": "5313787984500",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677121625",
+          "gasUsed": "310265",
+          "gasPrice": "289105229603"
+        },
+        {
+          "rewardAmount": "2278824231715758",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677088518",
+          "gasUsed": "326489",
+          "gasPrice": "153076464069"
+        },
+        {
+          "rewardAmount": "554089528724506",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1677061740",
+          "gasUsed": "309377",
+          "gasPrice": "187963522852"
+        },
+        {
+          "rewardAmount": "866322044935747",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1677036253",
+          "gasUsed": "326489",
+          "gasPrice": "182222224809"
+        },
+        {
+          "rewardAmount": "273300179012695630",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676983530",
+          "gasUsed": "1298717",
+          "gasPrice": "224523354941"
+        },
+        {
+          "rewardAmount": "4292391088",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676963154",
+          "gasUsed": "326489",
+          "gasPrice": "121438787717"
+        },
+        {
+          "rewardAmount": "27731481481961304",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676934776",
+          "gasUsed": "326489",
+          "gasPrice": "118448040177"
+        },
+        {
+          "rewardAmount": "554111148804177027",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676934222",
+          "gasUsed": "989254",
+          "gasPrice": "88694881740"
+        },
+        {
+          "rewardAmount": "55360580881658",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "1108409898604",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "556344736751",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "556344736751",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "556344736751",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "556344736751",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "55634473675",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "55634473675",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "556344736751",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896405",
+          "gasUsed": "2028676",
+          "gasPrice": "208633581754"
+        },
+        {
+          "rewardAmount": "556654825033",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "55665482503",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "55665482503",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "556654825033",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "55665482503",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "556654825033",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "55665482503",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "55665482503",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "55665482503",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "55665482503",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676896397",
+          "gasUsed": "2237563",
+          "gasPrice": "208119387581"
+        },
+        {
+          "rewardAmount": "55428240741700386",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676865019",
+          "gasUsed": "326489",
+          "gasPrice": "127387837611"
+        },
+        {
+          "rewardAmount": "1276519984313812",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676815613",
+          "gasUsed": "634777",
+          "gasPrice": "178078076243"
+        },
+        {
+          "rewardAmount": "143194763925785",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676815613",
+          "gasUsed": "634777",
+          "gasPrice": "178078076243"
+        },
+        {
+          "rewardAmount": "166258450819446",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676810451",
+          "gasUsed": "998396",
+          "gasPrice": "176560116583"
+        },
+        {
+          "rewardAmount": "332512617289801",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676810451",
+          "gasUsed": "998396",
+          "gasPrice": "176560116583"
+        },
+        {
+          "rewardAmount": "332512617289801",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676810451",
+          "gasUsed": "998396",
+          "gasPrice": "176560116583"
+        },
+        {
+          "rewardAmount": "332512617289800",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676810451",
+          "gasUsed": "998396",
+          "gasPrice": "176560116583"
+        },
+        {
+          "rewardAmount": "430188576169754489",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676731861",
+          "gasUsed": "324087",
+          "gasPrice": "465498186326"
+        },
+        {
+          "rewardAmount": "165261259259930320",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676680007",
+          "gasUsed": "611495",
+          "gasPrice": "209313920742"
+        },
+        {
+          "rewardAmount": "554089510762255",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676680007",
+          "gasUsed": "611495",
+          "gasPrice": "209313920742"
+        },
+        {
+          "rewardAmount": "166144037037708092",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676679905",
+          "gasUsed": "310265",
+          "gasPrice": "247766536847"
+        },
+        {
+          "rewardAmount": "166354166667337602",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676678492",
+          "gasUsed": "310253",
+          "gasPrice": "153441698992"
+        },
+        {
+          "rewardAmount": "166099537037707974",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676678362",
+          "gasUsed": "604707",
+          "gasPrice": "157234694044"
+        },
+        {
+          "rewardAmount": "166400462963633898",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676678362",
+          "gasUsed": "604707",
+          "gasPrice": "157234694044"
+        },
+        {
+          "rewardAmount": "165960648148819086",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676678290",
+          "gasUsed": "604707",
+          "gasPrice": "193957122472"
+        },
+        {
+          "rewardAmount": "165659722222893162",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676678290",
+          "gasUsed": "604707",
+          "gasPrice": "193957122472"
+        },
+        {
+          "rewardAmount": "165150462963633906",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676678254",
+          "gasUsed": "604707",
+          "gasPrice": "250865606722"
+        },
+        {
+          "rewardAmount": "165636574074745014",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676678254",
+          "gasUsed": "604707",
+          "gasPrice": "250865606722"
+        },
+        {
+          "rewardAmount": "2770227524476948841",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676669868",
+          "gasUsed": "939877",
+          "gasPrice": "183649085602"
+        },
+        {
+          "rewardAmount": "5493204136313776243",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676668424",
+          "gasUsed": "1256786",
+          "gasPrice": "233896033170"
+        },
+        {
+          "rewardAmount": "8298926649257719926",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676667994",
+          "gasUsed": "1394695",
+          "gasPrice": "527967120191"
+        },
+        {
+          "rewardAmount": "5529365000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676667370",
+          "gasUsed": "1340178",
+          "gasPrice": "246367535480"
+        },
+        {
+          "rewardAmount": "6924918541021135462",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676663647",
+          "gasUsed": "1532295",
+          "gasPrice": "355366876586"
+        },
+        {
+          "rewardAmount": "6617292210739930968",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676661396",
+          "gasUsed": "1660519",
+          "gasPrice": "395589476057"
+        },
+        {
+          "rewardAmount": "2760095698076530",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676591022",
+          "gasUsed": "309377",
+          "gasPrice": "180869899939"
+        },
+        {
+          "rewardAmount": "554611885266400",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676545406",
+          "gasUsed": "310265",
+          "gasPrice": "564703808754"
+        },
+        {
+          "rewardAmount": "13656537321088784",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676462977",
+          "gasUsed": "326489",
+          "gasPrice": "274844610848"
+        },
+        {
+          "rewardAmount": "826736111111169820",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676454711",
+          "gasUsed": "327365",
+          "gasPrice": "258917649175"
+        },
+        {
+          "rewardAmount": "30351520184106",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676427169",
+          "gasUsed": "616804",
+          "gasPrice": "185189825821"
+        },
+        {
+          "rewardAmount": "911407158348625",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676427169",
+          "gasUsed": "616804",
+          "gasPrice": "185189825821"
+        },
+        {
+          "rewardAmount": "27710262345627635",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676408212",
+          "gasUsed": "327365",
+          "gasPrice": "277738380848"
+        },
+        {
+          "rewardAmount": "27691358012326012",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676391852",
+          "gasUsed": "326489",
+          "gasPrice": "523919404661"
+        },
+        {
+          "rewardAmount": "543766974978932500",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676386059",
+          "gasUsed": "327365",
+          "gasPrice": "413808164898"
+        },
+        {
+          "rewardAmount": "1105430091111459530",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1676283027",
+          "gasUsed": "1030422",
+          "gasPrice": "265907129710"
+        },
+        {
+          "rewardAmount": "55456354164942771",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676242622",
+          "gasUsed": "866711",
+          "gasPrice": "156459354799"
+        },
+        {
+          "rewardAmount": "116520833335529082",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676183957",
+          "gasUsed": "327365",
+          "gasPrice": "211984235228"
+        },
+        {
+          "rewardAmount": "910808622458289",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676161332",
+          "gasUsed": "616816",
+          "gasPrice": "254891005021"
+        },
+        {
+          "rewardAmount": "15086548848935",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676161332",
+          "gasUsed": "616816",
+          "gasPrice": "254891005021"
+        },
+        {
+          "rewardAmount": "323104166666666698",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676138722",
+          "gasUsed": "310265",
+          "gasPrice": "179547014637"
+        },
+        {
+          "rewardAmount": "414479166666666638",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676134521",
+          "gasUsed": "310265",
+          "gasPrice": "277142951407"
+        },
+        {
+          "rewardAmount": "443888888888888992",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676133533",
+          "gasUsed": "310265",
+          "gasPrice": "312774696979"
+        },
+        {
+          "rewardAmount": "2378720935213",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676060903",
+          "gasUsed": "1484596",
+          "gasPrice": "185878229385"
+        },
+        {
+          "rewardAmount": "4753155886757",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676060903",
+          "gasUsed": "1484596",
+          "gasPrice": "185878229385"
+        },
+        {
+          "rewardAmount": "548605909382",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676060903",
+          "gasUsed": "1484596",
+          "gasPrice": "185878229385"
+        },
+        {
+          "rewardAmount": "548605909382",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676060903",
+          "gasUsed": "1484596",
+          "gasPrice": "185878229385"
+        },
+        {
+          "rewardAmount": "548605909382",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676060903",
+          "gasUsed": "1484596",
+          "gasPrice": "185878229385"
+        },
+        {
+          "rewardAmount": "548605909382",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676060903",
+          "gasUsed": "1484596",
+          "gasPrice": "185878229385"
+        },
+        {
+          "rewardAmount": "554166689218332",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676042314",
+          "gasUsed": "309389",
+          "gasPrice": "458075162671"
+        },
+        {
+          "rewardAmount": "277473006507829",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676032116",
+          "gasUsed": "326477",
+          "gasPrice": "305284924599"
+        },
+        {
+          "rewardAmount": "55412816080591",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676004003",
+          "gasUsed": "326489",
+          "gasPrice": "171604741332"
+        },
+        {
+          "rewardAmount": "609745375482182",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676002205",
+          "gasUsed": "310265",
+          "gasPrice": "211599206256"
+        },
+        {
+          "rewardAmount": "277008209196261279",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1676000355",
+          "gasUsed": "310253",
+          "gasPrice": "616541018090"
+        },
+        {
+          "rewardAmount": "2276086690295141",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675963270",
+          "gasUsed": "855124",
+          "gasPrice": "282422813414"
+        },
+        {
+          "rewardAmount": "1365655439587424",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675963270",
+          "gasUsed": "855124",
+          "gasPrice": "282422813414"
+        },
+        {
+          "rewardAmount": "1365655439587423",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675963270",
+          "gasUsed": "855124",
+          "gasPrice": "282422813414"
+        },
+        {
+          "rewardAmount": "1662268518519147880",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675953367",
+          "gasUsed": "738496",
+          "gasPrice": "553882240494"
+        },
+        {
+          "rewardAmount": "414682717935035048",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675936875",
+          "gasUsed": "327365",
+          "gasPrice": "286865873591"
+        },
+        {
+          "rewardAmount": "272988000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675929757",
+          "gasUsed": "1340178",
+          "gasPrice": "389604752768"
+        },
+        {
+          "rewardAmount": "554344359237857",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675894469",
+          "gasUsed": "309389",
+          "gasPrice": "107056799765"
+        },
+        {
+          "rewardAmount": "552469137282962",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675883035",
+          "gasUsed": "327353",
+          "gasPrice": "148375566125"
+        },
+        {
+          "rewardAmount": "5537422870694655",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675882331",
+          "gasUsed": "326489",
+          "gasPrice": "151262406242"
+        },
+        {
+          "rewardAmount": "44431712958889668",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675843497",
+          "gasUsed": "309389",
+          "gasPrice": "194501800218"
+        },
+        {
+          "rewardAmount": "277527008209472",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675840535",
+          "gasUsed": "327365",
+          "gasPrice": "211746574330"
+        },
+        {
+          "rewardAmount": "4560819401383571",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675836064",
+          "gasUsed": "326489",
+          "gasPrice": "163362960813"
+        },
+        {
+          "rewardAmount": "27706475308697502",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675832587",
+          "gasUsed": "327353",
+          "gasPrice": "146651334082"
+        },
+        {
+          "rewardAmount": "664962691266378194",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675797747",
+          "gasUsed": "1450829",
+          "gasPrice": "157661529961"
+        },
+        {
+          "rewardAmount": "48541675942162",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675758329",
+          "gasUsed": "329229",
+          "gasPrice": "160790778023"
+        },
+        {
+          "rewardAmount": "54203975646920592",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675737641",
+          "gasUsed": "299814",
+          "gasPrice": "178151953918"
+        },
+        {
+          "rewardAmount": "11183886629630203410",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675727069",
+          "gasUsed": "310253",
+          "gasPrice": "118810991004"
+        },
+        {
+          "rewardAmount": "41001731201026",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675703258",
+          "gasUsed": "326489",
+          "gasPrice": "129228568430"
+        },
+        {
+          "rewardAmount": "40852187799952",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675697296",
+          "gasUsed": "309377",
+          "gasPrice": "200155053094"
+        },
+        {
+          "rewardAmount": "51984951547479263",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675672457",
+          "gasUsed": "299814",
+          "gasPrice": "132409541670"
+        },
+        {
+          "rewardAmount": "56032485433748865",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675670311",
+          "gasUsed": "326489",
+          "gasPrice": "174168884121"
+        },
+        {
+          "rewardAmount": "21277777785662884",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675640168",
+          "gasUsed": "326489",
+          "gasPrice": "98723474911"
+        },
+        {
+          "rewardAmount": "1014284200000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636320",
+          "gasUsed": "619330",
+          "gasPrice": "154076082122"
+        },
+        {
+          "rewardAmount": "1011506440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636320",
+          "gasUsed": "619330",
+          "gasPrice": "154076082122"
+        },
+        {
+          "rewardAmount": "1055641960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636278",
+          "gasUsed": "1066819",
+          "gasPrice": "148007837506"
+        },
+        {
+          "rewardAmount": "1008883000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636278",
+          "gasUsed": "1066819",
+          "gasPrice": "148007837506"
+        },
+        {
+          "rewardAmount": "1055333320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636278",
+          "gasUsed": "1066819",
+          "gasPrice": "148007837506"
+        },
+        {
+          "rewardAmount": "1055024680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636278",
+          "gasUsed": "1066819",
+          "gasPrice": "148007837506"
+        },
+        {
+          "rewardAmount": "1061506120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636190",
+          "gasUsed": "1066819",
+          "gasPrice": "171060797404"
+        },
+        {
+          "rewardAmount": "1057802440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636190",
+          "gasUsed": "1066819",
+          "gasPrice": "171060797404"
+        },
+        {
+          "rewardAmount": "1060580200000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636190",
+          "gasUsed": "1066819",
+          "gasPrice": "171060797404"
+        },
+        {
+          "rewardAmount": "1060425880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636190",
+          "gasUsed": "1066819",
+          "gasPrice": "171060797404"
+        },
+        {
+          "rewardAmount": "967679560000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "312129",
+          "gasPrice": "171154734053"
+        },
+        {
+          "rewardAmount": "1057802440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1060580200000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1008420040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1056104920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1055796280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1057493800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1055179000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1057030840000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1056722200000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1054253080000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636182",
+          "gasUsed": "2409412",
+          "gasPrice": "171296161674"
+        },
+        {
+          "rewardAmount": "1062740680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1062277720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1060117240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1061814760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1059654280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1061351800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1059037000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1061043160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1058728360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636066",
+          "gasUsed": "2185618",
+          "gasPrice": "152474639003"
+        },
+        {
+          "rewardAmount": "1061351800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1058728360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1058574040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1056259240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1057956760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1055796280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1055487640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1057648120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1057185160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1055024680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675636058",
+          "gasUsed": "2409412",
+          "gasPrice": "157069700256"
+        },
+        {
+          "rewardAmount": "1059654280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1061660440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1059191320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1058882680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1058728360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1056104920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1057956760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1055796280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1057648120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635994",
+          "gasUsed": "2185654",
+          "gasPrice": "152252531386"
+        },
+        {
+          "rewardAmount": "1008420040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1056104920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1055950600000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1057802440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1057493800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1055179000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1054561720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1052246920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1054098760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1051783960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635984",
+          "gasUsed": "2409412",
+          "gasPrice": "154301001559"
+        },
+        {
+          "rewardAmount": "1054407400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1052246920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1053944440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1051783960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1053790120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1051475320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1051166680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "997617640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1048543240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1048543240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635974",
+          "gasUsed": "2409412",
+          "gasPrice": "134450581274"
+        },
+        {
+          "rewardAmount": "1057493800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635882",
+          "gasUsed": "619330",
+          "gasPrice": "133450146830"
+        },
+        {
+          "rewardAmount": "1054870360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635882",
+          "gasUsed": "619330",
+          "gasPrice": "133450146830"
+        },
+        {
+          "rewardAmount": "1063666600000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1061197480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1063203640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1060734520000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1060580200000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1062895000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1002247240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1057802440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1059962920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1057493800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635794",
+          "gasUsed": "2409424",
+          "gasPrice": "117753246105"
+        },
+        {
+          "rewardAmount": "1063049320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635716",
+          "gasUsed": "1290571",
+          "gasPrice": "123205460701"
+        },
+        {
+          "rewardAmount": "1065055480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635716",
+          "gasUsed": "1290571",
+          "gasPrice": "123205460701"
+        },
+        {
+          "rewardAmount": "1062586360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635716",
+          "gasUsed": "1290571",
+          "gasPrice": "123205460701"
+        },
+        {
+          "rewardAmount": "1062432040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635716",
+          "gasUsed": "1290571",
+          "gasPrice": "123205460701"
+        },
+        {
+          "rewardAmount": "1064746840000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635716",
+          "gasUsed": "1290571",
+          "gasPrice": "123205460701"
+        },
+        {
+          "rewardAmount": "1064901160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1062277720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1059499960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1061814760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1059345640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1061197480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1058728360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1057956760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1060271560000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1057802440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635710",
+          "gasUsed": "2409388",
+          "gasPrice": "125428787297"
+        },
+        {
+          "rewardAmount": "1059499960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1061660440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1059037000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1061351800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1058574040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1060888840000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1058111080000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1060425880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1060117240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1057648120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635652",
+          "gasUsed": "2409400",
+          "gasPrice": "134899570872"
+        },
+        {
+          "rewardAmount": "1063820920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1061043160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1063357960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1062895000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1062740680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1064901160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1062277720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1064283880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1061660440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635550",
+          "gasUsed": "2185630",
+          "gasPrice": "136141555830"
+        },
+        {
+          "rewardAmount": "1063820920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635506",
+          "gasUsed": "1066819",
+          "gasPrice": "126718400243"
+        },
+        {
+          "rewardAmount": "1061351800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635506",
+          "gasUsed": "1066819",
+          "gasPrice": "126718400243"
+        },
+        {
+          "rewardAmount": "1063512280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635506",
+          "gasUsed": "1066819",
+          "gasPrice": "126718400243"
+        },
+        {
+          "rewardAmount": "1063203640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635506",
+          "gasUsed": "1066819",
+          "gasPrice": "126718400243"
+        },
+        {
+          "rewardAmount": "1065364120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1063357960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1065055480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1064746840000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1062586360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1059962920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1062277720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1059654280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1061814760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1061660440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635468",
+          "gasUsed": "2409412",
+          "gasPrice": "120419233401"
+        },
+        {
+          "rewardAmount": "1063666600000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635410",
+          "gasUsed": "1514329",
+          "gasPrice": "126254193172"
+        },
+        {
+          "rewardAmount": "1065364120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635410",
+          "gasUsed": "1514329",
+          "gasPrice": "126254193172"
+        },
+        {
+          "rewardAmount": "1063049320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635410",
+          "gasUsed": "1514329",
+          "gasPrice": "126254193172"
+        },
+        {
+          "rewardAmount": "1065055480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635410",
+          "gasUsed": "1514329",
+          "gasPrice": "126254193172"
+        },
+        {
+          "rewardAmount": "1062586360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635410",
+          "gasUsed": "1514329",
+          "gasPrice": "126254193172"
+        },
+        {
+          "rewardAmount": "1062432040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635410",
+          "gasUsed": "1514329",
+          "gasPrice": "126254193172"
+        },
+        {
+          "rewardAmount": "1063820920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1063357960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1066135720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1065981400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1062895000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1062432040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1065055480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1064746840000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1062123400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1064283880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635354",
+          "gasUsed": "2409400",
+          "gasPrice": "131194731521"
+        },
+        {
+          "rewardAmount": "1059962920000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1062123400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1061814760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1059499960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1061197480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1058882680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1058419720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1060425880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1057956760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1060271560000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635346",
+          "gasUsed": "2409400",
+          "gasPrice": "134596371941"
+        },
+        {
+          "rewardAmount": "1061969080000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1063975240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1061506120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1063666600000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1060580200000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1063203640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1063049320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1060888840000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1060117240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1062432040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635256",
+          "gasUsed": "2409412",
+          "gasPrice": "137405557284"
+        },
+        {
+          "rewardAmount": "1063512280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1063049320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1061506120000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1061043160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1060580200000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1062432040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1060117240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1061969080000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1059654280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635206",
+          "gasUsed": "2185606",
+          "gasPrice": "155236553826"
+        },
+        {
+          "rewardAmount": "1063666600000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1061043160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1063203640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1060734520000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1060425880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1062895000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1062432040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1059808600000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1061969080000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1059191320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635148",
+          "gasUsed": "2409412",
+          "gasPrice": "147289795070"
+        },
+        {
+          "rewardAmount": "1059191320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1056413560000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1058574040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1058265400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1055796280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1055487640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1057802440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1057339480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1059345640000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1056722200000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635140",
+          "gasUsed": "2409424",
+          "gasPrice": "151613321464"
+        },
+        {
+          "rewardAmount": "1058574040000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1055796280000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1058265400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1055179000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1057493800000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1055024680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1057185160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1054407400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1056567880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1053944440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675635094",
+          "gasUsed": "2409400",
+          "gasPrice": "120679490167"
+        },
+        {
+          "rewardAmount": "1062123400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1059499960000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1059191320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1061660440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1061043160000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1058419720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1060734520000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1058111080000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1060271560000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1057802440000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634986",
+          "gasUsed": "2409424",
+          "gasPrice": "104284158645"
+        },
+        {
+          "rewardAmount": "1062586360000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1065055480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1062123400000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1064592520000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1061814760000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1064283880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1061197480000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1063666600000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1060734520000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1063049320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634886",
+          "gasUsed": "2409400",
+          "gasPrice": "95903979691"
+        },
+        {
+          "rewardAmount": "1064283880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634836",
+          "gasUsed": "843058",
+          "gasPrice": "111195153278"
+        },
+        {
+          "rewardAmount": "1061969080000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634836",
+          "gasUsed": "843058",
+          "gasPrice": "111195153278"
+        },
+        {
+          "rewardAmount": "1063975240000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634836",
+          "gasUsed": "843058",
+          "gasPrice": "111195153278"
+        },
+        {
+          "rewardAmount": "1066907320000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634792",
+          "gasUsed": "1738093",
+          "gasPrice": "100890997887"
+        },
+        {
+          "rewardAmount": "1064592520000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634792",
+          "gasUsed": "1738093",
+          "gasPrice": "100890997887"
+        },
+        {
+          "rewardAmount": "1066598680000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634792",
+          "gasUsed": "1738093",
+          "gasPrice": "100890997887"
+        },
+        {
+          "rewardAmount": "1064283880000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634792",
+          "gasUsed": "1738093",
+          "gasPrice": "100890997887"
+        },
+        {
+          "rewardAmount": "1066135720000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634792",
+          "gasUsed": "1738093",
+          "gasPrice": "100890997887"
+        },
+        {
+          "rewardAmount": "1063666600000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634792",
+          "gasUsed": "1738093",
+          "gasPrice": "100890997887"
+        },
+        {
+          "rewardAmount": "1065827080000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634792",
+          "gasUsed": "1738093",
+          "gasPrice": "100890997887"
+        },
+        {
+          "rewardAmount": "1066753000000000000",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675634748",
+          "gasUsed": "309389",
+          "gasPrice": "114030643838"
+        },
+        {
+          "rewardAmount": "51993372653514059",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675630064",
+          "gasUsed": "299814",
+          "gasPrice": "87273005063"
+        },
+        {
+          "rewardAmount": "43211836221340",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675617687",
+          "gasUsed": "326477",
+          "gasPrice": "318528348274"
+        },
+        {
+          "rewardAmount": "130950925933096155",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675612546",
+          "gasUsed": "326489",
+          "gasPrice": "160556761117"
+        },
+        {
+          "rewardAmount": "52159405124341007",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675590697",
+          "gasUsed": "299814",
+          "gasPrice": "95130502162"
+        },
+        {
+          "rewardAmount": "501623546199904",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675579929",
+          "gasUsed": "299814",
+          "gasPrice": "106713349052"
+        },
+        {
+          "rewardAmount": "52178874936592909",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675549308",
+          "gasUsed": "299814",
+          "gasPrice": "77420395142"
+        },
+        {
+          "rewardAmount": "51952467021828889",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675529828",
+          "gasUsed": "299814",
+          "gasPrice": "124863839617"
+        },
+        {
+          "rewardAmount": "1280840147948851972",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675525548",
+          "gasUsed": "1485029",
+          "gasPrice": "185478706024"
+        },
+        {
+          "rewardAmount": "7872905767567560",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675517342",
+          "gasUsed": "309389",
+          "gasPrice": "180654754999"
+        },
+        {
+          "rewardAmount": "4852538914868390",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675511770",
+          "gasUsed": "329229",
+          "gasPrice": "111971116463"
+        },
+        {
+          "rewardAmount": "16681003217587",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675508507",
+          "gasUsed": "616828",
+          "gasPrice": "145361029142"
+        },
+        {
+          "rewardAmount": "877945147316483",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675508507",
+          "gasUsed": "616828",
+          "gasPrice": "145361029142"
+        },
+        {
+          "rewardAmount": "47971830852172756472",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675508341",
+          "gasUsed": "310265",
+          "gasPrice": "103939475783"
+        },
+        {
+          "rewardAmount": "52084538305441234",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675470917",
+          "gasUsed": "299814",
+          "gasPrice": "78416170139"
+        },
+        {
+          "rewardAmount": "159515542328315594",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675455282",
+          "gasUsed": "1301947",
+          "gasPrice": "106008762046"
+        },
+        {
+          "rewardAmount": "53171847442771864",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675455282",
+          "gasUsed": "1301947",
+          "gasPrice": "106008762046"
+        },
+        {
+          "rewardAmount": "53171847442771864",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675455282",
+          "gasUsed": "1301947",
+          "gasPrice": "106008762046"
+        },
+        {
+          "rewardAmount": "53171847442771864",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675455282",
+          "gasUsed": "1301947",
+          "gasPrice": "106008762046"
+        },
+        {
+          "rewardAmount": "53171847442771864",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675455282",
+          "gasUsed": "1301947",
+          "gasPrice": "106008762046"
+        },
+        {
+          "rewardAmount": "52061897513964832",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675453234",
+          "gasUsed": "299814",
+          "gasPrice": "98905394404"
+        },
+        {
+          "rewardAmount": "435389679253314",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675437160",
+          "gasUsed": "326489",
+          "gasPrice": "252486232591"
+        },
+        {
+          "rewardAmount": "52018729904323012",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675433262",
+          "gasUsed": "299814",
+          "gasPrice": "182447692619"
+        },
+        {
+          "rewardAmount": "138884854490372179",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675415991",
+          "gasUsed": "309389",
+          "gasPrice": "151190490099"
+        },
+        {
+          "rewardAmount": "221834662600916",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675407299",
+          "gasUsed": "326489",
+          "gasPrice": "214537046166"
+        },
+        {
+          "rewardAmount": "45624060572824",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675400591",
+          "gasUsed": "326489",
+          "gasPrice": "123779592142"
+        },
+        {
+          "rewardAmount": "1387306432454387586",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675389995",
+          "gasUsed": "806440",
+          "gasPrice": "200134908531"
+        },
+        {
+          "rewardAmount": "13873064324543875858",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675389995",
+          "gasUsed": "806440",
+          "gasPrice": "200134908531"
+        },
+        {
+          "rewardAmount": "594559900236176643",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675389995",
+          "gasUsed": "806440",
+          "gasPrice": "200134908531"
+        },
+        {
+          "rewardAmount": "12755169994828",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675308122",
+          "gasUsed": "616816",
+          "gasPrice": "146071754176"
+        },
+        {
+          "rewardAmount": "911032768280196",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675308122",
+          "gasUsed": "616816",
+          "gasPrice": "146071754176"
+        },
+        {
+          "rewardAmount": "2786479909539390",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675293768",
+          "gasUsed": "327365",
+          "gasPrice": "103107563023"
+        },
+        {
+          "rewardAmount": "6008229050761959",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675211300",
+          "gasUsed": "302554",
+          "gasPrice": "86113303755"
+        },
+        {
+          "rewardAmount": "4435802492006576",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675188064",
+          "gasUsed": "326489",
+          "gasPrice": "90567450266"
+        },
+        {
+          "rewardAmount": "22506190598",
+          "token": "0x27e1e4e6bc79d93032abef01025811b7e4727e85",
+          "timestamp": "1675126067",
+          "gasUsed": "312129",
+          "gasPrice": "88523141851"
+        },
+        {
+          "rewardAmount": "5546369025070",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074223",
+          "gasUsed": "1824503",
+          "gasPrice": "125241917499"
+        },
+        {
+          "rewardAmount": "557208634666",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074223",
+          "gasUsed": "1824503",
+          "gasPrice": "125241917499"
+        },
+        {
+          "rewardAmount": "557208634666",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074223",
+          "gasUsed": "1824503",
+          "gasPrice": "125241917499"
+        },
+        {
+          "rewardAmount": "557208634666",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074223",
+          "gasUsed": "1824503",
+          "gasPrice": "125241917499"
+        },
+        {
+          "rewardAmount": "557208634666",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074223",
+          "gasUsed": "1824503",
+          "gasPrice": "125241917499"
+        },
+        {
+          "rewardAmount": "55720863466",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074223",
+          "gasUsed": "1824503",
+          "gasPrice": "125241917499"
+        },
+        {
+          "rewardAmount": "55720863466",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074223",
+          "gasUsed": "1824503",
+          "gasPrice": "125241917499"
+        },
+        {
+          "rewardAmount": "557208634666",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074223",
+          "gasUsed": "1824503",
+          "gasPrice": "125241917499"
+        },
+        {
+          "rewardAmount": "557595612164",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "55759561216",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "55759561216",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "557595612164",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "55759561216",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "557595612164",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "55759561216",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "55759561216",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "55759561216",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "55759561216",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675074213",
+          "gasUsed": "2237563",
+          "gasPrice": "127410204223"
+        },
+        {
+          "rewardAmount": "2376488100760939",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675073348",
+          "gasUsed": "327365",
+          "gasPrice": "92702372816"
+        },
+        {
+          "rewardAmount": "501027401706248",
+          "token": "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2",
+          "timestamp": "1675073306",
+          "gasUsed": "326453",
+          "gasPrice": "113784122579"
+        },
+        {
+          "rewardAmount": "46223776462345083",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675044116",
+          "gasUsed": "329229",
+          "gasPrice": "73457555665"
+        },
+        {
+          "rewardAmount": "831732253501894",
+          "token": "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+          "timestamp": "1675033257",
+          "gasUsed": "327365",
+          "gasPrice": "68159364992"
+        }
+      ]
+    }
   }
-}
