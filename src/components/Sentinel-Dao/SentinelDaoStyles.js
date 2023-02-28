@@ -61,7 +61,7 @@ export const LoadingContainer = styled.div`
 `
 
 export const TableHeader = styled.th`
-    padding: 10px;
+    padding: 20px 10px;
     border: solid #EAECF0;
     border-width: 1px 0;
     word-wrap: break-word;

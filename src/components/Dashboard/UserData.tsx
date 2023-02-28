@@ -1,5 +1,6 @@
 import {useContext} from 'react'
 import {DashBoardContainer, ServiceBox} from './userDataStyles'
+import { Icon } from '../Navbar/navbarStyles'
 import {GlobalCTX} from '../App'
 import {GlobalContextProps} from '../App/appTypes'
 import Image from 'next/image'
@@ -15,14 +16,20 @@ function UserDataComponent(){
             <DashBoardContainer>
                 <Link href="/borrow-agains-salary/borrower">
                     <ServiceBox>
-                        <label>Borrow Against Salary</label>
+                        <label>Borrow Against Salary <Icon src="/navbar/bag.svg"/></label>
                         <Image src="/ida-box.png" width={272} height={348} alt='IDA'/>
                     </ServiceBox>
                 </Link>
                 <Link href="/instant-distribution/owner">
                     <ServiceBox>
-                        <label>Instant Distribution Agreement</label>
+                        <label>Instant Distribution Agreement <Icon src="/navbar/ida.svg"/></label>
                         <Image src="/bag-box.png" width={272} height={348} alt='IDA'/>
+                    </ServiceBox>
+                </Link>
+                <Link href="/sentinel-dao">
+                    <ServiceBox>
+                        <label>Sentinel Dao <Icon src="/navbar/sentinel-dao.svg"/></label>
+                        <Image src="/sentinel-box.png" width={272} height={348} alt='IDA'/>
                     </ServiceBox>
                 </Link>
             </DashBoardContainer>

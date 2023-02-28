@@ -8,6 +8,7 @@ import { GlobalCTX } from '../../components/App'
 import SnackBar from '../../../modules/SnackBar';
 import Accordion from './Accordion'
 import faqData from './faqData';
+import Image from 'next/image';
 
 const chainScan = {
     Goerli: "https://goerli.etherscan.io",
@@ -49,23 +50,13 @@ function SentinelDao(){
                 <thead>
                     <tr>
                         <TableHeader>Token</TableHeader>
-                        <TableHeader>Current <br/> sentinel</TableHeader>
+                        <TableHeader>Sentinel</TableHeader>
                         <TableHeader>Stake</TableHeader>
-                        <TableHeader>
-                            APR
-                            <DoubleData style={{marginTop: '10px'}}>
-                                <span>7d</span>
-                                <span>30d</span>
-                            </DoubleData>
-                        </TableHeader>
-                        <TableHeader>
-                            TXs
-                            <DoubleData style={{marginTop: '10px'}}>
-                                <span>Jackpots</span>
-                                <span>Unprofitable</span>
-                            </DoubleData>
-                        </TableHeader>
-                        <TableHeader>DAO <br/> controlled</TableHeader>
+                        <TableHeader>7d APR</TableHeader>
+                        <TableHeader>30d APR</TableHeader>
+                        <TableHeader>Jackpots</TableHeader>
+                        <TableHeader>Unprofitable TXs</TableHeader>
+                        <TableHeader>DAO</TableHeader>
                         <TableHeader>DAO funds</TableHeader>
                         <TableHeader>Action</TableHeader>
                     </tr>
@@ -84,20 +75,34 @@ function SentinelDao(){
                         {
                             Object.entries(tokensInfo).map(([key, {transactions, apr, stake, sentinel, daoControlled, daoFunds, name}]) =>
                             <tr key={key}>
-                                <TableCell><a href={`${chainScan[chain]}/token/${key}`} target="_blank" rel="noreferrer">{name}</a></TableCell>
-                                <TableCell><a href={`${chainScan[chain]}/address/${sentinel}`} target="_blank" rel="noreferrer">{shortenAdress(sentinel)}</a></TableCell>
-                                <TableCell>{stake} <span style={{fontSize: '0.8rem'}}>{name}</span></TableCell>
                                 <TableCell>
-                                    <DoubleData>
-                                        <span>{Number.isFinite(apr['7d']) ? `${apr['7d']}%` : '-'}</span>
-                                        <span>{Number.isFinite(apr['30d']) ? `${apr['30d']}%` : '-'}</span>
-                                    </DoubleData>
+                                    <a className='centerFlex' href={`${chainScan[chain]}/token/${key}`} target="_blank" rel="noreferrer">
+                                        {name}
+                                        <Image src={`/tokens/${name}.svg`} width={24} height={24} alt="token logo" style={{marginLeft: '5px'}}/>
+                                    </a>
                                 </TableCell>
                                 <TableCell>
-                                    <DoubleData>
+                                    <a href={`${chainScan[chain]}/address/${sentinel}`} target="_blank" rel="noreferrer">
+                                        {shortenAdress(sentinel)}
+                                    </a>
+                                </TableCell>
+                                <TableCell>
+                                    <div className='centerFlex'>
+                                        {stake}
+                                        <Image src={`/tokens/${name}.svg`} width={24} height={24} alt="token logo" style={{marginLeft: '5px'}}/>
+                                    </div>
+                                </TableCell>
+                                <TableCell>
+                                    <span>{Number.isFinite(apr['7d']) ? `${apr['7d']}%` : '-'}</span>
+                                </TableCell>
+                                <TableCell>
+                                    <span>{Number.isFinite(apr['30d']) ? `${apr['30d']}%` : '-'}</span>
+                                </TableCell>
+                                <TableCell>
                                         <span style={{color: "#4CAF50"}}>{Math.ceil((transactions.jackPot/transactions.total)*100)}%</span>
+                                </TableCell>
+                                <TableCell>
                                         <span style={{color: "#EF5350"}}>{Math.floor((transactions.unprofitable/transactions.total)*100)}%</span>
-                                    </DoubleData>
                                 </TableCell>
                                 <TableCell>{daoControlled === true ? "✔️" : "❌"}</TableCell>
                                 <TableCell>{daoFunds ? Number(daoFunds).toFixed(2) : "-"}</TableCell>

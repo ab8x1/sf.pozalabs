@@ -1,10 +1,11 @@
 import {DialogBg, DialogContainer, ActionButton, TokenPerMounth} from '../Borrow-Against-Salary/Offers/offersStyles';
-import { FormHeader } from '../Borrow-Against-Salary/Borrow/borrowStyles';
+import { FormHeader, HeaderText } from '../Borrow-Against-Salary/Borrow/borrowStyles';
 import { InputContainer, Input, InputLabel } from '../Borrow-Against-Salary/Borrow/borrowStyles';
 import {useRef, useState, useEffect} from 'react'
 import { ButtonsMenu } from './SentinelDaoStyles';
 import OnClickOutside from '../../hooks/useClickOutside'
 import picActions, {getMaxFctn} from './helpers/picActions';
+import { Icon } from '../Navbar/navbarStyles';
 
 const picCb = async (wallet, amount, setSnackBar, manageState, data) => {
     try{
@@ -16,11 +17,11 @@ const picCb = async (wallet, amount, setSnackBar, manageState, data) => {
         })
     }
     catch(e){
-        console.log(e);
+        const {reason} = e;
         setSnackBar({
             isOpened: true,
             status: "error",
-            message: "Sorry, something went wrong"
+            message:  reason.charAt(0).toUpperCase() + reason.slice(1)
         })
     }
 }
@@ -43,7 +44,6 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
     }
 
     useEffect(() => {
-        console.log();
         if(manageState === "become")
             setAmount(data['daoFunds'])
     }, [manageState])
@@ -58,7 +58,11 @@ function SentinelAction({closeDialog, wallet, setSnackBar, data}){
         <DialogBg>
             <DialogContainer ref={ref} style={{padding: 0}}>
                 <FormHeader style={{background: 'linear-gradient(90deg, rgba(252,211,140,1) 0%, rgba(242,195,113,1) 50%, rgba(244,170,42,1) 100%)'}}>
-                    <h3>Manage Sentinel</h3>
+                    <Icon src="/navbar/sentinel-dao.svg" style={{marginRight: '0px', width: '35px', height: '35px'}}/>
+                    <div>
+                        <HeaderText>Manage Sentinel</HeaderText>
+                        <HeaderText>Tap into Sentinel's profitability</HeaderText>
+                    </div>
                 </FormHeader>
                 <div className='container'>
                     {

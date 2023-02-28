@@ -34,13 +34,20 @@ export const ConnectToWalletInfo = styled.p`
 `;
 
 export const DashBoardContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     margin: 50px 0;
+    & a{
+        width: 95%;
+        margin: 15px 0;
+    }
     @media(min-width: 992px){
-        grid-template-columns: 0.5fr 0.5fr;
+        & a{
+            width: 45%;
+            margin: 25px 0;
+        }
     }
 `
 export const ServiceBox = styled.div`
@@ -52,8 +59,13 @@ export const ServiceBox = styled.div`
     border-radius: 30px;
     transition: transform 0.2s ease-in-out;
     & label{
+        display: flex;
+        align-items: center;
         margin-bottom: 30px;
         font-weight: bold;
+        & img{
+            margin-left: 10px;
+        }
     }
     &:hover{
         transform: scale(1.05);

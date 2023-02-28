@@ -34,7 +34,7 @@ function NavbarComponent(){
                         <Option selected={router.asPath === "/"}><Link href="/"><Icon src="/navbar/dashboard.png"/>Dashboard</Link></Option>
                         <AppOption info={{name: "Borrow against salary", img: "/navbar/bag.svg"}} mainUrl='borrow-agains-salary' routes={bagRoutes}/>
                         <AppOption info={{name: "Instant distribution", img: "/navbar/ida.svg"}} mainUrl='instant-distribution' routes={idRoutes}/>
-                        <Option selected={router.asPath === "/sentinel-dao"}><Link href="/sentinel-dao"><Icon src="/navbar/ida.svg"/>Sentinel Dao</Link></Option>
+                        <Option selected={router.asPath === "/sentinel-dao"}><Link href="/sentinel-dao"><Icon src="/navbar/sentinel-dao.svg"/>Sentinel Dao</Link></Option>
                     </AppOptions>
                 </div>
             </ToggleNavbar>
