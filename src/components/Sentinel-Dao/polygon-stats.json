@@ -1,7 +1,7 @@
 {
   "tokensInfo" : {
     "0x1305f6b6df9dc47159d12eb7ac2804d4a33173c2": {
-      "stake": "49.22",
+      "stake": "57.53",
       "sentinel": "0xE2B52Fc1ad49B93F85C45315EcbAd740f17B0e8E"
     },
     "0x27e1e4e6bc79d93032abef01025811b7e4727e85": {
@@ -9,7 +9,7 @@
       "sentinel": "0x6EAA11eec98c663ba096593cc779217A7e20665a"
     },
     "0xcaa7349cea390f89641fe306d93591f87595dc1f": {
-      "stake": "11753.72",
+      "stake": "11650.51",
       "sentinel": "0xbCE740062324EB9E5395F111b8d2AaFd1810cb9d"
     }
   },
