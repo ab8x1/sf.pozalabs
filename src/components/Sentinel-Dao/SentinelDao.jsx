@@ -46,74 +46,76 @@ function SentinelDao(){
                 <Chain $selected={chain==="Goerli"} onClick={() => changeChain("Goerli")}>Goerli</Chain>
             </ChainSelector>
             {chain==="Polygon" && <p>State from 15.03.2023</p>}
-            <Table>
-                <thead>
-                    <tr>
-                        <TableHeader>Token</TableHeader>
-                        <TableHeader>Sentinel</TableHeader>
-                        <TableHeader>Stake</TableHeader>
-                        <TableHeader>7d APR</TableHeader>
-                        <TableHeader>30d APR</TableHeader>
-                        <TableHeader>Jackpots</TableHeader>
-                        <TableHeader>Unprofitable TXs</TableHeader>
-                        <TableHeader>DAO</TableHeader>
-                        <TableHeader>DAO funds</TableHeader>
-                        <TableHeader>Action</TableHeader>
-                    </tr>
-                </thead>
-                {
-                    tokensInfo === undefined ?
-                    <tbody>
+            <div style={{overflow: 'auto', padding: '5px'}}>
+                <Table>
+                    <thead>
                         <tr>
-                            <td colSpan={10}>
-                                <LoadingContainer/>
-                            </td>
+                            <TableHeader>Token</TableHeader>
+                            <TableHeader>Sentinel</TableHeader>
+                            <TableHeader>Stake</TableHeader>
+                            <TableHeader>7d APR</TableHeader>
+                            <TableHeader>30d APR</TableHeader>
+                            <TableHeader>Jackpots</TableHeader>
+                            <TableHeader>Unprofitable TXs</TableHeader>
+                            <TableHeader>DAO</TableHeader>
+                            <TableHeader>DAO funds</TableHeader>
+                            <TableHeader>Action</TableHeader>
                         </tr>
-                    </tbody>
-                    :
-                    <tbody>
-                        {
-                            Object.entries(tokensInfo).map(([key, {transactions, apr, stake, sentinel, daoControlled, daoFunds, name}]) =>
-                            <tr key={key}>
-                                <TableCell>
-                                    <a className='centerFlex' href={`${chainScan[chain]}/token/${key}`} target="_blank" rel="noreferrer">
-                                        {name}
-                                        <Image src={`/tokens/${name}.svg`} width={24} height={24} alt="token logo" style={{marginLeft: '5px'}}/>
-                                    </a>
-                                </TableCell>
-                                <TableCell>
-                                    <a href={`${chainScan[chain]}/address/${sentinel}`} target="_blank" rel="noreferrer">
-                                        {shortenAdress(sentinel)}
-                                    </a>
-                                </TableCell>
-                                <TableCell>
-                                    <div className='centerFlex'>
-                                        {stake}
-                                        <Image src={`/tokens/${name}.svg`} width={24} height={24} alt="token logo" style={{marginLeft: '5px'}}/>
-                                    </div>
-                                </TableCell>
-                                <TableCell>
-                                    <span>{Number.isFinite(apr['7d']) ? `${apr['7d']}%` : '-'}</span>
-                                </TableCell>
-                                <TableCell>
-                                    <span>{Number.isFinite(apr['30d']) ? `${apr['30d']}%` : '-'}</span>
-                                </TableCell>
-                                <TableCell>
-                                        <span style={{color: "#4CAF50"}}>{Math.ceil((transactions.jackPot/transactions.total)*100)}%</span>
-                                </TableCell>
-                                <TableCell>
-                                        <span style={{color: "#EF5350"}}>{Math.floor((transactions.unprofitable/transactions.total)*100)}%</span>
-                                </TableCell>
-                                <TableCell>{daoControlled === true ? "✔️" : "❌"}</TableCell>
-                                <TableCell>{daoFunds ? Number(daoFunds).toFixed(2) : "-"}</TableCell>
-                                <TableCell><ActionButton $disabled={chain==="Polygon"} onClick={wallet ? () => setDialog(key) : () => connectWallet(false)}>Manage</ActionButton></TableCell>
+                    </thead>
+                    {
+                        tokensInfo === undefined ?
+                        <tbody>
+                            <tr>
+                                <td colSpan={10}>
+                                    <LoadingContainer/>
+                                </td>
                             </tr>
+                        </tbody>
+                        :
+                        <tbody>
+                            {
+                                Object.entries(tokensInfo).map(([key, {transactions, apr, stake, sentinel, daoControlled, daoFunds, name}]) =>
+                                <tr key={key}>
+                                    <TableCell>
+                                        <a className='centerFlex' href={`${chainScan[chain]}/token/${key}`} target="_blank" rel="noreferrer">
+                                            {name}
+                                            <Image src={`/tokens/${name}.svg`} width={24} height={24} alt="token logo" style={{marginLeft: '5px'}}/>
+                                        </a>
+                                    </TableCell>
+                                    <TableCell>
+                                        <a href={`${chainScan[chain]}/address/${sentinel}`} target="_blank" rel="noreferrer">
+                                            {shortenAdress(sentinel)}
+                                        </a>
+                                    </TableCell>
+                                    <TableCell>
+                                        <div className='centerFlex'>
+                                            {stake}
+                                            <Image src={`/tokens/${name}.svg`} width={24} height={24} alt="token logo" style={{marginLeft: '5px'}}/>
+                                        </div>
+                                    </TableCell>
+                                    <TableCell>
+                                        <span>{Number.isFinite(apr['7d']) ? `${apr['7d']}%` : '-'}</span>
+                                    </TableCell>
+                                    <TableCell>
+                                        <span>{Number.isFinite(apr['30d']) ? `${apr['30d']}%` : '-'}</span>
+                                    </TableCell>
+                                    <TableCell>
+                                            <span style={{color: "#4CAF50"}}>{Math.ceil((transactions.jackPot/transactions.total)*100)}%</span>
+                                    </TableCell>
+                                    <TableCell>
+                                            <span style={{color: "#EF5350"}}>{Math.floor((transactions.unprofitable/transactions.total)*100)}%</span>
+                                    </TableCell>
+                                    <TableCell>{daoControlled === true ? "✔️" : "❌"}</TableCell>
+                                    <TableCell>{daoFunds ? Number(daoFunds).toFixed(2) : "-"}</TableCell>
+                                    <TableCell><ActionButton $disabled={chain==="Polygon"} onClick={wallet ? () => setDialog(key) : () => connectWallet(false)}>Manage</ActionButton></TableCell>
+                                </tr>
 
-                        )
-                        }
-                    </tbody>
-                }
-            </Table>
+                            )
+                            }
+                        </tbody>
+                    }
+                </Table>
+            </div>
             {
                 dialog && <SentinelAction closeDialog={() => setDialog(false)} wallet={wallet} setSnackBar={setSnackBar} data={tokensInfo?.[dialog]}/>
             }

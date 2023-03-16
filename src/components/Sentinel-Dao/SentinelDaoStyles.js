@@ -104,6 +104,7 @@ export const ButtonsMenu = styled.div`
 export const Frame = styled.div`
     position: relative;
     width: 100%;
+    max-width: 100%;
     height: 320px;
     background: #FFFFFF;
     border: 1px solid #E9E9E9;
@@ -113,8 +114,7 @@ export const Frame = styled.div`
     padding: 0px;
     margin: 0 auto;
     @media(min-width: 768px){
-        height: 500px;
-        padding: 20px 25px;
+        height: 400px;
     }
     @media(min-width: 991px){
         height: 500px;
