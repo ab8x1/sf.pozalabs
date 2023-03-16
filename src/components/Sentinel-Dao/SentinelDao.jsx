@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from 'react';
-import {TableCell, TableHeader, Table, DoubleData, ChainSelector, Chain, LoadingContainer} from './SentinelDaoStyles'
+import {TableCell, TableHeader, Table, DoubleData, ChainSelector, Chain, LoadingContainer, Frame, IframeContainer} from './SentinelDaoStyles'
 import getSentinelsInfo from './helpers/getSentinels';
 import { shortenAdress } from '../Navbar/TopNavbar';
 import { ActionButton } from '../Borrow-Against-Salary/Offers/offersStyles';
@@ -117,6 +117,25 @@ function SentinelDao(){
             {
                 dialog && <SentinelAction closeDialog={() => setDialog(false)} wallet={wallet} setSnackBar={setSnackBar} data={tokensInfo?.[dialog]}/>
             }
+            <h2 style={{marginTop: '50px'}}>FAQ</h2>
+            <div style={{margin: '50px 0 50px 0'}}>
+                {
+                    faqData.map(({title, content}) =>
+                        <Accordion key={title} title={title} content={content}/>
+                    )
+                }
+            </div>
+            <Frame>
+                <IframeContainer>
+                    <iframe
+                        title="Harvest 3: The New Beginning"
+                        width="100%"
+                        height="100%"
+                        src={'https://www.youtube.com/embed/N5XpY0fCQbM'}
+                        allow='autoplay; encrypted-media'
+                    />
+                </IframeContainer>
+            </Frame>
             {snackBar.isOpened &&
                 <SnackBar
                     status={snackBar.status}
@@ -124,14 +143,6 @@ function SentinelDao(){
                     closeSnackBar={() => setSnackBar(st => ({...st, isOpened: false}))}
                 />
             }
-            <h2 style={{marginTop: '50px'}}>FAQ</h2>
-            <div style={{margin: '50px 0 100px 0'}}>
-                {
-                    faqData.map(({title, content}) =>
-                        <Accordion key={title} title={title} content={content}/>
-                    )
-                }
-            </div>
         </div>
     )
 }

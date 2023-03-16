@@ -100,3 +100,35 @@ export const ButtonsMenu = styled.div`
         width: 45%;
     }
 `
+
+export const Frame = styled.div`
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 0px;
+    margin: 0 auto;
+    @media(min-width: 768px){
+        height: 500px;
+        padding: 20px 25px;
+    }
+    @media(min-width: 991px){
+        height: 500px;
+        max-width: 900px;
+    }
+`;
+
+export const IframeContainer = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    & iframe{
+        border: none;
+    }
+`;
