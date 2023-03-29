@@ -11,7 +11,7 @@ import Image from 'next/image'
 
 const bagRoutes: route[] = [{url: "borrower", name: "Borrower"}, {url: "lender", name: "Lender"}, {url: "employer", name: "Employer"}, {url: "activeLoans", name: "Active Loans"}];
 const idRoutes: route[] = [{url: "subscriber", name: "Subscriber"}, {url: "owner", name: "Owner"}];
-const sentinelRoutes: route[] = [{url: "view", name: "View"}];
+const perpetualBetsRoutes: route[] = [{url: "buyer", name: "Buyer"}, {url: "writer", name: "Writer"}];
 
 function NavbarComponent(){
     const [open, setOpen] = useState<boolean>(false);
@@ -35,6 +35,7 @@ function NavbarComponent(){
                         <AppOption info={{name: "Borrow against salary", img: "/navbar/bag.svg"}} mainUrl='borrow-agains-salary' routes={bagRoutes}/>
                         <AppOption info={{name: "Instant distribution", img: "/navbar/ida.svg"}} mainUrl='instant-distribution' routes={idRoutes}/>
                         <Option selected={router.asPath === "/sentinel-dao"}><Link href="/sentinel-dao"><Icon src="/navbar/sentinel-dao.svg"/>Sentinel Dao</Link></Option>
+                        <AppOption info={{name: "Perpetual bets", img: "/navbar/ida.svg"}} mainUrl='perpetual-bets' routes={perpetualBetsRoutes}/>
                     </AppOptions>
                 </div>
             </ToggleNavbar>
