@@ -10,8 +10,14 @@ import BuyerFlowRate from './BuyerFlowRate';
 import employerFlow from "../../Borrow-Against-Salary/Offers/helpers/employerFlow";
 import executeBet from './helpers/execute';
 
+const tokens = {
+    "0xA39434A63A52E749F02807ae27335515BA4b07F7": "BTC",
+    "0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e": "ETH",
+    "0x48731cF7e84dc94C5f84577882c14Be11a5B7456": "Link",
+}
+
 function BuyerOffer({data, wallet} : BuyerOfferProps){
-    const {strikePrice, freezePeriod, freezePeriodEnd, buyer, owner, address, minPaymentFlowRate} = data;
+    const {strikePrice, freezePeriod, freezePeriodEnd, buyer, owner, address, minPaymentFlowRate, isCall, token} = data;
     const walletAddress = wallet?.adress;
     const [showDetails, setShowDetails] = useState(false);
     const [newBuyer, setNewBuyer] = useState(buyer);
@@ -43,15 +49,19 @@ function BuyerOffer({data, wallet} : BuyerOfferProps){
                     <ActualFlowRate $rate={actualFlowRate}>Inflow: <span>{actualFlowRate} fDAIx/m</span></ActualFlowRate>
                 </OfferInfo>
                 <ExpandArrow src="/arrow.svg" width={16} height={16} alt="arrow" opened={showDetails}/>
+                <Info style={{alignItems: 'center'}}>
+                    Strike price:
+                    ${Number(strikePrice).toFixed(2)}
+                    <Image src={`/tokens/${tokens[token]}.svg`} width={30} height={30} alt="token" style={{marginLeft: '0px'}}/>
+                </Info>
                 <Info style={{maxWidth: '120px'}}>
-                    Strike price: <br/>
-                    ${Number(strikePrice).toFixed(2)} ETH
+                    {isCall ? "Call ⬆️" : "Put ⬇️"}
                 </Info>
                 <AssetsInfo>
                     <Image src="/dai.svg" width={35} height={35} alt="dai"/>
                     <span style={{display: 'block', maxWidth: '140px', minWidth: '120px'}}>{assets === undefined ? '...' : assets} fDAIx</span>
                 </AssetsInfo>
-                <ActionButton $disabled={actualFlowRate === undefined} style={myPurchasedOffer ? {backgroundColor: "#8BC34A"} : {}} onClick={myPurchasedOffer ? execute : () => setFlowRatePopUp(true)}>{myPurchasedOffer ? "Execute" : "Buy"}</ActionButton>
+                <ActionButton $disabled={actualFlowRate === undefined} style={myPurchasedOffer ? {backgroundColor: "#8BC34A"} : {}} onClick={myPurchasedOffer ? execute : () => setFlowRatePopUp(true)}>{myPurchasedOffer ? "Execute" : !buyer ? "Buy" : "Outbid"}</ActionButton>
             </InfoContainer>
             {
                 showDetails &&

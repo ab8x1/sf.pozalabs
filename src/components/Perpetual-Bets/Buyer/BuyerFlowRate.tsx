@@ -15,7 +15,7 @@ function FlowRate({setFlowRatePopUp, wallet, address, setActualFlowRate, actualF
     const [flowRate, setFlowRate] = useState<number | undefined>();
     const [rawFlowRate, setRawFlowRate] = useState(0);
     const [error, setError] = useState("");
-
+    const minDefaultFlow = Math.round(Number(minPaymentFlowRate) * 3600 * 24 * 30);
     const ref: any = useRef();
 
     const closePopUp = () => {
@@ -43,8 +43,8 @@ function FlowRate({setFlowRatePopUp, wallet, address, setActualFlowRate, actualF
     const handleFlowRateChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
         const rawVal = e.target.value;
         const val = Number(rawVal);
-        if(typeof val !== "number" || isNaN(val) === true || val <= 0){
-            setError("Must be positive number");
+        if(typeof val !== "number" || isNaN(val) === true || val <= minDefaultFlow){
+            setError(`Must be greater than ${minDefaultFlow}`);
             setFlowRate(undefined);
         }
         else{
@@ -84,8 +84,9 @@ function FlowRate({setFlowRatePopUp, wallet, address, setActualFlowRate, actualF
                         name="flowRate"
                         onChange={handleFlowRateChange}
                         defaultValue={""}
-                        placeholder="Amount /month in dollars"
+                        placeholder={`Min flow rate: ${minDefaultFlow}`}
                         style={error ? {borderColor: 'red'} : {}}
+                        min={minDefaultFlow}
                     />
                 </InputContainer>
                 <TokenPerMounth>

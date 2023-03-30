@@ -40,9 +40,11 @@ export async function fetchBet(bet, customHttpProvider){
         customHttpProvider
     );
 
-    const price = ethers.utils.formatEther(await betOffer.getLatestPrice())
+    const price = ethers.utils.formatEther(await betOffer.getLatestPrice());
 
-    const owner = await betOffer.owner()
+    const owner = await betOffer.owner();
+
+    const token = await betOffer.priceFeed();
 
     let buyer = await betOffer.buyer() //if buyer = 0x0000 = button = buy else outbid, if freezperdioend > currentTimstep grey out outbid
     if(buyer === "0x0000000000000000000000000000000000000000") buyer = null;
@@ -59,5 +61,5 @@ export async function fetchBet(bet, customHttpProvider){
 
     const isCall = await betOffer.isCall();
 
-    return {price, owner, buyer, freezePeriod, freezePeriodEnd, strikePrice, minPaymentFlowRate, isCall, address: bet}
+    return {price, owner, buyer, freezePeriod, freezePeriodEnd, strikePrice, minPaymentFlowRate, isCall, address: bet, token}
 }

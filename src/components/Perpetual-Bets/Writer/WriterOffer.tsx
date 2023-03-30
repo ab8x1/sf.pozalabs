@@ -9,8 +9,14 @@ import Fund from './Fund'
 import { getAssets } from "../../Borrow-Against-Salary/Offers/helpers/asyncInfo";
 import cancelBet from './helpers/cancelBet';
 
+const tokens = {
+    "0xA39434A63A52E749F02807ae27335515BA4b07F7": "BTC",
+    "0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e": "ETH",
+    "0x48731cF7e84dc94C5f84577882c14Be11a5B7456": "Link",
+}
+
 function WriterOffer({data, wallet} : WriterOfferType){
-    const {strikePrice, freezePeriod, freezePeriodEnd, buyer, owner, address, isCall} = data;
+    const {strikePrice, freezePeriod, freezePeriodEnd, buyer, owner, address, isCall, token} = data;
     const [fund, setFund] = useState(false);
     const [assets, setAssets] = useState<number | undefined>();
 
@@ -44,10 +50,13 @@ function WriterOffer({data, wallet} : WriterOfferType){
                 </Info>
                 <Info style={{marginLeft: '20px', display: 'block'}}>
                     <InfoCol>Strike price:</InfoCol>
-                    <InfoCol style={{paddingTop: '10px'}}>{Number(strikePrice).toFixed(2)}ETH</InfoCol>
+                    <InfoCol style={{paddingTop: '10px'}}>
+                        {Number(strikePrice).toFixed(2)}
+                        <Image src={`/tokens/${tokens[token]}.svg`} width={30} height={30} alt="token" style={{marginLeft: '5px'}}/>
+                    </InfoCol>
                 </Info>
                 <Info style={{marginLeft: '20px', display: 'block'}}>
-                    <InfoCol>{isCall ? "Call ✅" : "Put ⭕"}</InfoCol>
+                    <InfoCol>{isCall ? "Call ⬆️" : "Put ⬇️"}</InfoCol>
                 </Info>
                 <Info style={{marginLeft: '20px', display: 'block'}}>
                     <InfoCol>{buyer ? "Active ✅" : "Not active ⭕"}</InfoCol>

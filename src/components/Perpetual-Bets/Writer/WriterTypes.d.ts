@@ -21,7 +21,8 @@ export type NewOfferTypes = {
         freezeDays: number,
         freezeHours: number,
         freezeMinutes: number,
-    }
+    },
+    token: string
 }
 
 export type WriterOfferType = {

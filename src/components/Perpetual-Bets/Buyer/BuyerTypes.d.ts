@@ -14,7 +14,8 @@ export type Offer = {
     strikePrice: string,
     minPaymentFlowRate: string,
     isCall: boolean,
-    address: string
+    address: string,
+    token: string
 }
 
 export type OfferTypes = Offer[] | undefined | null

@@ -9,7 +9,10 @@ import { PopUpProps, NewOfferTypes } from "./WriterTypes";
 import { InputContainer, InputLabel, DoubleContainer } from "../../Borrow-Against-Salary/Borrow/borrowStyles";
 import { CheckBoxes, TripleContainer } from "./WriterStyles";
 import createOffer from './helpers/createOffer';
+import Controller from '../../Borrow-Against-Salary/Borrow/Controller';
+import Select from "../../../../modules/Select";
 
+const tokenItems = [["ETH", "/tokens/ETHx.svg"], ["BTC", "/tokens/Bitcoin.svg"], ["Link", "/tokens/Link.svg"]].map(([item, url], i) => ({value: item, label: item, id: i, iconUrl: url}));
 
 function WriterPopUp({setPopUp, wallet} : PopUpProps){
     const ref : any = useRef();
@@ -20,7 +23,7 @@ function WriterPopUp({setPopUp, wallet} : PopUpProps){
     });
 
     const onSubmit = async (data: NewOfferTypes) => {
-        const {freezeMinutes, freezeHours, freezeDays} = data.period;
+        console.log(data);
         createOffer(wallet, data);
     };
 
@@ -37,11 +40,11 @@ function WriterPopUp({setPopUp, wallet} : PopUpProps){
                     <FormContainer style={{boxShadow: 'none', padding:'30px'}}>
                         <DoubleContainer style={{gridTemplateColumns: '1fr 0.5fr'}}>
                             <InputContainer>
-                                <InputLabel>Min. Payment Flow Rate / h <Error>{errors.flowRate?.message}</Error></InputLabel>
+                                <InputLabel>Min. Payment Flow Rate / month <Error>{errors.flowRate?.message}</Error></InputLabel>
                                 <Input type="number" placeholder="Type flow rate" error={!!errors?.flowRate} {...register(`flowRate`, {required: "Input reqired", min: 1})}/>
                             </InputContainer>
                             <InputContainer>
-                                <InputLabel>Call/Puts</InputLabel>
+                                <InputLabel>Call/Put</InputLabel>
                                 <CheckBoxes>
                                     <label>Call</label>
                                     <Input error={false} type="checkbox" placeholder="Type flow rate" {...register(`call`, {
@@ -50,7 +53,7 @@ function WriterPopUp({setPopUp, wallet} : PopUpProps){
                                             setValue('puts', checked ? false : true);
                                         }
                                     })}/>
-                                    <label>Puts</label>
+                                    <label>Put</label>
                                     <Input error={false} type="checkbox" placeholder="Type flow rate" {...register(`puts`, {
                                         onChange: e => {
                                             const checked = e.target.checked;
@@ -60,6 +63,20 @@ function WriterPopUp({setPopUp, wallet} : PopUpProps){
                                 </CheckBoxes>
                             </InputContainer>
                         </DoubleContainer>
+                        <InputContainer>
+                            <Controller
+                                Component={Select}
+                                componentProps={{
+                                        Placeholder: "Select a token",
+                                        items: tokenItems,
+                                        error: errors?.token
+                                }}
+                                control={control}
+                                name="token"
+                                required={true}
+                                key="token"
+                            />
+                        </InputContainer>
                         <DoubleContainer style={{gridTemplateColumns: '1fr 0.7fr'}}>
                             <InputContainer>
                                 <InputLabel>Strike Price <Error>{errors.strikePrice?.message}</Error></InputLabel>
