@@ -36,7 +36,7 @@ function Transfer({setPopUp, wallet, assets, setAssets, address }: FundProps){
             <PopUpContainer style={{maxWidth: '600px'}} ref={ref}>
                 <FormHeader style={{background: 'linear-gradient(90deg, rgba(252,211,140,1) 0%, rgba(242,195,113,1) 50%, rgba(244,170,42,1) 100%)'}}>
                     <div>
-                        <HeaderText>"Top up agreement</HeaderText>
+                        <HeaderText>Top up agreement</HeaderText>
                     </div>
                 </FormHeader>
                 <FormContainer style={{boxShadow: 'none'}}>
