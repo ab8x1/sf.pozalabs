@@ -4,7 +4,7 @@ export default function dhm(t){
         d = Math.floor(t / cd),
         h = Math.floor( (t - d * cd) / ch),
         m = Math.round( (t - d * cd - h * ch) / 60000),
-        pad = function(n){ return n > 0 ? n < 10 ? '0' + n : n : ''; };
+        pad = function(n){ return n < 10 ? '0' + n : n; };
   if( m === 60 ){
     h++;
     m = 0;
@@ -13,5 +13,5 @@ export default function dhm(t){
     d++;
     h = 0;
   }
-  return `${d}${d>0 ? 'd' : ''} ${pad(h)}${h>0 ? 'h' : ''} ${pad(m)}${m>0 ? 'm' : ''}`;
+  return `${d>0 ? d+'d ' : ''} ${h>0 || (d>0 && m>0)? pad(h)+'h ' : ''} ${m>0 ? pad(m)+'m' : ''}`;
 }

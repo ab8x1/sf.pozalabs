@@ -5,6 +5,7 @@ import Image from "next/image";
 import getOffers from './helpers/getOffers';
 import { BuyerProps, OfferTypes } from "./BuyerTypes";
 import BuyerOffer from './BuyerOffer';
+import { LoadingContainer } from "../../Borrow-Against-Salary/Offers/offersStyles";
 
 function Buyer({wallet} : BuyerProps){
     const [offers, setOffers] = useState<OfferTypes>();
@@ -13,10 +14,8 @@ function Buyer({wallet} : BuyerProps){
            const fetchedOffers = await getOffers(wallet);
            setOffers(fetchedOffers);
         }
-        if(wallet){
-            fetchOffers();
-        }
-    }, [wallet]);
+        fetchOffers();
+    }, []);
 
     return(
         <DisplayContainer>
@@ -27,8 +26,9 @@ function Buyer({wallet} : BuyerProps){
                 </div>
             </FormHeader>
             {
-                offers?.map((offer, i) =>
-                    <BuyerOffer key={i} data={offer}/>
+                offers === undefined ? <LoadingContainer/>
+                : offers?.map((offer, i) =>
+                    <BuyerOffer key={i} data={offer} wallet={wallet}/>
                 )
             }
         </DisplayContainer>

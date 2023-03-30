@@ -13,7 +13,7 @@ function WriterPage(){
             <Head>
                 <title>Writer</title>
             </Head>
-            <Writer wallet={wallet}/>
+            <Writer wallet={wallet} connectWallet={connectWallet}/>
         </>
     )
 }

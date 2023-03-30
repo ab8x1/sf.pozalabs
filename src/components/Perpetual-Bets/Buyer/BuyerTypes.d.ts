@@ -1,10 +1,11 @@
-import { WalletProps } from "../../App/appTypes"
+import { Dispatch, SetStateAction } from "react"
+import { WalletProps, WalletType } from "../../App/appTypes"
 
 export type BuyerProps = {
     wallet: WalletProps
 }
 
-type Offer = {
+export type Offer = {
     price: string,
     owner: string,
     buyer: string,
@@ -12,12 +13,23 @@ type Offer = {
     freezePeriodEnd: string,
     strikePrice: string,
     minPaymentFlowRate: string,
-    isCall: string,
+    isCall: boolean,
     address: string
 }
 
 export type OfferTypes = Offer[] | undefined | null
 
 export type BuyerOfferProps = {
-    data: Offer
+    data: Offer,
+    wallet: WalletProps
+}
+
+export type BuyerFlowRate = {
+    setFlowRatePopUp: Dispatch<SetStateAction<boolean>>,
+    wallet: WalletProps,
+    address: string,
+    setActualFlowRate: Dispatch<SetStateAction<number | undefined>>,
+    actualFlowRate: number | undefined,
+    setNewBuyer: Dispatch<SetStateAction<string>>,
+    minPaymentFlowRate: string
 }

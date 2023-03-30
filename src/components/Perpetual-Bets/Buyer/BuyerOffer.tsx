@@ -6,17 +6,35 @@ import Image from "next/image";
 import { shortenAdress } from "../../Navbar/TopNavbar";
 import timeTo from './helpers/timeTo';
 import { getFlow, getAssets } from "../../Borrow-Against-Salary/Offers/helpers/asyncInfo";
+import BuyerFlowRate from './BuyerFlowRate';
+import employerFlow from "../../Borrow-Against-Salary/Offers/helpers/employerFlow";
+import executeBet from './helpers/execute';
 
-function BuyerOffer({data} : BuyerOfferProps){
-    const {strikePrice, freezePeriod, freezePeriodEnd, buyer, owner, address} = data;
+function BuyerOffer({data, wallet} : BuyerOfferProps){
+    const {strikePrice, freezePeriod, freezePeriodEnd, buyer, owner, address, minPaymentFlowRate} = data;
+    const walletAddress = wallet?.adress;
     const [showDetails, setShowDetails] = useState(false);
+    const [newBuyer, setNewBuyer] = useState(buyer);
     const [actualFlowRate, setActualFlowRate] = useState<number | undefined>();
     const [assets, setAssets] = useState<number | undefined>();
+    const [flowRatePopUp, setFlowRatePopUp] = useState(false);
+    const myPurchasedOffer = newBuyer === walletAddress && actualFlowRate !== 0;
 
     useEffect(() => {
         getFlow(buyer, address, setActualFlowRate);
         getAssets(address, setAssets);
     }, []);
+
+    const cancelFlow = async () => {
+        setActualFlowRate(undefined);
+        await employerFlow("deleteFlow", wallet, address, 0);
+        setActualFlowRate(0);
+        setNewBuyer("");
+    }
+
+    const execute = () => {
+        executeBet(wallet, address);
+    }
 
     return(
         <OfferContainer $active={true}>
@@ -33,7 +51,7 @@ function BuyerOffer({data} : BuyerOfferProps){
                     <Image src="/dai.svg" width={35} height={35} alt="dai"/>
                     <span style={{display: 'block', maxWidth: '140px', minWidth: '120px'}}>{assets === undefined ? '...' : assets} fDAIx</span>
                 </AssetsInfo>
-                <ActionButton>Buy</ActionButton>
+                <ActionButton $disabled={actualFlowRate === undefined} style={myPurchasedOffer ? {backgroundColor: "#8BC34A"} : {}} onClick={myPurchasedOffer ? execute : () => setFlowRatePopUp(true)}>{myPurchasedOffer ? "Execute" : "Buy"}</ActionButton>
             </InfoContainer>
             {
                 showDetails &&
@@ -49,20 +67,24 @@ function BuyerOffer({data} : BuyerOfferProps){
                                 <span style={{fontWeight: 'bold', marginLeft: '5px'}}>{timeTo(Number(freezePeriod)* 1000)}</span>
                             </p>
                             <p>
-                                Expiry: {Number(freezePeriodEnd) > 0 ? freezePeriodEnd : '-'}
+                                Expiry: {Number(freezePeriodEnd) > 0 ? new Date(Number(freezePeriodEnd)*10**21).toISOString().substring(0, 19).replace('T', ' ') : '-'}
                             </p>
                         </div>
                         <Addresses>
                             <p>Buyer:
-                                { buyer ?
-                                    <a href={`https://goerli.etherscan.io/address/${buyer}`} target="_blank" rel="noopener noreferrer">{shortenAdress(buyer)}</a>
+                                { newBuyer ?
+                                    <a href={`https://goerli.etherscan.io/address/${newBuyer}`} target="_blank" rel="noopener noreferrer">{shortenAdress(newBuyer)}</a>
                                     : ' None'
                                 }
                             </p>
                             <p>Writer: <a href={`https://goerli.etherscan.io/address/${owner}`} target="_blank" rel="noopener noreferrer">{shortenAdress(owner)}</a></p>
+                            {myPurchasedOffer && <ActionButton style={{backgroundColor: "#F44336"}} onClick={cancelFlow}>Cancel</ActionButton>}
                         </Addresses>
                     </InfoContainer>
                 </ExpandDetails>
+            }
+            { flowRatePopUp &&
+                <BuyerFlowRate setFlowRatePopUp={setFlowRatePopUp} wallet={wallet} address={address} setActualFlowRate={setActualFlowRate} actualFlowRate={actualFlowRate} setNewBuyer={setNewBuyer} minPaymentFlowRate={minPaymentFlowRate}/>
             }
         </OfferContainer>
     )
