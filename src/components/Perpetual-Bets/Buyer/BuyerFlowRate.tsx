@@ -15,7 +15,8 @@ function FlowRate({setFlowRatePopUp, wallet, address, setActualFlowRate, actualF
     const [flowRate, setFlowRate] = useState<number | undefined>();
     const [rawFlowRate, setRawFlowRate] = useState(0);
     const [error, setError] = useState("");
-    const minDefaultFlow = Math.round(Number(minPaymentFlowRate) * 3600 * 24 * 30);
+    const minFlow = Number(minPaymentFlowRate) * 3600 * 24 * 30;
+    const minDefaultFlow = Math.round((minFlow + Number.EPSILON) * 100) / 100;
     const ref: any = useRef();
 
     const closePopUp = () => {
@@ -43,8 +44,8 @@ function FlowRate({setFlowRatePopUp, wallet, address, setActualFlowRate, actualF
     const handleFlowRateChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
         const rawVal = e.target.value;
         const val = Number(rawVal);
-        if(typeof val !== "number" || isNaN(val) === true || val <= minDefaultFlow){
-            setError(`Must be greater than ${minDefaultFlow}`);
+        if(typeof val !== "number" || isNaN(val) === true || val < minDefaultFlow){
+            setError(`Min flow: ${minDefaultFlow}`);
             setFlowRate(undefined);
         }
         else{

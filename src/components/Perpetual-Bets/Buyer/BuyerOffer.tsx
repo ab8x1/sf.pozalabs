@@ -25,7 +25,8 @@ function BuyerOffer({data, wallet} : BuyerOfferProps){
     const [assets, setAssets] = useState<number | undefined>();
     const [flowRatePopUp, setFlowRatePopUp] = useState(false);
     const myPurchasedOffer = newBuyer === walletAddress && actualFlowRate !== 0;
-
+    const freezeTimestamp = Number(freezePeriodEnd)*10**21;
+    const isOutdated = Date.now() > freezeTimestamp;
     useEffect(() => {
         getFlow(buyer, address, setActualFlowRate);
         getAssets(address, setAssets);
@@ -42,9 +43,16 @@ function BuyerOffer({data, wallet} : BuyerOfferProps){
         executeBet(wallet, address);
     }
 
+    const toogleOffer= () => {
+        if(window.getSelection){
+            window.getSelection()?.removeAllRanges();
+        }
+        setShowDetails(st => (!st));
+    }
+
     return(
         <OfferContainer $active={true}>
-            <InfoContainer onClick={() => setShowDetails(!showDetails)} style={{cursor: 'pointer'}}>
+            <InfoContainer onClick={toogleOffer} style={{cursor: 'pointer'}}>
                 <OfferInfo>
                     <ActualFlowRate $rate={actualFlowRate}>Inflow: <span>{actualFlowRate} fDAIx/m</span></ActualFlowRate>
                 </OfferInfo>
@@ -77,7 +85,7 @@ function BuyerOffer({data, wallet} : BuyerOfferProps){
                                 <span style={{fontWeight: 'bold', marginLeft: '5px'}}>{timeTo(Number(freezePeriod)* 1000)}</span>
                             </p>
                             <p>
-                                Expiry: {Number(freezePeriodEnd) > 0 ? new Date(Number(freezePeriodEnd)*10**21).toISOString().substring(0, 19).replace('T', ' ') : '-'}
+                                Expiry: {isOutdated ? "Passed" : Number(freezePeriodEnd) > 0 ? new Date(Number(freezePeriodEnd)*10**21).toISOString().substring(0, 19).replace('T', ' ') : '-'}
                             </p>
                         </div>
                         <Addresses>
