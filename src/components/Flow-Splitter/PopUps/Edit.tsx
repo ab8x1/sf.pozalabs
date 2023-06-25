@@ -39,19 +39,23 @@ function Edit({reference, wallet, connectWallet, popUpData, data, closePopUp, se
             address);            
         if(address) updateFlows(sideReceiverFlow, mainReceiverFlow)
         //create new splitter element
-        if(!address) setSplitters(st=>([...st, {
-            address: newAddress,
-            sideReceiver: {
-              address: sideReceiver,
-              units: getValues().sideUnits,
-              flow: mainReceiverFlow
-            },
-            mainReceiver: {
-              address: mainReceiver,
-              units: 1000 - getValues().sideUnits,
-              flow: sideReceiverFlow
-            }    
-        }]))
+        if(!address) setSplitters(st=>{
+            const prevArr = st?.length > 0 ? st : [];
+            return ([...prevArr, {
+                    address: newAddress,
+                    sideReceiver: {
+                      address: sideReceiver,
+                      units: getValues().sideUnits,
+                      flow: mainReceiverFlow
+                    },
+                    mainReceiver: {
+                      address: mainReceiver,
+                      units: 1000 - getValues().sideUnits,
+                      flow: sideReceiverFlow
+                    }    
+                }])
+        })
+        
         closePopUp()
     }
 

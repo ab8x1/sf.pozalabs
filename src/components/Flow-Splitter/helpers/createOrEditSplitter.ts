@@ -24,7 +24,6 @@ export default function createOrEditSplitter(
         const daix = await sf.loadSuperToken("fDAIx");
         let splitterAddress = SplitterAddress || "";
         if (type === "create") {
-          console.log("hello im here")
           const flowSplitterFactory = new ethers.Contract(
             FlowSplitterFactoryAddress,
             FlowSplitterFactoryABI,
@@ -47,25 +46,26 @@ export default function createOrEditSplitter(
           );
           splitterAddress = flowSplitterArraySender.at(-1);
           const {monthlyMainFlow, monthlySideFlow} = await getFlows(mainReceiver, sideReceiver, splitterAddress, wallet)
+          console.log(`new splitter address:`)
+          console.log(splitterAddress)
           res([splitterAddress, monthlyMainFlow, monthlySideFlow])
+        } else {
+          const flowSplitter = new ethers.Contract(
+            splitterAddress || "",
+            FlowSplitterABI,
+            provider
+          );
+  
+          const tx = await flowSplitter
+            .connect(sfSigner)
+            .updateSplit(units);
+          console.log("tx registered! here is your tx hash: ", tx.hash);
+          await tx.wait();
+  
+          const {monthlyMainFlow, monthlySideFlow} = await getFlows(mainReceiver, sideReceiver, splitterAddress, wallet)
+  
+          res([splitterAddress, monthlyMainFlow, monthlySideFlow]);
         }
-
-        const flowSplitter = new ethers.Contract(
-          splitterAddress || "",
-          FlowSplitterABI,
-          provider
-        );
-
-        //ToDo check for chnages
-        const tx = await flowSplitter
-          .connect(sfSigner)
-          .updateSplit(units);
-        console.log("tx registered! here is your tx hash: ", tx.hash);
-        await tx.wait();
-
-        const {monthlyMainFlow, monthlySideFlow} = await getFlows(mainReceiver, sideReceiver, splitterAddress, wallet)
-
-        res([splitterAddress, monthlyMainFlow, monthlySideFlow]);
       }
     } catch (e) {
       console.log(e);

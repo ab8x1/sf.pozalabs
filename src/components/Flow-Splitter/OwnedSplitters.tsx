@@ -45,7 +45,7 @@ function OwnedSplitters({globalCTX, splitters, setSplitters}: OwnedSplittersProp
                             splitters === undefined ?  <LoadingContainer/>
                             : splitters === null ? <h2 style={{textAlign: 'center', padding:'40px 20px'}}>No Splitters found</h2>
                             : splitters?.map((data, i) =>
-                                <Splitter key={`${data.id}`} index={i} data={data} wallet={wallet} setSplitters={setSplitters}/>
+                                <Splitter key={`${data.id}.${i}`} index={i} data={data} wallet={wallet} setSplitters={setSplitters}/>
                             )
                         }
                     </DisplayContainer>
