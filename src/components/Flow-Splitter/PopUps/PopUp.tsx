@@ -11,15 +11,7 @@ function PopUp({closePopUp, wallet, connectWallet, popUpData, setSplitters, upda
     OnClickOutside(container, () => closePopUp());
     return(
         <DialogBg>
-            {
-                status ?
-                    status === "edit" ?
-                        <Edit reference={container} connectWallet={connectWallet} wallet={wallet} popUpData={popUpData} data={data} closePopUp={closePopUp} setSnackBar={setSnackBar} createSplitterData={createSplitterData} setSplitters={setSplitters} updateFlows={updateFlows}/>
-                    :
-                        <Transfer type={status} setSnackBar={setSnackBar} reference={container} wallet={wallet} data={data} allUnits={allUnits} closePopUp={closePopUp}/>
-                :
-                null
-            }
+            <Edit reference={container} connectWallet={connectWallet} wallet={wallet} popUpData={popUpData} data={data} closePopUp={closePopUp} setSnackBar={setSnackBar} createSplitterData={createSplitterData} setSplitters={setSplitters} updateFlows={updateFlows}/>
         </DialogBg>
     )
 }
