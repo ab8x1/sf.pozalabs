@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import UserData from '../src/components/Dashboard'
+import Head from "next/head";
+import UserData from "../src/components/Dashboard";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Salary stream</title>
+        <title>Super apps</title>
       </Head>
-      <UserData/>
+      <UserData />
     </>
-  )
+  );
 }

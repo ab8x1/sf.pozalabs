@@ -10,7 +10,7 @@ export default function createOrEditAgreement(wallet: WalletProps, type: "create
     return new Promise(async (res, rej) => {
         try{
             if(wallet){
-                const {sf, sfSigner, provider, adress} = wallet;
+                const {sf, sfSigner, provider, adress: adress} = wallet;
                 const daix = await sf.loadSuperToken("fDAIx");
                 let userAgreement = agreementId || "";
                 if(type === "create"){

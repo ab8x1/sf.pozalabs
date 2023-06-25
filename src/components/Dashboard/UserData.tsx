@@ -17,7 +17,7 @@ function UserDataComponent(){
                 <Link href="/borrow-agains-salary/borrower">
                     <ServiceBox>
                         <label>Borrow Against Salary <Icon src="/navbar/bag.svg"/></label>
-                        <Image src="/ida-box.png" width={272} height={348} alt='IDA'/>
+                        <Image src="/ida-box.png" width={272} height={348} alt='BAS'/>
                     </ServiceBox>
                 </Link>
                 <Link href="/instant-distribution/owner">
@@ -29,7 +29,13 @@ function UserDataComponent(){
                 <Link href="/sentinel-dao">
                     <ServiceBox>
                         <label>Sentinel Dao <Icon src="/navbar/sentinel-dao.svg"/></label>
-                        <Image src="/sentinel-box.png" width={272} height={348} alt='IDA'/>
+                        <Image src="/sentinel-box.png" width={272} height={348} alt='SentinelDAO'/>
+                    </ServiceBox>
+                </Link>
+                <Link href="/flow-splitter">
+                    <ServiceBox>
+                        <label>Flow Splitter <Icon src="/navbar/flow-splitter.svg"/></label>
+                        <Image src="/flow-splitter-grey-bg.png" width={272} height={348} alt='FS'/>
                     </ServiceBox>
                 </Link>
             </DashBoardContainer>

@@ -1,5 +1,5 @@
 
-export default async function(type, wallet, loanAddress, flowRate){
+export default async function employerFlow(type, wallet, loanAddress, flowRate){
     return new Promise(async (res, rej) => {
         const {sf, sfSigner, adress, daix} = wallet;
         const employer = sfSigner;

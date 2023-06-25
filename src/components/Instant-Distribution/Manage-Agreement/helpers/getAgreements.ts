@@ -8,7 +8,7 @@ export default function getAgreements(wallet: WalletProps): Promise<null | Agree
     return new Promise(async (res, rej) => {
         if(wallet){
             try{
-                const {provider, adress} = wallet;
+                const {provider, adress: adress} = wallet;
 
                 const spreaderFactory = new ethers.Contract(
                     SpreaderFactoryAddress,
