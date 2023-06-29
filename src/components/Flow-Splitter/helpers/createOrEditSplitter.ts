@@ -2,7 +2,6 @@ import { ethers } from "ethers";
 import { WalletProps } from "../../App/appTypes";
 import FlowSplitterJSON from "../../../artifacts/contracts/FlowSplitter.sol/FlowSplitter.json";
 const FlowSplitterABI = FlowSplitterJSON.abi;
-import { SplittersChanges } from "../SplitterTypes";
 import { getFlows } from "./getSplitters";
 const FlowSplitterFactoryABI =
   require("../../../artifacts/contracts/FlowSplitterFactory.sol/FlowSplitterFactory.json").abi;
@@ -16,7 +15,7 @@ export default function createOrEditSplitter(
   mainReceiver: string,
   sideReceiver: string,
   SplitterAddress?: string
-): Promise<string[]> {
+): Promise<[string, number, number]> {
   return new Promise(async (res, rej) => {
     try {
       if (wallet) {
@@ -38,34 +37,33 @@ export default function createOrEditSplitter(
               units,
               daix.address,
               sf.settings.config.hostAddress
-          );
+            );
           console.log("tx registered! here is your tx hash: ", tx.hash);
           await tx.wait();
-          const flowSplitterArraySender = await flowSplitterFactory.getSplittersByOwner(
-            adress
-          );
+          const flowSplitterArraySender =
+            await flowSplitterFactory.getSplittersByOwner(adress);
           splitterAddress = flowSplitterArraySender.at(-1);
-          const {monthlyMainFlow, monthlySideFlow} = await getFlows(mainReceiver, sideReceiver, splitterAddress, wallet)
-          console.log(`new splitter address:`)
-          console.log(splitterAddress)
-          res([splitterAddress, monthlyMainFlow, monthlySideFlow])
+          console.log(`new splitter address:`);
+          console.log(splitterAddress);
         } else {
           const flowSplitter = new ethers.Contract(
             splitterAddress || "",
             FlowSplitterABI,
             provider
           );
-  
-          const tx = await flowSplitter
-            .connect(sfSigner)
-            .updateSplit(units);
+
+          const tx = await flowSplitter.connect(sfSigner).updateSplit(units);
           console.log("tx registered! here is your tx hash: ", tx.hash);
           await tx.wait();
-  
-          const {monthlyMainFlow, monthlySideFlow} = await getFlows(mainReceiver, sideReceiver, splitterAddress, wallet)
-  
-          res([splitterAddress, monthlyMainFlow, monthlySideFlow]);
+
         }
+        const { monthlyMainFlow, monthlySideFlow } = await getFlows(
+          mainReceiver,
+          sideReceiver,
+          splitterAddress,
+          wallet
+        );
+        res([splitterAddress, monthlyMainFlow, monthlySideFlow]);
       }
     } catch (e) {
       console.log(e);
