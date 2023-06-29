@@ -44,12 +44,12 @@ function Edit({reference, wallet, connectWallet, popUpData, data, closePopUp, se
             return ([...prevArr, {
                     address: newAddress,
                     sideReceiver: {
-                      address: sideReceiver,
+                      address: getValues().sideAddress,
                       units: getValues().sideUnits,
                       flow: mainReceiverFlow
                     },
                     mainReceiver: {
-                      address: mainReceiver,
+                      address: getValues().mainAddress,
                       units: 1000 - getValues().sideUnits,
                       flow: sideReceiverFlow
                     }    
