@@ -129,7 +129,7 @@ export const InputRow = styled.div`
         border-radius: 0 12px 12px 0;
     }
     @media(min-width: 768px){
-        grid-template-columns: 70px 0.6fr 0.2fr 0.2fr;
+        grid-template-columns: 70px 0.7fr 0.2fr 0.2fr 0.2fr;
     }
 `
 export const AddButton = styled(SubmitForm)`

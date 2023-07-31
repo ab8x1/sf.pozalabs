@@ -34,7 +34,7 @@ function UserDataComponent(){
                 </Link>
                 <Link href="/flow-splitter">
                     <ServiceBox>
-                        <label>Flow Splitter <Icon src="/navbar/flow-splitter.svg"/></label>
+                        <label>Super Splitter <Icon src="/navbar/flow-splitter.svg"/></label>
                         <Image src="/flow-splitter-grey-bg.png" width={272} height={348} alt='FS'/>
                     </ServiceBox>
                 </Link>

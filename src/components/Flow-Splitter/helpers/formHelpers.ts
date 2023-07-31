@@ -4,8 +4,8 @@ import {CreateSplitterFormTypes} from '../SplitterTypes'
 
 export const validateAddress = (adress: string, setFocus: UseFormSetFocus<CreateSplitterFormTypes>, index: number, getValues: UseFormGetValues<CreateSplitterFormTypes>) => {
     if(ethers.utils.isAddress(adress)){
-        if(getValues("subscribers").some((val, i) => val.address === adress && index !== i)) return "*Already exists";
-        setFocus(`subscribers.${index}.units`);
+        if(getValues("receivers").some((val, i) => val.address === adress && index !== i)) return "*Already exists";
+        setFocus(`receivers.${index}.units`);
         return true
     }
     else return "*Wrong address";

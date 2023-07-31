@@ -28,15 +28,15 @@ type SubscriberNew = {
 export type SplitterTypes = {
     id: string,
     assets: number,
-    subscribers?: Subscriber[],
+    receivers?: SubscriberNew[],
     setSplitterSubscribers?: Dispatch<SetStateAction<Subscriber[] | undefined>>,
     setAssets?: Dispatch<SetStateAction<number | undefined>>
 }
 
 export type SplitterTypesNew = {
     address: string,
-    sideReceiver?: SubscriberNew,
-    mainReceiver?: SubscriberNew
+    receivers?: SubscriberNew[],
+    totalOutflow?: number
 }
 
 export type NewSplitterTypes = {
@@ -57,7 +57,8 @@ export type ManageSplitterProps = {
 export type CreateSplitterFormTypes = {
     sideAddress: string,
     sideUnits: number,
-    mainAddress: string
+    mainAddress: string,
+    receivers: ReceiverType[]
 }
 
 export type SharesPropsTypes = {
@@ -100,6 +101,7 @@ export type CreateSplitterProps = {
 }
 
 export type SplittersChanges = {
-    type: "create" | "edit",
+    address: string,
+    type: "noChange" | "new" | "gain" | "lose" | "delete",
     units: number
 }

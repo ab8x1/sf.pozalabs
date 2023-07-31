@@ -5,14 +5,14 @@ import {FlowRateProps} from './offersTypes'
 import {DialogBg, DialogContainer, ActionButton, TokenPerMounth} from './offersStyles'
 import {InputContainer, Input, InputLabel, Error} from './borrowStyles'
 import manageFlow from './manageFlow'
-import { getFlows } from '../helpers/getSplitters'
+import { fetchReceiversAndOutflow, getSplitterContract, fetchSplitterSingle } from '../helpers/getSplitters'
 
 const transactionCB = async (tx: any, updateData: (() => void)) => {
     await tx?.wait();
     updateData();
 }
 
-function FlowRate({setShowFlowRate, wallet, flowSplitterAddress, defaultFlowRate, actualFlowRate, setSnackBar, setActualFlowRate, updateFlows, mainReceiver, sideReceiver}: FlowRateProps){
+function FlowRate({setShowFlowRate, wallet, flowSplitterAddress, defaultFlowRate, actualFlowRate, setSnackBar, setActualFlowRate, setTotalOutflow, setReceivers}: FlowRateProps){
     const [flowRate, setFlowRate] = useState<number | undefined>();
     const [rawFlowRate, setRawFlowRate] = useState(0);
     const [error, setError] = useState("");
@@ -72,9 +72,11 @@ function FlowRate({setShowFlowRate, wallet, flowSplitterAddress, defaultFlowRate
                     status: "success"
                 });
                 setActualFlowRate(type === "deleteFlow" ? 0 : rawFlowRate);
-                const {monthlyMainFlow, monthlySideFlow} = await getFlows(mainReceiver.address, sideReceiver.address, flowSplitterAddress, wallet)
-                updateFlows(monthlySideFlow, monthlyMainFlow)
+                const flowSplitter = getSplitterContract(flowSplitterAddress, wallet.provider);
+                const [receiverAddrs, totalOutflow] = await fetchReceiversAndOutflow(flowSplitter);
+                setTotalOutflow(totalOutflow);
             }
+            await tx.wait();
             transactionCB(tx, updateData);
             closePopUp();
         }

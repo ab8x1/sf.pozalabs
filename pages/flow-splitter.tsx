@@ -32,7 +32,7 @@ export default function CreateIDAPage() {
   return (
     <>
       <Head>
-        <title>Create share request</title>
+        <title>Manage super splitter</title>
       </Head>
 
       <PageContainer className='container' style={{maxWidth: '1100px'}}>

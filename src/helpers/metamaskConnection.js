@@ -18,8 +18,28 @@ const updateWallet = async (provider, setWallet) => {
     chainId: network.chainId,
     provider: provider
   })
+//resolverAddress: "0x05eE721BD4D803d6d477Aa7607395452B65373FF"
+  //celo resolver:
+  //0x05eE721BD4D803d6d477Aa7607395452B65373FF
+
+  //celo daix:
+  //0xEC77e13E60847fbCA242A3DFA8d8B3f386Af7593
+
+  //CELOx
+  //0x671425ae1f272bc6f79bec3ed5c4b00e9c628240
+
+  //mumbai resolver
+  //0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3
+
+  //mumbai fdaix
+  //0x5d8b4c2554aeb7e86f387b4d6c00ac33499ed01f
   const sfSigner = sf.createSigner({ web3Provider: provider });
-  const daix = await sf.loadSuperToken("fDAIx");
+  const superTokenAddressOrSymbol = network.chainId === 42220 ? "G$" : "fDAIx"; //42220 - celo
+  console.log(`superTokenAddressOrSymbol:`)
+  console.log(superTokenAddressOrSymbol)
+  const daix = await sf.loadSuperToken(superTokenAddressOrSymbol);
+  console.log(`SuperToken:`)
+  console.log(daix)
   setWallet({
     adress,
     balanceInEth,

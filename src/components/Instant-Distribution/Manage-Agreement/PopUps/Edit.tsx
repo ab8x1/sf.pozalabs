@@ -11,6 +11,8 @@ import createOrEditAgreement from "../helpers/createOrEditAgreement";
 const newAgreementDefaults = [{address: ""}, {address: ""}]
 
 function Edit({reference, wallet, connectWallet, data, closePopUp, setSnackBar, createAgreementData}: ManageAgreementProps){
+    console.log(`createAgreementData:`)
+    console.log(createAgreementData)
     const {setAgreements, setNewAgreementLoading} = createAgreementData || {};
     const {subscribers, id, setAgreementSubscribers} = data || {};
     const isNewAgreement = !data;
@@ -23,6 +25,8 @@ function Edit({reference, wallet, connectWallet, data, closePopUp, setSnackBar, 
         name: "subscribers",
         control
     });
+    console.log(`fields:`)
+    console.log(fields)
 
     const addNewSubscriber = () => {
         append({address: "", new: true, units: undefined});
@@ -77,7 +81,8 @@ function Edit({reference, wallet, connectWallet, data, closePopUp, setSnackBar, 
                         setNewAgreementLoading(true);
 
                     const newId = await createOrEditAgreement(wallet, !subscribers ? "create" : "edit", changes, id);
-                    const editedSubscribers: Subscriber[] = data.subscribers.map(({address, units, approved}) => ({address, units: units || 0, approved: !!approved}));console.log('editedSubscribers: ',editedSubscribers);
+                    const editedSubscribers: Subscriber[] = data.subscribers.map(({address, units, approved}) => ({address, units: units || 0, approved: !!approved}));
+                    console.log('editedSubscribers: ',editedSubscribers);
 
                     setSnackBar({
                         isOpened: true,

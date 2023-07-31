@@ -9,23 +9,22 @@ import FlowRate from "./PopUps/FlowRate";
 import SnackBar from "../../../modules/SnackBar";
 import {LoadingSpinner} from './LoadingSpinner'
 import Image from "next/image";
-import deleteSplitterFlow from "./helpers/delete";
 import { getFlowToSplitter } from "./helpers/getSplitters";
+import { getblockExplorerUrl } from "./helpers/getEnv";
 
 
 function Splitter({index, data, wallet, setSplitters}: SplitterProps){
-    const {address, mainReceiver, sideReceiver} = data || {};
+    const {address} = data || {};
     const [snackBar, setSnackBar] = useState<SnackBarObj>({isOpened: false, status: "success", message: ""});
-    //const [SplitterSubscribers, setSplitterSubscribers] = useState<Subscriber[] | undefined>(subscribers);
-    const [popUp, setPopUp] = useState<PopUpType>({status: false, data: data, setSnackBar});
-    const [sideReceiverFlow, setSideReceiverFlow] = useState(sideReceiver?.flow)
-    const [mainReceiverFlow, setMainReceiverFlow] = useState(mainReceiver?.flow)
+    const [totalOutflow, setTotalOutflow] = useState(data.totalOutflow)
+    const [receivers, setReceivers] = useState(data.receivers)
     const [actualFlowRate, setActualFlowRate] = useState<number | undefined>();
     const [showFlowRatePopUp, setShowFlowRatePopUp] = useState(false)
+    const [popUp, setPopUp] = useState<PopUpType>({status: false, data: data, setSnackBar});
 
-    const updateFlows = (sideReceiverFlow, mainReceiverFlow) => {
-        setSideReceiverFlow(sideReceiverFlow)
-        setMainReceiverFlow(mainReceiverFlow)
+    if(address === "0x65B8155bBb95E60EB9b8a020D60F4Ce11068A18b") {
+        console.log(`receivers:`)
+        console.log(receivers)
     }
 
     useEffect(() => {
@@ -44,6 +43,10 @@ function Splitter({index, data, wallet, setSplitters}: SplitterProps){
         setPopUp(st => ({...st, status: false}));
     }
 
+    const blockExplorer = getblockExplorerUrl(wallet);
+    const tokenSymbol = wallet?.network.chainId === 42220 ? "G$" : "fDAIx";
+    const tokenSvg = wallet?.network.chainId === 42220 ? "g$" : "dai";
+
     return(
         <>
             <SplitterContainer>
@@ -51,44 +54,34 @@ function Splitter({index, data, wallet, setSplitters}: SplitterProps){
                     <TopInfo>
                         <label>Id:</label>
                         <span>
-                            <a href={`https://mumbai.polygonscan.com/address/${address}`}  rel="noreferrer" target="_blank">
+                            <a href={`${blockExplorer}/address/${address}`}  rel="noreferrer" target="_blank">
                                 {shortenAdress(address)}
                                 <Image src="/external-link.svg" width={18} height={18} alt="external-link" style={{marginLeft: '10px'}}/>
                             </a>
                         </span>
                     </TopInfo>
-                    <Image style={!mainReceiver ? {opacity: '0.5', pointerEvents: 'none'} : {cursor: 'pointer'}} src="/edit.svg" width={20} height={20} alt="edit" onClick={() => showPopUp("edit")} 
+                    <Image style={!receivers ? {opacity: '0.5', pointerEvents: 'none'} : {cursor: 'pointer'}} src="/edit.svg" width={20} height={20} alt="edit" onClick={() => showPopUp("edit")} 
                     />
                 </TopInfoContainer>
                 <InfoCol>
-                    <Info style={{marginLeft: '20px'}}>
-                        <Image src="/subscribers.svg" width={40} height={40} alt="dai"/>
-                        <InfoCol>{"Main receiver:" || <>Editing... <LoadingSpinner size={"20px"}/></>}</InfoCol>
-                    </Info>
                     <Info>
-                        <Image src="/dai.svg" width={35} height={35} alt="dai"/>
-                        <span style={{display: 'block', maxWidth: '140px', minWidth: '120px'}}>{mainReceiverFlow} fDAIx monthly</span>
+                        <Image src={`/${tokenSvg}.svg`} width={35} height={35} alt={`${tokenSvg}`}/>
+                        <span style={{display: 'block', maxWidth: '140px', minWidth: '120px'}}>{totalOutflow} {tokenSymbol} monthly</span>
+                    </Info>
+                    <Info style={{marginLeft: '20px'}}>
+                        <Image src="/subscribers.svg" width={35} height={35} alt="dai"/>
+                        <InfoCol>{receivers?.length || <>Editing... <LoadingSpinner size={"20px"}/></>}</InfoCol>
                     </Info>
                 </InfoCol>
                 <InfoCol>
-                    <Info style={{marginLeft: '20px'}}>
-                        <Image src="/subscribers.svg" width={30} height={30} alt="dai"/>
-                        <InfoCol>{"Side receiver:" || <>Editing... <LoadingSpinner size={"20px"}/></>}</InfoCol>
-                    </Info>
-                    <Info>
-                        <Image src="/dai.svg" width={25} height={25} alt="dai"/>
-                        <span style={{display: 'block', maxWidth: '140px', minWidth: '120px'}}>{sideReceiverFlow} fDAIx monthly</span>
-                    </Info>
-                </InfoCol>
-                <InfoCol>
-                    <SplitterButton  $disabled={mainReceiver===undefined} style={{backgroundColor: "#BC6E5A", color: 'white', marginLeft: '20px'}} onClick={mainReceiver!==undefined ? () => setShowFlowRatePopUp(true) : undefined}>Manage flow</SplitterButton>
+                    <SplitterButton  $disabled={receivers===undefined} style={{backgroundColor: "#BC6E5A", color: 'white', marginLeft: '20px'}} onClick={receivers!==undefined ? () => setShowFlowRatePopUp(true) : undefined}>Manage flow</SplitterButton>
                 </InfoCol>
             </SplitterContainer>
             { showFlowRatePopUp &&
                     <FlowRate active={showFlowRatePopUp} setShowFlowRate={setShowFlowRatePopUp} wallet={wallet}
-                    address={address} defaultFlowRate={0} actualFlowRate={actualFlowRate} setSnackBar={setSnackBar} setActualFlowRate={setActualFlowRate} flowSplitterAddress={address} updateFlows={updateFlows} mainReceiver={mainReceiver} sideReceiver={sideReceiver}/>
+                    address={address} defaultFlowRate={0} actualFlowRate={actualFlowRate} setSnackBar={setSnackBar} setActualFlowRate={setActualFlowRate} flowSplitterAddress={address} setTotalOutflow={setTotalOutflow} setReceivers={setReceivers}/>
             }
-            {popUp.status !== false && <PopUp popUpData={popUp} closePopUp={closePopUp} wallet={wallet} setSplitters={setSplitters} updateFlows={updateFlows}/>}
+            {popUp.status !== false && <PopUp popUpData={popUp} closePopUp={closePopUp} wallet={wallet} setSplitters={setSplitters} setReceivers={setReceivers} receivers={receivers} totalOutflow={totalOutflow}/>}
             {snackBar.isOpened &&
                 <SnackBar
                     status={snackBar.status}

@@ -19,8 +19,8 @@ function CreateSplitter({wallet, connectWallet, setSplitters}: CreateSplitterPro
         <section>
             <CreateSplitterContainer>
                 <NewSplitterInfo>
-                    <h1>Your Flow Splitters</h1>
-                    <p>Send money streams to two accounts at the same time!</p>
+                    <h1>Your Super Splitters</h1>
+                    <p>Send money streams to <strong>multiple</strong> accounts at the same time!</p>
                     <div style={{display: 'flex', alignItems: 'center'}}>
                         <AddButton $disabled={loading} onClick={() => setPopUp(st => ({...st, status: "edit", createSplitterData: {setSplitters, setNewSplitterLoading: setLoading}}))}>
                             Create Splitter
@@ -31,7 +31,7 @@ function CreateSplitter({wallet, connectWallet, setSplitters}: CreateSplitterPro
                 </NewSplitterInfo>
                 <Image src="/flow-splitter.png" width={400} height={400} alt="Splitter"/>
             </CreateSplitterContainer>
-            {popUp.status !== false && <PopUp popUpData={{status:"edit"}} closePopUp={closePopUp} wallet={wallet} connectWallet={connectWallet} setSplitters={setSplitters}/>}
+            {popUp.status !== false && <PopUp popUpData={popUp} closePopUp={closePopUp} wallet={wallet} connectWallet={connectWallet} setSplitters={setSplitters}/>}
             {snackBar.isOpened &&
                 <SnackBar
                     status={snackBar.status}

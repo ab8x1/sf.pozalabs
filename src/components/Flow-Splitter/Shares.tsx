@@ -30,10 +30,10 @@ const DisplayShares = styled.div`
     }
 `
 
-function SideShares({watch, index}: SharesPropsTypes){
-    const val = watch('sideUnits');
-    const allUnits = 1000;
-    const unit = val || 0;
+function Shares({watch, index}: SharesPropsTypes){
+    const vals = watch('receivers');
+    const allUnits = vals.reduce((acc, val) => acc + (Number(val?.units) || 0), 0);
+    const unit = vals[index]?.units || 0;
     const owned = ((unit / allUnits) * 100);
     return(
         <SharesContiner>
@@ -45,4 +45,4 @@ function SideShares({watch, index}: SharesPropsTypes){
     )
 }
 
-export default SideShares;
+export default Shares;

@@ -4,9 +4,8 @@ const FlowSplitterFactoryABI =
   require("../../../artifacts/contracts/FlowSplitterFactory.sol/FlowSplitterFactory.json").abi;
   const FlowSplitterABI =
   require("../../../artifacts/contracts/FlowSplitter.sol/FlowSplitter.json").abi;
-const FlowSplitterFactoryAddress =
-  process.env.NEXT_PUBLIC_SPLITTER_FACTORY_ADDRESS || "";
-import { SplitterTypes, SplitterTypesNew } from "../SplitterTypes";
+import { SplitterTypes, SplitterTypesNew, SubscriberNew } from "../SplitterTypes";
+import { getFlowSplitterFactoryAddress } from "./getEnv";
 
 export default function getSplitters(
   wallet: WalletProps
@@ -15,7 +14,7 @@ export default function getSplitters(
     if (wallet) {
       try {
         const { provider, adress: adress } = wallet;
-
+        const FlowSplitterFactoryAddress = getFlowSplitterFactoryAddress(wallet);
         const splitterFactory = new ethers.Contract(
           FlowSplitterFactoryAddress,
           FlowSplitterFactoryABI,
@@ -50,63 +49,48 @@ export async function getFlowToSplitter(flowSplitterAddress:any, wallet: WalletP
       providerOrSigner: provider
     })
 
-    const monthlySplitterFlow = monthlyAmount(flowToSplitter)
+    const monthlySplitterFlow = monthlyAmount(flowToSplitter.flowRate)
 
     return monthlySplitterFlow
   }
 }
 
-export async function getFlows(mainReceiver:string, sideReceiver:string, flowSplitterAddress:string, wallet: WalletProps) {
+async function getReceiverDetails(receiverAddrs:string, flowSplitter:any, wallet: WalletProps) {
   if (wallet) {
     const { provider, daix } = wallet;
-    const mainReceiverFlow = await daix.getFlow({
-      sender: flowSplitterAddress,
-      receiver: mainReceiver,
+
+    const flow = await daix.getFlow({
+      sender: flowSplitter.address,
+      receiver: receiverAddrs,
       providerOrSigner: provider
-    })
+    });
 
-    const sideReceiverFlow = await daix.getFlow({
-      sender: flowSplitterAddress,
-      receiver: sideReceiver,
-      providerOrSigner: provider
-    })
-
-    const monthlyMainFlow = monthlyAmount(mainReceiverFlow)
-    const monthlySideFlow = monthlyAmount(sideReceiverFlow)
-
-    return {monthlyMainFlow, monthlySideFlow}
+    const units = await flowSplitter.getFlowByReceiver(receiverAddrs);
+    const SubscriberNew:SubscriberNew = {
+      address: receiverAddrs,
+      units: Number(units),
+      flow: monthlyAmount(flow.flowRate)
+    }
+    return SubscriberNew;
   }
-
-  // default return in case wallet is not defined
-  return {monthlyMainFlow: 0, monthlySideFlow: 0}
+  return {};
 }
 
 export async function fetchSplitterSingle(flowSplitterAddress:any, wallet: WalletProps){
   return new Promise(async (res, rej) => {
     if(wallet) {
       const { provider, daix, adress: adress } = wallet;
-      const flowSplitter = new ethers.Contract(
-        flowSplitterAddress,
-          FlowSplitterABI,
-          provider
-      );
+      const flowSplitter = getSplitterContract(flowSplitterAddress, provider);
       
-      const [mainReceiver, sideReceiver, sideReceiverPortion] = await Promise.all([flowSplitter.mainReceiver(),flowSplitter.sideReceiver(), flowSplitter.sideReceiverPortion()]);
+      const [receiverAddrs, totalOutflow] = await fetchReceiversAndOutflow(flowSplitter);
       
-      const {monthlyMainFlow, monthlySideFlow} = await getFlows(mainReceiver, sideReceiver, flowSplitterAddress, wallet)
+      const receivers:SubscriberNew[] = await Promise.all(receiverAddrs.map(async (receiverAddr: string) => getReceiverDetails(receiverAddr, flowSplitter, wallet)))
+      
       
       const SplittersNew: SplitterTypesNew = {
         address: flowSplitterAddress,
-        sideReceiver: {
-          address: sideReceiver,
-          units: sideReceiverPortion,
-          flow: monthlySideFlow
-        },
-        mainReceiver: {
-          address: mainReceiver,
-          units: 1000 - sideReceiverPortion,
-          flow: monthlyMainFlow
-        }      
+        receivers: receivers,
+        totalOutflow: totalOutflow
       }
 
       res(SplittersNew);
@@ -115,4 +99,17 @@ export async function fetchSplitterSingle(flowSplitterAddress:any, wallet: Walle
   })
   }
 
-const monthlyAmount = (flow: { flowRate: ethers.BigNumberish }) => Number((Number(ethers.utils.formatEther(flow.flowRate)) * 3600 * 24 * 30).toFixed(2));
+const monthlyAmount = (totalFlow: ethers.BigNumberish) => +((+(ethers.utils.formatEther(totalFlow))* 3600 * 24 * 30).toFixed(2));
+
+export async function fetchReceiversAndOutflow(flowSplitter: ethers.Contract) {
+  const [receiverAddrs, totalOutflow] = await Promise.all([flowSplitter.getReceivers(),flowSplitter.calcTotalOutflow()]);
+  return [receiverAddrs, monthlyAmount(totalOutflow)];
+}
+
+export function getSplitterContract(flowSplitterAddress:string, provider: ethers.providers.Provider) {
+  return new ethers.Contract(
+    flowSplitterAddress,
+      FlowSplitterABI,
+      provider
+  );
+}
