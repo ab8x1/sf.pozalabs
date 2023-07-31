@@ -21,11 +21,7 @@ const updateWallet = async (provider, setWallet) => {
 
   const sfSigner = sf.createSigner({ web3Provider: provider });
   const superTokenAddressOrSymbol = network.chainId === 42220 ? "G$" : "fDAIx"; //42220 - celo
-  console.log(`superTokenAddressOrSymbol:`)
-  console.log(superTokenAddressOrSymbol)
   const daix = await sf.loadSuperToken(superTokenAddressOrSymbol);
-  console.log(`SuperToken:`)
-  console.log(daix)
   setWallet({
     adress,
     balanceInEth,
