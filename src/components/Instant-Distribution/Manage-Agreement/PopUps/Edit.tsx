@@ -11,8 +11,6 @@ import createOrEditAgreement from "../helpers/createOrEditAgreement";
 const newAgreementDefaults = [{address: ""}, {address: ""}]
 
 function Edit({reference, wallet, connectWallet, data, closePopUp, setSnackBar, createAgreementData}: ManageAgreementProps){
-    console.log(`createAgreementData:`)
-    console.log(createAgreementData)
     const {setAgreements, setNewAgreementLoading} = createAgreementData || {};
     const {subscribers, id, setAgreementSubscribers} = data || {};
     const isNewAgreement = !data;
@@ -25,8 +23,6 @@ function Edit({reference, wallet, connectWallet, data, closePopUp, setSnackBar, 
         name: "subscribers",
         control
     });
-    console.log(`fields:`)
-    console.log(fields)
 
     const addNewSubscriber = () => {
         append({address: "", new: true, units: undefined});
