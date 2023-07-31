@@ -14,14 +14,14 @@ import { getblockExplorerUrl } from "./helpers/getEnv";
 
 
 function Splitter({index, data, wallet, setSplitters}: SplitterProps){
-    const {address} = data || {};
+    const {address, receivers} = data || {};
     const [snackBar, setSnackBar] = useState<SnackBarObj>({isOpened: false, status: "success", message: ""});
     const [totalOutflow, setTotalOutflow] = useState(data.totalOutflow)
-    const [receivers, setReceivers] = useState(data.receivers)
+    const [agreementReceivers, setAgreementReceivers] = useState(receivers)
     const [actualFlowRate, setActualFlowRate] = useState<number | undefined>();
     const [showFlowRatePopUp, setShowFlowRatePopUp] = useState(false)
-    const [popUp, setPopUp] = useState<PopUpType>({status: false, data: data, setSnackBar});
-
+    const [popUp, setPopUp] = useState<PopUpType>({status: false, data: {address, receivers: agreementReceivers}, setSnackBar});
+    
     if(address === "0x65B8155bBb95E60EB9b8a020D60F4Ce11068A18b") {
         console.log(`receivers:`)
         console.log(receivers)
@@ -70,7 +70,7 @@ function Splitter({index, data, wallet, setSplitters}: SplitterProps){
                     </Info>
                     <Info style={{marginLeft: '20px'}}>
                         <Image src="/subscribers.svg" width={35} height={35} alt="dai"/>
-                        <InfoCol>{receivers?.length || <>Editing... <LoadingSpinner size={"20px"}/></>}</InfoCol>
+                        <InfoCol>{agreementReceivers?.length || <>Editing... <LoadingSpinner size={"20px"}/></>}</InfoCol>
                     </Info>
                 </InfoCol>
                 <InfoCol>
@@ -79,9 +79,9 @@ function Splitter({index, data, wallet, setSplitters}: SplitterProps){
             </SplitterContainer>
             { showFlowRatePopUp &&
                     <FlowRate active={showFlowRatePopUp} setShowFlowRate={setShowFlowRatePopUp} wallet={wallet}
-                    address={address} defaultFlowRate={0} actualFlowRate={actualFlowRate} setSnackBar={setSnackBar} setActualFlowRate={setActualFlowRate} flowSplitterAddress={address} setTotalOutflow={setTotalOutflow} setReceivers={setReceivers}/>
+                    address={address} defaultFlowRate={0} actualFlowRate={actualFlowRate} setSnackBar={setSnackBar} setActualFlowRate={setActualFlowRate} flowSplitterAddress={address} setTotalOutflow={setTotalOutflow} setReceivers={setAgreementReceivers}/>
             }
-            {popUp.status !== false && <PopUp popUpData={popUp} closePopUp={closePopUp} wallet={wallet} setSplitters={setSplitters} setReceivers={setReceivers} receivers={receivers} totalOutflow={totalOutflow}/>}
+            {popUp.status !== false && <PopUp popUpData={popUp} closePopUp={closePopUp} wallet={wallet} setSplitters={setSplitters} setReceivers={setAgreementReceivers} receivers={agreementReceivers} totalOutflow={totalOutflow}/>}
             {snackBar.isOpened &&
                 <SnackBar
                     status={snackBar.status}

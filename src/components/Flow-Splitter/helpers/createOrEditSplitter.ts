@@ -46,16 +46,16 @@ export default function createOrEditSplitter(
           console.log(`current splitter address: ${splitterAddress}`);
           const flowSplitter = getSplitterContract(splitterAddress, wallet.provider);
 
-          let tx;
           for (const change of changes) {
             const {address, units, type} = change;
+            let tx;
             if(type !== "noChange") {
               tx = await flowSplitter.connect(sfSigner).updateSplit(units, address);
             }
-          }
-          if(tx) {
-            console.log("tx registered! here is your tx hash: ", tx.hash);
-            await tx.wait();
+            if(tx) {
+              console.log("tx registered! here is your tx hash: ", tx.hash);
+              await tx.wait();
+            }
           }
 
         }

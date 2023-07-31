@@ -11,15 +11,15 @@ import createOrEditSplitter from "../helpers/createOrEditSplitter";
 
 const newSplitterDefaults = [{address: ""}, {address: ""}]
 
-function Edit({reference, wallet, connectWallet, popUpData, data, closePopUp, setSnackBar, createSplitterData, setSplitters, setReceivers, receivers, totalOutflow}: ManageSplitterProps){
+function Edit({reference, wallet, connectWallet, popUpData, data, closePopUp, setSnackBar, createSplitterData, setSplitters, setReceivers, totalOutflow}: ManageSplitterProps){
     const {setSplitter, setNewSplitterLoading} = createSplitterData || {};
     const {address} = popUpData?.data || {};
-    const {address:splitterAddress} = data || {};
-    const isNewSplitter = !data;
+    const {address:splitterAddress, receivers} = data || {};
+    const isNewSplitter = !splitterAddress;
     const clickToConnect = !wallet && connectWallet ? {onClick: () => connectWallet(false)}  : {}
     const { register, handleSubmit, formState: { errors, isDirty }, control, setFocus, getValues, watch, trigger} = useForm<CreateSplitterFormTypes>({
         defaultValues: {
-            receivers: receivers || [{address: ""}, {address: ""}]
+            receivers: receivers || newSplitterDefaults
         },
         mode: 'onChange'
     });
@@ -75,7 +75,11 @@ function Edit({reference, wallet, connectWallet, popUpData, data, closePopUp, se
                         setNewSplitterLoading(true);
 
                     const newId = await createOrEditSplitter(wallet, !receivers ? "create" : "edit", changes, splitterAddress);
-                    const editedReceivers: SubscriberNew[] = data.receivers.map(({address, units, flow}) => ({address, units: +units || 0, flow: flow}));
+                    const editedReceivers: SubscriberNew[] = data.receivers
+                        .filter(({ units }) => Number(units) > 0)
+                        .map(({address, units, flow}) => ({address, units: Number(units) || 0, flow: flow}));
+                    console.log(`editedReceivers:`)
+                    console.log(editedReceivers)
 
                     setSnackBar({
                         isOpened: true,
@@ -94,7 +98,7 @@ function Edit({reference, wallet, connectWallet, popUpData, data, closePopUp, se
                         console.log("newSplitter: ",newSplitter);
                         setNewSplitterLoading(false);
                         setSplitters(st => {
-                            if(st && st.length > 0) return [newSplitter, ...st];
+                            if(st && st.length > 0) return [...st, newSplitter];
                             else return [newSplitter];
                         });
                     }
@@ -145,7 +149,7 @@ function Edit({reference, wallet, connectWallet, popUpData, data, closePopUp, se
                                     </div>
                                     <div style={{position: 'relative'}}>
                                         <ErrorLabel>{errors?.receivers?.[index]?.units?.message}</ErrorLabel>
-                                        <Input disabled={false} error={!!errors?.receivers?.[index]?.units} type="number" placeholder='Units' {...register(`receivers.${index}.units`, unitsValidationObj)}/>
+                                        <Input min={0} disabled={false} error={!!errors?.receivers?.[index]?.units} type="number" placeholder='Units' {...register(`receivers.${index}.units`, unitsValidationObj)}/>
                                     </div>
                                     <Flow watch={watch} index={index} totalOutflow={totalOutflow}/>
                                     <Shares watch={watch} index={index}/>
