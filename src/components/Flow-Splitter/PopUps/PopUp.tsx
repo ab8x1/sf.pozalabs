@@ -4,9 +4,9 @@ import { DialogBg } from "../../Borrow-Against-Salary/Offers/offersStyles"
 import Edit from "./Edit";
 import OnClickOutside from "../../../../modules/Select/helpers/onClickOutside";
 
-function PopUp({closePopUp, wallet, connectWallet, popUpData, setSplitters, updateFlows, setReceivers, receivers} : PopUpProps){
+function PopUp({closePopUp, wallet, connectWallet, popUpData, setSplitters, setReceivers, receivers, totalOutflow} : PopUpProps){
     const {status, setSnackBar, createSplitterData} = popUpData || {};
-    const {address, totalOutflow} = popUpData.data || {};
+    const {address} = popUpData.data || {};
     const data = {address, receivers, totalOutflow}
     const container: any = useRef();
     OnClickOutside(container, () => closePopUp());

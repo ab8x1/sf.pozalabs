@@ -20,12 +20,9 @@ function Splitter({index, data, wallet, setSplitters}: SplitterProps){
     const [agreementReceivers, setAgreementReceivers] = useState(receivers)
     const [actualFlowRate, setActualFlowRate] = useState<number | undefined>();
     const [showFlowRatePopUp, setShowFlowRatePopUp] = useState(false)
-    const [popUp, setPopUp] = useState<PopUpType>({status: false, data: {address, receivers: agreementReceivers}, setSnackBar});
-    
-    if(address === "0x65B8155bBb95E60EB9b8a020D60F4Ce11068A18b") {
-        console.log(`receivers:`)
-        console.log(receivers)
-    }
+    const [popUp, setPopUp] = useState<PopUpType>({status: false, data: {address, receivers: agreementReceivers, totalOutflow}, setSnackBar});
+
+
 
     useEffect(() => {
         const getInflow = async () => {

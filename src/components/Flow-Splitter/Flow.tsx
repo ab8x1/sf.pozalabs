@@ -32,7 +32,6 @@ const DisplayFlow = styled.div`
 
 function Flow({watch, index, totalOutflow}){
     const vals = watch('receivers');
-    const totalFlow = vals.reduce((acc, val) => acc + (Number(val?.flow) || 0), 0);
 
     const unit = vals[index]?.units || 0;
     const allUnits = vals.reduce((acc, val) => acc + (Number(val?.units) || 0), 0);
