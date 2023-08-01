@@ -36,7 +36,7 @@ function NavbarComponent() {
                         <AppOption info={{ name: "Instant distribution", img: "/navbar/ida.svg" }} mainUrl='instant-distribution' routes={idRoutes} />
                         <Option selected={router.asPath === "/sentinel-dao"}><Link href="/sentinel-dao"><Icon src="/navbar/sentinel-dao.svg" />Sentinel Dao</Link></Option>
                         <AppOption info={{ name: "Perpetual bets", img: "/navbar/ida.svg" }} mainUrl='perpetual-bets' routes={perpetualBetsRoutes} />
-                        <Option selected={router.asPath === "/flow-splitter"}><Link href="/flow-splitter"><Icon src="/navbar/flow-splitter.svg" />Super Splitter</Link></Option>
+                        <Option selected={router.asPath === "/flow-splitter"}><Link href="/super-splitter"><Icon src="/navbar/flow-splitter.svg" />Super Splitter</Link></Option>
                     </AppOptions>
                 </div>
             </ToggleNavbar>
